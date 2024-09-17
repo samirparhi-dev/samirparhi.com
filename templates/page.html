@@ -39,9 +39,10 @@
         {{ page.content | safe }}
           
         </article>
-        {% if page.taxonomies.tags %}
-          <div class=" flex-grow flex mx-auto text-center flex-wrap p-4 justify-center">
-            <p class="text-fuchsia-800 flex flex-row"> Tags 🔖 :
+        
+          <div class=" flex mx-auto text-center flex-wrap p-4 justify-center">
+            {% if page.taxonomies.tags %}
+            <p class="text-fuchsia-800 flex flex-wrap"> Tags 🔖 :
               {% for tag in page.taxonomies.tags %}
               <a href="{{ get_taxonomy_url(kind="tags", name=tag) }}" class="text-sky-700 flex hover:underline mx-2">
                 #{{ tag }} 
