@@ -58,7 +58,7 @@ show_word_count = true
 current_year = 2024
 
 my_blog_menu = [
-    {url = "#", menu = "Home"},
+    {url = "https://ls-lrt.com/#", menu = "Home"},
     {url = "https://ls-lrt.com/about", menu = "About"},
     {url = "https://ls-lrt.com/collab", menu = "Collaboration"},
     {url = "https://ls-lrt.com/connect", menu = "Get In Touch"},
