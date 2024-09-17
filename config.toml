@@ -1,0 +1,121 @@
+
+base_url = "https://ls-lrt.com"
+
+title = "ls-lrt.com"
+description = "Blog Site of Samir Parhi"
+
+default_language = "en"
+author = "Samir Ranjan Parhi"
+preserve_dotfiles_in_output = false
+compile_sass = true
+minify_html = false
+# internal_level = "error"
+# external_level = "error"
+
+# taxonomies = [
+#     {name = "categories", feed = true, paginate_by=5},
+#     {name = "tags", feed = true, paginate_by=5},
+# ]
+
+taxonomies = [
+    {name = "tags", feed = true, paginate_by=5},
+]
+
+build_search_index = true
+
+
+[markdown]
+
+highlight_code = true
+highlight_theme = "material-dark"
+smart_punctuation = true
+render_footnotes = true
+render_emoji = true
+
+[markdown.extensions]
+heading_attributes = true
+table = true
+tasklist = true
+
+
+[slugify]
+paths = "on"
+taxonomies = "on"
+anchors = "on"
+paths_keep_dates = false
+
+[search]
+
+include_title = true
+include_description = false
+include_path = false
+include_content = true
+index_format = "elasticlunr_javascript"
+
+[extra]
+show_word_count = true
+
+current_year = 2024
+
+my_blog_menu = [
+    {url = "#", menu = "Home"},
+    {url = "https://ls-lrt.com/about", menu = "About"},
+    {url = "https://ls-lrt.com/collab", menu = "Collaboration"},
+    {url = "https://ls-lrt.com/connect", menu = "Get In Touch"},
+    
+]
+
+social_handle = [
+    {url = "https://github.com/samirparhi-dev", social_handle = "GitHub"},
+    {url = "https://linkedin.com/in/samir-parhi", social_handle = "LinkedIn"},
+    {url = "https://twitter.com/samirparhi", social_handle = "X"},
+    {url = "mailto:samirparhi@gmail.com", social_handle = "Mail"},
+    {url = "https://mastodon.social/@samirparhi", social_handle = "Mastodon"}
+
+]
+company_logo=[{url="img/brand/ls-lrt-logo-2024.png"}]
+profile_pic = [{profile_pic_path="img/profile_pic/my-portrait-recent.png"}]
+
+skills = [
+    "Rust",
+    "Leptos",
+    "Mili Search",
+    "julia",
+    "Dash",
+    "Cyber Security",
+    "Open Source",
+    "Linux",
+    "GitHub",
+    "JWT",
+    "Shell",
+    "Python",
+    "TDD",
+    "Code Scanning",
+    "Vulnerability Analysis & Remediation",
+    "OWASP",
+    "Red & Blue teaming",
+    "CodeQL",
+    "Snyk",
+    "Sentinel",
+    "CheckMark",
+    "SonarQube",
+    "CVE & CWE Analysis",
+    "Vulnerability",
+    "SBOM",
+    "CycloneDX",
+    "SPDX",
+    "Cosign",
+    "OpenSSL",
+    "DevOps",
+    "PODMAN",
+    "Docker",
+    "Kubernetes",
+    "CI & CD",
+    "Custom Code",
+    "Automation",
+    "Tool Integrations",
+]
+my_collab = [
+    {url = "https://capita7.com/", name = "Capita7"},
+    {url = "https://sharang.s9lab.dev/", name = "S9-lab"}
+]

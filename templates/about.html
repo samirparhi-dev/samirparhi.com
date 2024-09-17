@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+<div class="container mx-auto flex py-10 flex-wrap text-purple-700">
+    
+    <div class="flex flex-wrap justify-between">
+        <div>
+        <p class="text-2xl px-10 py-10 text-wrap text-justify">
+            <span class="text-5xl font-bold text-fuchsia-900">A</span> passionate Technologist, Independent Thinker and Developer. ❤️ for Open-Source Software. Enjoys Designing, Tinkering and Break-fixing System. I believe Privacy and security is one of the fundamental rights not an Option. Curious to learn more techs. Lets work together for a transparent Livelihood enriched with Privacy and security.
+        </p>
+        
+    </div>
+    </div>
+
+    <div class="flex-wrap py-5 ">
+        <p class="text-3xl font-sm py-5 px-10 zigzag-underline "><span class="text-4xl font-bold text-fuchsia-900">E</span>xpertise 📱 </p>
+
+        <ul class=" list-none flex space-x-2 space-y-1 px-10 py-3 flex-wrap ">
+            {% for item in config.extra.skills %}
+            <li class="p-2 font-mono text-wrap shadow bg-purple-50 bg-gradient-to-r from-transparent to-zinc-50 hover:bg-teal-50 text-slate-500 hover:text-lime-900 border-red-500 rounded-md border-2">
+                    {{ item }}
+            </li>
+            {% endfor %}
+        </ul>
+
+        <p class="text-3xl font-extrabold p-10 zigzag-underline">GitHub Contribution Snapshot 📈 </p>
+
+        <a href="https://git.io/streak-stats"><img class="p-10 justify-center" src="https://streak-stats.demolab.com?user=samirparhi-dev&theme=graywhite&date_format=j%20M%5B%20Y%5D&card_width=600&ring=EB5454&background=45%2CEBDBCD%2CEBE6E2" alt="GitHub Streak" /></a>
+
+        <ul class=" list-none flex space-x-2 space-y-1 flex-wrap ">
+            <p class="text-3xl font-bold px-auto mx-auto justify-center"><br><br>🛟 <span class="text-4xl font-extrabold text-fuchsia-900"></span>Always free for Social Cause 🛟 </p>
+        </ul>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+<div class="container mx-auto flex py-10 flex-wrap text-blue-700">
+
+    <div class="flex flex-wrap justify-between">
+        <div>
+        <p class="text-2xl px-2 py-10 text-wrap text-justify"><span class="text-4xl font-bold text-red-700">I</span>
+             am happy to collaborate with people and Org Who are self-starter, Ambitious, Working for Social cause and need a little push. It can be Financially, Technically and Morally. All for free and my work is Licensed under OpenSource as mentioned.
+            <div>
+            <a href="https://github.com/samirparhi-dev/samirparhi-dev/blob/main/LICENSE" class=" shadow bg-sky-50 hover:bg-blue-5 text-lg text-black-100 hover:text-purple-500 hover:bg-red-50 px-5 border-zinc-800 py-1 rounded-2xl ">
+                The MIT License
+            </a>
+        </div>
+        </p>
+
+    </div>
+    </div>
+
+    <div class="flex-wrap py-5 ">
+        <p class="text-3xl font-extrabold py-5 "><span class="text-4xl font-bold text-red-700">C</span>ollaborations 👫 </p>
+
+        <div class="px-auto flex flex-wrap justify-center">
+            <ul class=" px-auto list-none flex text-xl space-x-6 py-2 px-auto mx-auto rounded-xl">
+                {% for item in config.extra.my_collab %}
+                <li class=" p-1 font-mono text-wrap shadow bg-purple-50 bg-gradient-to-r from-transparent to-zinc-50 hover:bg-teal-50 text-slate-500 hover:text-lime-900 border-cyan-400 rounded-xl border-2">
+                    <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer"> {{ item.name }}
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+
+    </div>
+</div>
+{% endblock %}

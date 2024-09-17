@@ -1,0 +1,8 @@
++++
+title = "Let's have a cup of ☕️ "
+date = 2020-07-09
+path = "contact"
+paginate_by = 5
+sort_by = "date"
+template = "connect.html"
++++

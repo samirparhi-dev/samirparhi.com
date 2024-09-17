@@ -1,0 +1,16 @@
+#IDE Specific
+.DS_Store
+# Ignore Zola build output
+public/
+
+# Ignore Zola cache
+.zola/
+
+# Ignore other build artifacts
+target/
+# Ignore npm dependencies
+node_modules/
+
+# Ignore Tailwind CSS build output
+public/
+.vscode/

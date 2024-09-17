@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>ls-lrt.com - RUST</title>
+    <subtitle>Blog Site of Samir Parhi</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://ls-lrt.com/tags/rust/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://ls-lrt.com"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2024-09-17T00:00:00+00:00</updated>
+    <id>https://ls-lrt.com/tags/rust/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Battle of Programming Language: Statically Typed Vs Dynamically Typed ?</title>
+        <published>2024-09-17T00:00:00+00:00</published>
+        <updated>2024-09-17T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Samir Ranjan Parhi
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://ls-lrt.com/statically-typed-and-dynamically-typed-programing-language-intro/"/>
+        <id>https://ls-lrt.com/statically-typed-and-dynamically-typed-programing-language-intro/</id>
+        
+        <content type="html" xml:base="https://ls-lrt.com/statically-typed-and-dynamically-typed-programing-language-intro/">&lt;h2 id=&quot;wood-the-tree-analogy-defining-tall-in-programming&quot;&gt;🪵 The Tree Analogy: Defining “Tall” in Programming&lt;&#x2F;h2&gt;
+&lt;p&gt;Take a real-world object like a tree 🌴. When you describe it with an adjective, you define it based on that descriptor. The interesting thing about adjectives is that they’re not always tied to specific, measurable details. For instance, if you say the tree is tall, everyone understands the tree is tall, but how tall is subjective and varies from person to person, depending on their personal scale. For example, to me, a tree taller than 8 feet is considered tall, but for you, that might not be the case. You might think a tree over 10 feet is tall. Still, we both agree it’s tall.&lt;&#x2F;p&gt;
+&lt;p&gt;This concept of subjectivity in adjectives can be closely linked to understanding statically typed programming languages and general-purpose programming languages (which are often dynamically typed).&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;fast-forward-statically-typed-languages&quot;&gt;⏩ Statically Typed Languages&lt;&#x2F;h2&gt;
+&lt;p&gt;Languages like &lt;code&gt;C++&lt;&#x2F;code&gt;, &lt;code&gt;Rust&lt;&#x2F;code&gt; demand you explicitly define types upfront. This precision leads to optimizations that make them a solid choice for high-performance machine learning systems.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;zap-performance-benefits&quot;&gt;⚡ Performance Benefits:&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Compile-Time Optimization:&lt;&#x2F;strong&gt; Just as a precise adjective removes ambiguity and potential miscommunication, statically typed languages catch many errors during compilation.Since types are known before execution, compilers generate highly efficient machine code, reducing CPU and memory overhead.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Efficient Memory Usage:&lt;&#x2F;strong&gt; Explicit type definitions mean better memory management, allowing these languages to make the most out of system resources. It gives precision and prevents ambiguity.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Parallelization:&lt;&#x2F;strong&gt; Allow you to fine-tune control over CPU cores and even leverage GPUs and TPUs for heavy machine learning tasks.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;warning-challenges&quot;&gt;⚠️ Challenges:&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Inflexibility:&lt;&#x2F;strong&gt; Requiring everything to be explicitly typed or defined can slow down development, especially for prototyping or situations where the types aren’t clear at the start.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Verbosity:&lt;&#x2F;strong&gt; It adds extra code and complexity for things that might not need it in simple scenarios.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Slower Iteration:&lt;&#x2F;strong&gt; Refactoring and iterating quickly might be harder when you need to make sure all types are aligned correctly.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;snake-dynamically-typed-languages&quot;&gt;🐍 Dynamically Typed Languages&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Flexibility and Adaptability:&lt;&#x2F;strong&gt; Dynamically typed languages (like &lt;code&gt;Python&lt;&#x2F;code&gt;, &lt;code&gt;JavaScript&lt;&#x2F;code&gt;, &lt;code&gt;Ruby&lt;&#x2F;code&gt;) are more like using the adjective “tall” without a strict definition. They are flexible and allow you to work without having to define everything explicitly. This suits exploratory or rapidly changing contexts.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Ease of Use:&lt;&#x2F;strong&gt; You can be more casual in your descriptions (or code) without worrying about errors until they actually show up during runtime. This can lead to faster development in certain scenarios.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;construction-challenges&quot;&gt;🚧 Challenges:&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Potential for Miscommunication:&lt;&#x2F;strong&gt; Just as the word “tall” might mean different things to different people, in a dynamically typed language, the same function or variable can change in unexpected ways, causing confusion or errors.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Slower Execution:&lt;&#x2F;strong&gt; Runtime type checking and interpretation add overhead, making dynamically typed languages slower in terms of raw CPU performance.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Higher Memory Overhead:&lt;&#x2F;strong&gt; Without predefined types, dynamically typed languages often consume more memory, which may limit performance when handling large datasets.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Less Optimization:&lt;&#x2F;strong&gt; Without knowing the exact types, compilers&#x2F;interpreters can’t optimize as well as they could in statically typed languages.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;brain-case-studies&quot;&gt;🧠 Case Studies&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;1-statically-typed-languages&quot;&gt;1. Statically Typed Languages:&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Mission-Critical Applications:&lt;&#x2F;strong&gt; Where errors need to be minimized at all costs (e.g., banking systems, aerospace software). The precision of static typing ensures that fewer unexpected behaviors occur.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Large, Complex Systems:&lt;&#x2F;strong&gt; Where maintaining clear structures and interfaces is essential for scalability. Static typing helps maintain clarity and prevents issues during refactoring.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Performance-Optimized Code:&lt;&#x2F;strong&gt; Static typing allows for better optimization during compile time, leading to more efficient runtime performance.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;2-dynamically-typed-languages&quot;&gt;2. Dynamically Typed Languages&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Prototyping and Rapid Development:&lt;&#x2F;strong&gt; Where speed of development is key, and the exact structure or types may not be fully understood in the early stages. Flexibility allows quick iterations.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Small or Medium-Sized Applications:&lt;&#x2F;strong&gt; Where the complexity is lower, and the risk of runtime errors is acceptable or manageable.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Data Science, Web Development, Scripting:&lt;&#x2F;strong&gt; Fields where flexibility and rapid changes are needed more than strict type enforcement. For example, many web frameworks in &lt;code&gt;Python&lt;&#x2F;code&gt; or &lt;code&gt;JavaScript&lt;&#x2F;code&gt; thrive on the ease of use provided by dynamic typing.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;page-with-curl-summary&quot;&gt;📃 Summary&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Statically Typed Languages:&lt;&#x2F;strong&gt; Offer precision and safety but are less flexible and can slow down development in exploratory phases. They are suited for large-scale, performance-sensitive, or mission-critical systems.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Dynamically Typed Languages:&lt;&#x2F;strong&gt; Offer flexibility and speed but at the cost of potential runtime errors and less optimization. They are suited for prototyping, rapid development, and smaller-scale projects.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;thought-balloon-open-thought&quot;&gt;💭 Open Thought&lt;&#x2F;h2&gt;
+&lt;p&gt;Can &lt;code&gt;Rust&lt;&#x2F;code&gt; Be the Next Machine learning language ? or We train the Machine Using &lt;code&gt;Python&lt;&#x2F;code&gt; and &lt;code&gt;Julia&lt;&#x2F;code&gt;, then use them using &lt;code&gt;Rust&lt;&#x2F;code&gt; ?&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Part-2: Recursive Search with Rust</title>
+        <published>2024-06-14T00:00:00+00:00</published>
+        <updated>2024-06-14T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Samir Ranjan Parhi
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://ls-lrt.com/recursion-in-rust/"/>
+        <id>https://ls-lrt.com/recursion-in-rust/</id>
+        
+        <content type="html" xml:base="https://ls-lrt.com/recursion-in-rust/">&lt;h4 id=&quot;problem-statement&quot;&gt;Problem Statement:&lt;&#x2F;h4&gt;
+&lt;p&gt;Build a cli using Rust that can search a given string in all files in a directory and Sub directory Recursively.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;building-the-logic&quot;&gt;Building the logic:&lt;&#x2F;h3&gt;
+&lt;p&gt;Lets Search from the &lt;code&gt;$PWD&lt;&#x2F;code&gt;, However you can start from any directory you want . First we have to see if there is any file in this current directory which is under this scope. after that lets find out if the search string is present in that if found return the file name and line no. If not found search the word in other file if it exist.&lt;&#x2F;p&gt;
+&lt;p&gt;Now if you find a folder agin you perform the above activity and this loop continues.&lt;&#x2F;p&gt;
+&lt;p&gt;Lets put the above idea to flow chart&lt;&#x2F;p&gt;
+&lt;img src=&quot;&#x2F;img&#x2F;blog&#x2F;rust-recursion.svg&quot;&gt;
+&lt;h4 id=&quot;writing-the-first-impression&quot;&gt;Writing the First impression&lt;&#x2F;h4&gt;
+&lt;pre&gt;&lt;code class=&quot;text-sm&quot;&gt;
+main.rs
+
+use walkdir::WalkDir;
+use regex::Regex;
+use std::fs;
+use std::io::{self, BufRead, Write};
+use std::path::Path;
+use std::path::PathBuf;
+
+fn search_inside_file(file_path: &amp;Path, search_pattern: &amp;Regex) -&gt; io::Result&lt;()&gt; {
+    let file = fs::File::open(file_path)?;
+    let reader = io::BufReader::new(file);
+
+    for (index, line) in reader.lines().enumerate() {
+        let line = line?;
+        if search_pattern.is_match(&amp;line) {
+            println!(
+                &quot;Match found in file {} at line {}: {}&quot;,
+                file_path.display(),
+                index + 1,
+                line
+            );
+        }
+    }
+
+    Ok(())
+}
+
+fn search_folder_recursively(dir: &amp;Path, pattern: &amp;str) -&gt; io::Result&lt;()&gt; {
+    let search_pattern = Regex::new(pattern).expect(&quot;Invalid regex pattern&quot;);
+
+    for entry in WalkDir::new(dir).into_iter().filter_map(Result::ok) {
+        let path = entry.path();
+
+        if path.is_file() {
+            if let Err(e) = search_inside_file(path, &amp;search_pattern) {
+                eprintln!(&quot;Failed to read file {}: {}&quot;, path.display(), e);
+            }
+        }
+    }
+
+    Ok(())
+}
+
+fn main() -&gt; io::Result&lt;()&gt; {
+    let mut dir = String::new();
+    let mut pattern = String::new();
+
+    println!(&quot;Enter the directory path to search in:&quot;);
+
+    io::stdout().flush()?;
+
+    io::stdin().read_line(&amp;mut dir)?;
+
+    let dir = dir.trim(); 
+
+    let dir_path = PathBuf::from(dir);
+
+    if !dir_path.is_absolute() {
+        return Err(io::Error::new(
+            io::ErrorKind::InvalidInput,
+            &quot;Please provide an absolute path for the directory.&quot;,
+        ));
+    }
+    println!(&quot;Enter the search string:&quot;);
+    io::stdout().flush()?;
+    io::stdin().read_line(&amp;mut pattern)?;
+    let pattern = pattern.trim();
+    search_folder_recursively(Path::new(dir), pattern)?;
+
+
+
+    Ok(())
+}
+
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h5 id=&quot;lets-understand-what-is-happening-above&quot;&gt;Lets Understand What is happening above:&lt;&#x2F;h5&gt;
+&lt;p&gt;&lt;code&gt;WalkDir&lt;&#x2F;code&gt; is a type provided by the &lt;code&gt;walkdir&lt;&#x2F;code&gt; crate in Rust. helps in recursive directory traversal, allowing you to iterate over all files and directories within a given directory and its subdirectories.&lt;&#x2F;p&gt;
+&lt;p&gt;There are 2 functions &lt;code&gt;search_inside_file()&lt;&#x2F;code&gt; and &lt;code&gt;search_folder_recursively()&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;search_inside_file()&lt;&#x2F;code&gt; - search the desired &lt;code&gt;string&lt;&#x2F;code&gt; in a file.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;search_folder_recursively()&lt;&#x2F;code&gt; helps us to walk between the directory recursively.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Point to note &lt;code&gt;io::stdout().flush()?&lt;&#x2F;code&gt; line of code is used to flush the output buffer of the standard output stream (stdout). It’s important to flush the output buffer at times to ensure the output appears promptly where expected, especially in scenarios where immediate visibility of output is important, such as in interactive console applications or when displaying progress updates. Without flushing, output may appear delayed or incomplete.&lt;&#x2F;p&gt;
+&lt;h4 id=&quot;important-point-to-note&quot;&gt;Important point to note :&lt;&#x2F;h4&gt;
+&lt;p&gt;Above is the crude &lt;code&gt;code&lt;&#x2F;code&gt; which needs a lot of refinement with respect to the I&#x2F;O and Concurrency. If you run this code now it may show you a stream of output of search logs. Do not panic coz it is just searching the file one by one and showing you if it is found in that file . Your codde is perfectly fine and just need few modification how the output should be formatted which will talk about in the next blog.&lt;&#x2F;p&gt;
+&lt;h4 id=&quot;what-is-next&quot;&gt;What is next ?&lt;&#x2F;h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Format output to remove unnecessary logs.&lt;&#x2F;li&gt;
+&lt;li&gt;Cli should be able to search multiple files at the same time.&lt;&#x2F;li&gt;
+&lt;li&gt;Implement the Concurrency to reduce runtime .&lt;&#x2F;li&gt;
+&lt;li&gt;Robust error handling. (CLI should not crash under any circumstances).&lt;&#x2F;li&gt;
+&lt;li&gt;ClI should show an precise error message in case of failure and continue with the next file.&lt;&#x2F;li&gt;
+&lt;li&gt;Writing normal Test cases and edge cases.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h4 id=&quot;you-can-explore-more-for-test-edge-cases-to-be-written-on&quot;&gt;you can explore more for Test &amp;amp; Edge cases to be written on:&lt;&#x2F;h4&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;samirparhi-dev&#x2F;dir_search&#x2F;blob&#x2F;main&#x2F;test_folder&#x2F;readme.md&quot;&gt; Code @ GitHub &lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;We will be implementing them step by step in coming blogs.&lt;&#x2F;p&gt;
+&lt;p&gt;Hope this helps the beginner to start their journey with RUST. ⚙️&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Part:0 - Few facts about Rust programming language</title>
+        <published>2024-04-30T00:00:00+00:00</published>
+        <updated>2024-04-30T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Samir Ranjan Parhi
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://ls-lrt.com/few-facts-about-rust-programming-language/"/>
+        <id>https://ls-lrt.com/few-facts-about-rust-programming-language/</id>
+        
+        <content type="html" xml:base="https://ls-lrt.com/few-facts-about-rust-programming-language/">&lt;p&gt;This is the very first write-up of our Rust journey. In this part, we will learn a few interesting facts about Rust programming language. This will give us an overview of how and what of Rust at a high level.&lt;&#x2F;p&gt;
+&lt;p&gt;Every programming languages are special. Let’s take an overview of very charming Rust .&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#212121;color:#eeffff;&quot;&gt;&lt;code&gt;&lt;span&gt;1. Like most programming languages, the rust logic execution starts from main() block.
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;2. Rust is a statically typed language, Which means you have to specify the data type ( int&#x2F;float&#x2F;String) of each variable. More about data types can be found here.
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;3. The variable&#x2F;literals are immutable by default in rust. However, you can make the variable mutable by using mutkeyword. Why the variable is immutable by default?
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    ○ This is to provide the developer with an easy way to debug a program. When you know the value is not changed it is easy to debug.
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    ○ The second reason is let&amp;#39;s say there are two expressions which are using the same value. if during execution the variable changes then, the expressions may not work as expected. So to make the program more robust the literals are mutable. You can get more info here.
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;4. Rust is a compiled language. This means each project&#x2F; code produces an executable file like .exe, .deb etc. after compiling. The advantage is the code can run in any of the operating systems without a rust installation.
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;5. There are two kinds of string data types namely &amp;amp;str : string slice and String.This is to provide memory safety for the rust program. we will learn more about these in the coming parts.
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;6. To prevent the memory leak in rust and make it more robust, Rust uses the concept called ownership . this is a very useful and interesting feature in Rust. This helps regulating variable scopes. When a variable goes out of scope rust deletes&#x2F; frees the value as well as the memory. More information here.
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;7. Rust Does not have the concept of a Garbage collector due to the above-said reason
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;8. Like other languages you can use external libraries&#x2F;packages that are provided by rust itself (standard libraries) or 3rd parties. The packages&#x2F;Libraries are called Crates.
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;9. Rust manages the Dependencies in a very well manner. The package manager is called Cargo. the interesting thing is that if you create a project with Cargo, it not only creates the boilerplate folder structure but it initialises the folder with Git automatically. So it natively supports Git.
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;These are few facts i found may be intersting to know before starting to learn Rust. Please let me if you have found some interssting fact about rust. Do correct if something is wrong here :-)&lt;&#x2F;p&gt;
+&lt;p&gt;See you in the part 1 😀 .&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Part 1: Variable and DataTypes in Rust</title>
+        <published>2024-04-30T00:00:00+00:00</published>
+        <updated>2024-04-30T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Samir Ranjan Parhi
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://ls-lrt.com/variable-and-datatypes-in-rust/"/>
+        <id>https://ls-lrt.com/variable-and-datatypes-in-rust/</id>
+        
+        <content type="html" xml:base="https://ls-lrt.com/variable-and-datatypes-in-rust/">&lt;p&gt;Variables are the basic building blocks of a programming language. It holds data in the computer memory during runtime. The data that a variable hold can be different types. Like other languages, Rust has 2 kinds of high-level data types. Scalar and Compound . Scalar contains a single value whereas Compound holds multi-value data in the memory during run time. the default data types are explained in the figure below:&lt;&#x2F;p&gt;
+&lt;p&gt;Now if you mark in the figure we use let keyword to declare a variable and the value of the variable is on the right side of the = symbol.
+It is important to note that the variable in the rust is immutable (do not change the data once loaded) by default (why? please refer the part:0 of this series) However you can have the liberty to make it immutable by adding a mut keyword in front of any variable name. Example below:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#212121;color:#eeffff;&quot;&gt;&lt;code&gt;&lt;span&gt;let x = 10 ; &#x2F;&#x2F;this immutable 
+&lt;&#x2F;span&gt;&lt;span&gt;let x = 11 ; &#x2F;&#x2F; while doing this you will get an error
+&lt;&#x2F;span&gt;&lt;span&gt;mut let x = 10 ; &#x2F;&#x2F;this is mutable
+&lt;&#x2F;span&gt;&lt;span&gt;let x = 11 ; &#x2F;&#x2F; you are safe to do this action
+&lt;&#x2F;span&gt;&lt;span&gt;it is best practice to mention the data type of the variable while declaring. However, rust can automatically detect when you have rust analyzer installed on any of the popular IDE. To mention the data type below are the samples.
+&lt;&#x2F;span&gt;&lt;span&gt;let a: u32 = 23; &#x2F;&#x2F; a unsigned 32 bit integer
+&lt;&#x2F;span&gt;&lt;span&gt;let b: f32 = 2.3; &#x2F;&#x2F; a floating point 32 integer
+&lt;&#x2F;span&gt;&lt;span&gt;let c: bool = false; &#x2F;&#x2F; a boolean type variable
+&lt;&#x2F;span&gt;&lt;span&gt;let d: char = &amp;#39;m&amp;#39;; &#x2F;&#x2F; a char type variable
+&lt;&#x2F;span&gt;&lt;span&gt;let e: (i32, char, f32) = (23, &amp;#39;m&amp;#39;, 2.3); &#x2F;&#x2F; a tupple type
+&lt;&#x2F;span&gt;&lt;span&gt;let f: [i32; 5] = [6, 7, 8, 9, 10]; &#x2F;&#x2F; an array type
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;To know what all are the different types of integers and floats please refer here.
+to print anything to the output console rust used println!() macro. in side println!() macro to extract the value of a variable you have to enclose the variable with {}. the sample is given below:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#212121;color:#eeffff;&quot;&gt;&lt;code&gt;&lt;span&gt;fn main() {
+&lt;&#x2F;span&gt;&lt;span&gt;    let mut a: i32 = 7; &#x2F;&#x2F; a mutable variable
+&lt;&#x2F;span&gt;&lt;span&gt;    println!(&amp;quot;The value of a is: {a}&amp;quot;); &#x2F;&#x2F;print 7
+&lt;&#x2F;span&gt;&lt;span&gt;    let a = 8;
+&lt;&#x2F;span&gt;&lt;span&gt;    println!(&amp;quot;The value of y is: {a}&amp;quot;); &#x2F;&#x2F;print 8
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;let’s know something more about Compound data types:
+Array operations:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#212121;color:#eeffff;&quot;&gt;&lt;code&gt;&lt;span&gt;let&amp;#39;s take an array as :
+&lt;&#x2F;span&gt;&lt;span&gt;let f: [i32; 5] = [6, 7, 8, 9, 10];&#x2F;&#x2F; i32 is the data types of the array and 5 is the length of the array.
+&lt;&#x2F;span&gt;&lt;span&gt;let first = f[0]; &#x2F;&#x2F; first holds First element of array 
+&lt;&#x2F;span&gt;&lt;span&gt;let five = f[4]; &#x2F;&#x2F; holds 5th element of the array
+&lt;&#x2F;span&gt;&lt;span&gt;let r = &amp;amp;f[0..3]; &#x2F;&#x2F; r holds the element starting with 0th index till 2nd index. last index is always excluded.
+&lt;&#x2F;span&gt;&lt;span&gt;let g: [i32; 0] = [] &#x2F;&#x2F; an empty array.
+&lt;&#x2F;span&gt;&lt;span&gt;let g: [i32; 5] = [7, 5] &#x2F;&#x2F; returns [7, 7, 7, 7, 7]
+&lt;&#x2F;span&gt;&lt;span&gt;Tuple operations:
+&lt;&#x2F;span&gt;&lt;span&gt;let&amp;#39;s take a tuple as:
+&lt;&#x2F;span&gt;&lt;span&gt;let f: (i32, &amp;amp;str, f64)= (7, &amp;quot;samir&amp;quot;, 3.8); &#x2F;&#x2F; a tuple
+&lt;&#x2F;span&gt;&lt;span&gt;let mut r = f.0; &#x2F;&#x2F;r contains the 0th index value i,e 7
+&lt;&#x2F;span&gt;&lt;span&gt;let r = f.2; &#x2F;&#x2F; now r contains the 2nd index value i,e 3.8
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;In this part, we learnt the overview and a few operations on array and tuple. this is very easy and if you have learnt any programming language earlier this might be familiar to you. but as I told this series is for the beginner and comes in handy during the initial days.&lt;&#x2F;p&gt;
+&lt;p&gt;Thank you for hopping in and see you in the next part.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Why I was encouraged to learn Rust (Comparing Rust and Python</title>
+        <published>2024-04-30T00:00:00+00:00</published>
+        <updated>2024-04-30T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Samir Ranjan Parhi
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://ls-lrt.com/why-i-was-encouraged-to-learn-rust/"/>
+        <id>https://ls-lrt.com/why-i-was-encouraged-to-learn-rust/</id>
+        
+        <content type="html" xml:base="https://ls-lrt.com/why-i-was-encouraged-to-learn-rust/">&lt;p&gt;It is been 8 years in my Job career as an infrastructure&#x2F;DevSecOps engineer, I am much satisfied. But in the corner of my heart, I had the urge to learn programming so that I can relate my daily job to the developer program easily.&lt;&#x2F;p&gt;
+&lt;p&gt;Everyone knows there are a lot of great programming languages and also suggested some. Finally, I was left with python and Rust. When I started comparing both the below fact sheet concluded that I should start investing my time in learning Rust.&lt;&#x2F;p&gt;
+&lt;p&gt;The fact sheet:&lt;&#x2F;p&gt;
+&lt;p&gt;Facts	Rust	Python
+Learning curve	High (for a complete beginner)	Easy to learn
+Execution speed	High	Much lower
+Memory Management	Exceptional (no need for garbage collector)	Lower than
+syntax	Statically typed.	plain English
+Creating System tools	Very much recommend	Not Recommended
+Popular in Developer	#1	#3
+Stability	High	low
+Documentation	sufficient	Sufficient
+Pre-existing module	less (Developing)	A lot (plug and play)
+type	Low level	High level&lt;&#x2F;p&gt;
+&lt;p&gt;Out of all these comparisons, I loved the way Rust manage the Memory and the art behind the failsafe. I have heard of the pain of developers when it comes to the performance of the application and performing the right way to collect the garbage, it is no more in Rust. I was also fascinated to know how the most amazing tool like Kubernetes is programmed, So Rust was the right choice for me to take up. Though I know I will be starting programming from the scratch, and there will be a huge learning curve this year, I would try to learn as much as possible.&lt;&#x2F;p&gt;
+&lt;p&gt;At the same time, I will be publishing my learning note as I progress with a self-assessment so that it would provide the reader with more insight.
+Stay tuned in this series to learn along with me. Let’s be closer to the system a bit more.&lt;&#x2F;p&gt;
+&lt;p&gt;Note: The above opinions are solely my personal views&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>
