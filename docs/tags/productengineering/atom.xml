@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>ls-lrt.com - ProductEngineering</title>
+    <subtitle>Blog Site of Samir Parhi</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://ls-lrt.com/tags/productengineering/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://ls-lrt.com"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2024-09-18T00:00:00+00:00</updated>
+    <id>https://ls-lrt.com/tags/productengineering/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Mastering the Art of Pivot: Navigating Momentum in Business and Innovation</title>
+        <published>2024-09-18T00:00:00+00:00</published>
+        <updated>2024-09-18T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Samir Ranjan Parhi
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://ls-lrt.com/mastering-the-art-of-pivot/"/>
+        <id>https://ls-lrt.com/mastering-the-art-of-pivot/</id>
+        
+        <content type="html" xml:base="https://ls-lrt.com/mastering-the-art-of-pivot/">&lt;h2 id=&quot;generalization&quot;&gt;♺ Generalization:&lt;&#x2F;h2&gt;
+&lt;p&gt;Pivot! Simply put, it’s change—a sustainable and universal reality. Every entity on this planet, whether it’s an individual, a business, or anything else, inevitably goes through pivots.&lt;&#x2F;p&gt;
+&lt;p&gt;We tend to appreciate products that build momentum, and the same goes for businesses. Both continuously aim to gain momentum, which, in physics, is defined as the product of an object’s mass and velocity (momentum = mass × velocity).&lt;&#x2F;p&gt;
+&lt;p&gt;In the context of a business or product:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Mass:&lt;&#x2F;strong&gt; could be seen as the complexity, features, or baggage of a product&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Velocity:&lt;&#x2F;strong&gt; could represent the rate of progress or adaptability&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Let’s correlate Physics and Business Metaphor:&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;rocket-momentum-and-fabric-interaction&quot;&gt;🚀 Momentum and Fabric Interaction:&lt;&#x2F;h2&gt;
+&lt;p&gt;If a product is too complex (heavy), it can become less adaptable, causing the business to struggle (tear the fabric). However, if it has a high rate of innovation or agility (&lt;code&gt;velocity&lt;&#x2F;code&gt;), it compensates for the heaviness, allowing the product to move forward despite the complexity. Let’s plot it :&lt;&#x2F;p&gt;
+&lt;img src=&quot;&#x2F;img&#x2F;blog&#x2F;pivot-intro.svg&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;X-Axis:&lt;&#x2F;strong&gt;  Business relevance over time, The idea is that a product must continuously stay relevant in time by adapting.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Y-Axis:&lt;&#x2F;strong&gt; Rate of Change in Technology A higher Y-value indicates a company adopting more cutting-edge or future technologies.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Z-Axis:&lt;&#x2F;strong&gt; (Rate of Product Innovation &#x2F; Pivot): How frequently or drastically a product is innovating or pivoting.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;case&quot;&gt;Case ① :&lt;&#x2F;h3&gt;
+&lt;p&gt;A product overloaded with unnecessary features (high Z-value) can only succeed if it evolves and adapts very rapidly (high Y-value) to meet market demands. Without this agility, the excess weight of unused features slows it down, limiting its momentum on the time (X) axis.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;case-1&quot;&gt;Case ② :&lt;&#x2F;h3&gt;
+&lt;p&gt;A “light” product—small, focused, and purposeful—can pivot easily along the X-axis. Launching with a minimum viable product (MVP) allows for quicker adjustments and faster adaptation (moderate Y-value) without overburdening the product with unnecessary features (low Z-value).&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;case-shift-on-y-and-z-axes&quot;&gt;Case ③ : Shift on Y and Z Axes:&lt;&#x2F;h3&gt;
+&lt;p&gt;Moving toward Y (cutting-edge technology) or Z (frequent pivots&#x2F;innovations) in isolation can hinder progress. A product that is too futuristic (high Y-value) or innovates too frequently (high Z-value) may lose momentum because it loses focus or overextends resources on experimentation without bringing value.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;koko-classifying-a-product&quot;&gt;🈁 Classifying a Product :&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;rock-heavy&quot;&gt;🪨 Heavy :&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Too many features but not enough users:&lt;&#x2F;strong&gt; The product is packed with features, but they aren’t reaching or being used by customers&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;High upfront spending without enough research:&lt;&#x2F;strong&gt; A lot of money is spent early on without properly understanding the market.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Building out of fear instead of demand:&lt;&#x2F;strong&gt; The product is created just to follow trends (FOMO) rather than addressing real customer needs.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Outdated technology:&lt;&#x2F;strong&gt; The product isn’t keeping up with new technology or improvements in its tech stack.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;train2-light&quot;&gt;🚆 Light :&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Purpose-driven design:&lt;&#x2F;strong&gt; The product is built with a clear purpose, solving specific customer problems.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Fewer features, more users:&lt;&#x2F;strong&gt; Focusing on fewer, more essential features that users actually need and want.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Low upfront costs:&lt;&#x2F;strong&gt; Managing costs carefully in the early stages, keeping spending low.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Fast feedback and quick adjustments:&lt;&#x2F;strong&gt; Getting feedback early on and adapting quickly, even before the product is fully launched, making it easier to pivot.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;brain-final-thought&quot;&gt;🧠 Final Thought&lt;&#x2F;h2&gt;
+&lt;p&gt;In physics, space-time is a fabric that can bend, and similarly, in business, the passage of time and external forces (technology, market trends) can “bend” the business environment. A heavy product can warp this fabric, slowing progress. A light, nimble product moves more easily across it.&lt;&#x2F;p&gt;
+&lt;p&gt;Hope you like it. ❀&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>
