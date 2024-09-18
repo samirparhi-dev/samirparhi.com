@@ -1,5 +1,5 @@
 +++
-title = "Mastering the Art of Pivot: Navigating Momentum in Business and Innovation"
+title = "Physics in Product Metaphor: Navigating Momentum Through Pivot"
 description = " Let's Understand what is Pivot in a Product and business by corelating it to Physics Metaphor. We look in to various Use cases with regards to the key Influences which cause the pivot. What exactly a product team can Adapt"
 date = 2024-09-18
 
