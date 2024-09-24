@@ -1,7 +1,7 @@
 
-base_url = "https://ls-lrt.com"
+base_url = "https://samirparhi.com"
 
-title = "ls-lrt.com"
+title = "samirparhi.com"
 description = "Blog Site of Samir Parhi"
 
 default_language = "en"
@@ -17,9 +17,7 @@ minify_html = false
 #     {name = "tags", feed = true, paginate_by=5},
 # ]
 
-taxonomies = [
-    {name = "tags", feed = true, paginate_by=5},
-]
+taxonomies = [{ name = "tags", feed = true, paginate_by = 5 }]
 
 build_search_index = true
 
@@ -58,23 +56,23 @@ show_word_count = true
 current_year = 2024
 
 my_blog_menu = [
-    {url = "https://ls-lrt.com/#", menu = "Home"},
-    {url = "https://ls-lrt.com/about", menu = "About"},
-    {url = "https://ls-lrt.com/collab", menu = "Collaboration"},
-    {url = "https://ls-lrt.com/connect", menu = "Get In Touch"},
-    
+    { url = "https://samirparhi.com/#", menu = "Home" },
+    { url = "https://samirparhi.com/about", menu = "About" },
+    { url = "https://samirparhi.com/collab", menu = "Collaboration" },
+    { url = "https://samirparhi.com/connect", menu = "Get In Touch" },
+
 ]
 
 social_handle = [
-    {url = "https://github.com/samirparhi-dev", social_handle = "GitHub"},
-    {url = "https://linkedin.com/in/samir-parhi", social_handle = "LinkedIn"},
-    {url = "https://twitter.com/samirparhi", social_handle = "X"},
-    {url = "mailto:samirparhi@gmail.com", social_handle = "Mail"},
-    {url = "https://mastodon.social/@samirparhi", social_handle = "Mastodon"}
+    { url = "https://github.com/samirparhi-dev", social_handle = "GitHub" },
+    { url = "https://linkedin.com/in/samir-parhi", social_handle = "LinkedIn" },
+    { url = "https://twitter.com/samirparhi", social_handle = "X" },
+    { url = "mailto:samirparhi@gmail.com", social_handle = "Mail" },
+    { url = "https://mastodon.social/@samirparhi", social_handle = "Mastodon" },
 
 ]
-company_logo=[{url="img/brand/ls-lrt-logo-2024.png"}]
-profile_pic = [{profile_pic_path="img/profile_pic/my-portrait-recent.png"}]
+company_logo = [{ url = "img/brand/ls-lrt-logo-2024.png" }]
+profile_pic = [{ profile_pic_path = "img/profile_pic/my-portrait-recent.png" }]
 
 skills = [
     "Rust",
@@ -116,6 +114,6 @@ skills = [
     "Tool Integrations",
 ]
 my_collab = [
-    {url = "https://capita7.com/", name = "Capita7"},
-    {url = "https://sharang.s9lab.dev/", name = "S9-lab"}
+    { url = "https://capita7.com/", name = "Capita7" },
+    { url = "https://sharang.s9lab.dev/", name = "S9-lab" },
 ]
