@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-    <title>ls-lrt.com - Open -Source</title>
+    <title>samirparhi.com - Open -Source</title>
     <subtitle>Blog Site of Samir Parhi</subtitle>
-    <link rel="self" type="application/atom+xml" href="https://ls-lrt.com/tags/open-source/atom.xml"/>
-    <link rel="alternate" type="text/html" href="https://ls-lrt.com"/>
+    <link rel="self" type="application/atom+xml" href="https://samirparhi.com/tags/open-source/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://samirparhi.com"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
     <updated>2024-09-18T00:00:00+00:00</updated>
-    <id>https://ls-lrt.com/tags/open-source/atom.xml</id>
+    <id>https://samirparhi.com/tags/open-source/atom.xml</id>
     <entry xml:lang="en">
         <title>Physics in Product Metaphor: Navigating Momentum Through Pivot</title>
         <published>2024-09-18T00:00:00+00:00</published>
@@ -20,10 +20,10 @@
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://ls-lrt.com/mastering-the-art-of-pivot/"/>
-        <id>https://ls-lrt.com/mastering-the-art-of-pivot/</id>
+        <link rel="alternate" type="text/html" href="https://samirparhi.com/mastering-the-art-of-pivot/"/>
+        <id>https://samirparhi.com/mastering-the-art-of-pivot/</id>
         
-        <content type="html" xml:base="https://ls-lrt.com/mastering-the-art-of-pivot/">&lt;h2 id=&quot;generalization&quot;&gt;♺ Generalization:&lt;&#x2F;h2&gt;
+        <content type="html" xml:base="https://samirparhi.com/mastering-the-art-of-pivot/">&lt;h2 id=&quot;generalization&quot;&gt;♺ Generalization:&lt;&#x2F;h2&gt;
 &lt;p&gt;Pivot! Simply put, it’s change—a sustainable and universal reality. Every entity on this planet, whether it’s an individual, a business, or anything else, inevitably goes through pivots.&lt;&#x2F;p&gt;
 &lt;p&gt;We tend to appreciate products that build momentum, and the same goes for businesses. Both continuously aim to gain momentum, which, in physics, is defined as the product of an object’s mass and velocity (momentum = mass × velocity).&lt;&#x2F;p&gt;
 &lt;p&gt;In the context of a business or product:&lt;&#x2F;p&gt;
@@ -94,10 +94,10 @@
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://ls-lrt.com/recursion-in-rust/"/>
-        <id>https://ls-lrt.com/recursion-in-rust/</id>
+        <link rel="alternate" type="text/html" href="https://samirparhi.com/recursion-in-rust/"/>
+        <id>https://samirparhi.com/recursion-in-rust/</id>
         
-        <content type="html" xml:base="https://ls-lrt.com/recursion-in-rust/">&lt;h4 id=&quot;problem-statement&quot;&gt;Problem Statement:&lt;&#x2F;h4&gt;
+        <content type="html" xml:base="https://samirparhi.com/recursion-in-rust/">&lt;h4 id=&quot;problem-statement&quot;&gt;Problem Statement:&lt;&#x2F;h4&gt;
 &lt;p&gt;Build a cli using Rust that can search a given string in all files in a directory and Sub directory Recursively.&lt;&#x2F;p&gt;
 &lt;h3 id=&quot;building-the-logic&quot;&gt;Building the logic:&lt;&#x2F;h3&gt;
 &lt;p&gt;Lets Search from the &lt;code&gt;$PWD&lt;&#x2F;code&gt;, However you can start from any directory you want . First we have to see if there is any file in this current directory which is under this scope. after that lets find out if the search string is present in that if found return the file name and line no. If not found search the word in other file if it exist.&lt;&#x2F;p&gt;
@@ -225,10 +225,10 @@ fn main() -&gt; io::Result&lt;()&gt; {
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://ls-lrt.com/creating-a-aks-private-cluster-with-application-gateway-and-istio/"/>
-        <id>https://ls-lrt.com/creating-a-aks-private-cluster-with-application-gateway-and-istio/</id>
+        <link rel="alternate" type="text/html" href="https://samirparhi.com/creating-a-aks-private-cluster-with-application-gateway-and-istio/"/>
+        <id>https://samirparhi.com/creating-a-aks-private-cluster-with-application-gateway-and-istio/</id>
         
-        <content type="html" xml:base="https://ls-lrt.com/creating-a-aks-private-cluster-with-application-gateway-and-istio/">&lt;p&gt;Security has been a very key consideration in modern application architecture. When we talk about cloud-native application architecture, people tend to think about security a lot. That is why all the cloud providers have a bunch of features to make your application more secure and robust. For example, Azure provides various gateways like Network security groups, Application gateway, Azure front-door. These azure services provide a secure connection either by introducing a firewall or validating SSL certificates.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://samirparhi.com/creating-a-aks-private-cluster-with-application-gateway-and-istio/">&lt;p&gt;Security has been a very key consideration in modern application architecture. When we talk about cloud-native application architecture, people tend to think about security a lot. That is why all the cloud providers have a bunch of features to make your application more secure and robust. For example, Azure provides various gateways like Network security groups, Application gateway, Azure front-door. These azure services provide a secure connection either by introducing a firewall or validating SSL certificates.&lt;&#x2F;p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;people say “Security is a myth over the internet&lt;&#x2F;p&gt;
 &lt;&#x2F;blockquote&gt;
@@ -400,10 +400,10 @@ az network application-gateway create \
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://ls-lrt.com/configuring-meshery-behind-istio-ingress-gateway/"/>
-        <id>https://ls-lrt.com/configuring-meshery-behind-istio-ingress-gateway/</id>
+        <link rel="alternate" type="text/html" href="https://samirparhi.com/configuring-meshery-behind-istio-ingress-gateway/"/>
+        <id>https://samirparhi.com/configuring-meshery-behind-istio-ingress-gateway/</id>
         
-        <content type="html" xml:base="https://ls-lrt.com/configuring-meshery-behind-istio-ingress-gateway/">&lt;p&gt;Accessing Workloads behind a ingress-gateway always has been a  industry standard practice in Kubernetes setup. It facilitate single  entry point for all your services deployed in a production grade  Kubernetes. This setup also allows you to leverage the service-mesh  functionality of implementing policies and have a better authz and authn  to the deployed services. Meshery is no different, you can configure it  to be accessed through ingress gateway. Let’s see how can we configure  it.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://samirparhi.com/configuring-meshery-behind-istio-ingress-gateway/">&lt;p&gt;Accessing Workloads behind a ingress-gateway always has been a  industry standard practice in Kubernetes setup. It facilitate single  entry point for all your services deployed in a production grade  Kubernetes. This setup also allows you to leverage the service-mesh  functionality of implementing policies and have a better authz and authn  to the deployed services. Meshery is no different, you can configure it  to be accessed through ingress gateway. Let’s see how can we configure  it.&lt;&#x2F;p&gt;
 &lt;h4 id=&quot;prerequisite&quot;&gt;Prerequisite :&lt;&#x2F;h4&gt;
 &lt;ul&gt;
 &lt;li&gt;Kubernetes is up and running.&lt;&#x2F;li&gt;
@@ -536,10 +536,10 @@ http:&#x2F;&#x2F;20.204.19.97&#x2F;provider and you will she the meshery UI as b
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://ls-lrt.com/cross-site-scripting-xss-vulnerability-and-mitigation-in-web-applications/"/>
-        <id>https://ls-lrt.com/cross-site-scripting-xss-vulnerability-and-mitigation-in-web-applications/</id>
+        <link rel="alternate" type="text/html" href="https://samirparhi.com/cross-site-scripting-xss-vulnerability-and-mitigation-in-web-applications/"/>
+        <id>https://samirparhi.com/cross-site-scripting-xss-vulnerability-and-mitigation-in-web-applications/</id>
         
-        <content type="html" xml:base="https://ls-lrt.com/cross-site-scripting-xss-vulnerability-and-mitigation-in-web-applications/">&lt;h4 id=&quot;introduction&quot;&gt;Introduction&lt;&#x2F;h4&gt;
+        <content type="html" xml:base="https://samirparhi.com/cross-site-scripting-xss-vulnerability-and-mitigation-in-web-applications/">&lt;h4 id=&quot;introduction&quot;&gt;Introduction&lt;&#x2F;h4&gt;
 &lt;p&gt;In the realm of web security, Cross-Site Scripting (XSS) stands as one of the most prevalent and hazardous vulnerabilities. With its ability to manipulate the interaction between a web application and its users, XSS can lead to unauthorized data exposure, session hijacking, and even malware distribution. This article delves into the concept of XSS, highlighting its potential impact and providing insight into securing applications against this threat.
 Understanding Cross-Site Scripting (XSS)&lt;&#x2F;p&gt;
 &lt;p&gt;At its core, XSS is a vulnerability that arises when a web application incorporates untrusted data into its output, allowing attackers to inject malicious scripts into the content delivered to other users. This often happens when user-generated content isn’t properly sanitized before being displayed. The impact of an XSS attack can vary, from stealing sensitive information to impersonating users or even taking control of their accounts.&lt;&#x2F;p&gt;
@@ -633,10 +633,10 @@ Happy Learning 🎉&lt;&#x2F;p&gt;
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://ls-lrt.com/few-facts-about-rust-programming-language/"/>
-        <id>https://ls-lrt.com/few-facts-about-rust-programming-language/</id>
+        <link rel="alternate" type="text/html" href="https://samirparhi.com/few-facts-about-rust-programming-language/"/>
+        <id>https://samirparhi.com/few-facts-about-rust-programming-language/</id>
         
-        <content type="html" xml:base="https://ls-lrt.com/few-facts-about-rust-programming-language/">&lt;p&gt;This is the very first write-up of our Rust journey. In this part, we will learn a few interesting facts about Rust programming language. This will give us an overview of how and what of Rust at a high level.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://samirparhi.com/few-facts-about-rust-programming-language/">&lt;p&gt;This is the very first write-up of our Rust journey. In this part, we will learn a few interesting facts about Rust programming language. This will give us an overview of how and what of Rust at a high level.&lt;&#x2F;p&gt;
 &lt;p&gt;Every programming languages are special. Let’s take an overview of very charming Rust .&lt;&#x2F;p&gt;
 &lt;pre style=&quot;background-color:#212121;color:#eeffff;&quot;&gt;&lt;code&gt;&lt;span&gt;1. Like most programming languages, the rust logic execution starts from main() block.
 &lt;&#x2F;span&gt;&lt;span&gt;
@@ -678,10 +678,10 @@ Happy Learning 🎉&lt;&#x2F;p&gt;
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://ls-lrt.com/imposing-mandatory-http-s-security-headers-in-nginx/"/>
-        <id>https://ls-lrt.com/imposing-mandatory-http-s-security-headers-in-nginx/</id>
+        <link rel="alternate" type="text/html" href="https://samirparhi.com/imposing-mandatory-http-s-security-headers-in-nginx/"/>
+        <id>https://samirparhi.com/imposing-mandatory-http-s-security-headers-in-nginx/</id>
         
-        <content type="html" xml:base="https://ls-lrt.com/imposing-mandatory-http-s-security-headers-in-nginx/">&lt;p&gt;Making an application up and running does not qualify as a full-fledged product. It is particularly important to have security measure in the Product. Now in the ever-increasing digital revolution, security flaws are really risk for an organisation as-well as the users. Though we cannot eliminate all the risks, we can always try to address most of them and the important CVEs. Earlier days these security considerations (Security headers in this context) are handled by application itself and coded by the developer in the application code but in the micro-service world it is especially important for developers to focus more on business logic rather than all these auxiliary tasks to reduce time to market of the product.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://samirparhi.com/imposing-mandatory-http-s-security-headers-in-nginx/">&lt;p&gt;Making an application up and running does not qualify as a full-fledged product. It is particularly important to have security measure in the Product. Now in the ever-increasing digital revolution, security flaws are really risk for an organisation as-well as the users. Though we cannot eliminate all the risks, we can always try to address most of them and the important CVEs. Earlier days these security considerations (Security headers in this context) are handled by application itself and coded by the developer in the application code but in the micro-service world it is especially important for developers to focus more on business logic rather than all these auxiliary tasks to reduce time to market of the product.&lt;&#x2F;p&gt;
 &lt;p&gt;The good news is, now DevOps team can handle few of these features with help of Kubernetes, Iingress Gateways and Service Meshes. In this blog post we will focus on how to impose the mandatory security headers in Kubernetes NGINX ingress controller.
 OWASP (Open Web Application Security Project) is a nonprofit foundation that works to improve the security of software, has recommended to below HTTP headers should be present by default.&lt;&#x2F;p&gt;
 &lt;p&gt;Important HTTP headers:&lt;&#x2F;p&gt;
@@ -752,10 +752,10 @@ Hope this helps. Stay tuned for More!&lt;&#x2F;p&gt;
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://ls-lrt.com/parameters-to-consider-while-choosing-an-open-source-tool/"/>
-        <id>https://ls-lrt.com/parameters-to-consider-while-choosing-an-open-source-tool/</id>
+        <link rel="alternate" type="text/html" href="https://samirparhi.com/parameters-to-consider-while-choosing-an-open-source-tool/"/>
+        <id>https://samirparhi.com/parameters-to-consider-while-choosing-an-open-source-tool/</id>
         
-        <content type="html" xml:base="https://ls-lrt.com/parameters-to-consider-while-choosing-an-open-source-tool/">&lt;p&gt;When deciding on an open-source tool for a specific purpose, there are several key parameters you should consider to ensure the tool meets your needs and is a good fit for your project. Here are some important parameters to keep in mind:&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://samirparhi.com/parameters-to-consider-while-choosing-an-open-source-tool/">&lt;p&gt;When deciding on an open-source tool for a specific purpose, there are several key parameters you should consider to ensure the tool meets your needs and is a good fit for your project. Here are some important parameters to keep in mind:&lt;&#x2F;p&gt;
 &lt;pre style=&quot;background-color:#212121;color:#eeffff;&quot;&gt;&lt;code&gt;&lt;span&gt;1. Functionality: The tool should have the features and capabilities required to fulfil your project&amp;#39;s objectives. Make a list of the specific functions you need and compare them with the tool&amp;#39;s capabilities.
 &lt;&#x2F;span&gt;&lt;span&gt;
 &lt;&#x2F;span&gt;&lt;span&gt;2. Ease of Use: Consider the tool&amp;#39;s user interface, documentation, and overall usability. An intuitive and well-documented tool can save you time and effort during the learning and implementation phases.
@@ -806,10 +806,10 @@ Hope this helps. Stay tuned for More!&lt;&#x2F;p&gt;
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://ls-lrt.com/uncontrolled-data-used-in-path-expression-a-cyber-security-threat/"/>
-        <id>https://ls-lrt.com/uncontrolled-data-used-in-path-expression-a-cyber-security-threat/</id>
+        <link rel="alternate" type="text/html" href="https://samirparhi.com/uncontrolled-data-used-in-path-expression-a-cyber-security-threat/"/>
+        <id>https://samirparhi.com/uncontrolled-data-used-in-path-expression-a-cyber-security-threat/</id>
         
-        <content type="html" xml:base="https://ls-lrt.com/uncontrolled-data-used-in-path-expression-a-cyber-security-threat/">&lt;p&gt;Path expressions are used in a variety of software applications to construct file paths. However, if these expressions are not properly validated, they can be used by attackers to gain unauthorized access to sensitive data or systems.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://samirparhi.com/uncontrolled-data-used-in-path-expression-a-cyber-security-threat/">&lt;p&gt;Path expressions are used in a variety of software applications to construct file paths. However, if these expressions are not properly validated, they can be used by attackers to gain unauthorized access to sensitive data or systems.&lt;&#x2F;p&gt;
 &lt;p&gt;This type of attack is known as path traversal, and it can be used to access files that are outside of the intended directory structure. For example, an attacker could provide a path expression that includes a “..&#x2F;” sequence, which would cause the application to traverse up one directory level. This could allow the attacker to access files that they would not otherwise be able to see.&lt;&#x2F;p&gt;
 &lt;p&gt;Path traversal attacks can also be used to exploit vulnerabilities in web applications. For example, an attacker could provide a path expression that includes a “..” sequence in a web form. If the application does not properly validate the input, the attacker could use this to access the application’s filesystem.&lt;&#x2F;p&gt;
 &lt;p&gt;To prevent path traversal attacks, it is important to properly validate all user input that is used to construct path expressions. This can be done by using a regular expression to ensure that the input only contains valid characters. Additionally, it is important to restrict the access that users have to sensitive files and directories.&lt;&#x2F;p&gt;
@@ -871,10 +871,10 @@ are a few things you can do:&lt;&#x2F;p&gt;
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://ls-lrt.com/variable-and-datatypes-in-rust/"/>
-        <id>https://ls-lrt.com/variable-and-datatypes-in-rust/</id>
+        <link rel="alternate" type="text/html" href="https://samirparhi.com/variable-and-datatypes-in-rust/"/>
+        <id>https://samirparhi.com/variable-and-datatypes-in-rust/</id>
         
-        <content type="html" xml:base="https://ls-lrt.com/variable-and-datatypes-in-rust/">&lt;p&gt;Variables are the basic building blocks of a programming language. It holds data in the computer memory during runtime. The data that a variable hold can be different types. Like other languages, Rust has 2 kinds of high-level data types. Scalar and Compound . Scalar contains a single value whereas Compound holds multi-value data in the memory during run time. the default data types are explained in the figure below:&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://samirparhi.com/variable-and-datatypes-in-rust/">&lt;p&gt;Variables are the basic building blocks of a programming language. It holds data in the computer memory during runtime. The data that a variable hold can be different types. Like other languages, Rust has 2 kinds of high-level data types. Scalar and Compound . Scalar contains a single value whereas Compound holds multi-value data in the memory during run time. the default data types are explained in the figure below:&lt;&#x2F;p&gt;
 &lt;p&gt;Now if you mark in the figure we use let keyword to declare a variable and the value of the variable is on the right side of the = symbol.
 It is important to note that the variable in the rust is immutable (do not change the data once loaded) by default (why? please refer the part:0 of this series) However you can have the liberty to make it immutable by adding a mut keyword in front of any variable name. Example below:&lt;&#x2F;p&gt;
 &lt;pre style=&quot;background-color:#212121;color:#eeffff;&quot;&gt;&lt;code&gt;&lt;span&gt;let x = 10 ; &#x2F;&#x2F;this immutable 
@@ -933,10 +933,10 @@ Array operations:&lt;&#x2F;p&gt;
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://ls-lrt.com/why-i-was-encouraged-to-learn-rust/"/>
-        <id>https://ls-lrt.com/why-i-was-encouraged-to-learn-rust/</id>
+        <link rel="alternate" type="text/html" href="https://samirparhi.com/why-i-was-encouraged-to-learn-rust/"/>
+        <id>https://samirparhi.com/why-i-was-encouraged-to-learn-rust/</id>
         
-        <content type="html" xml:base="https://ls-lrt.com/why-i-was-encouraged-to-learn-rust/">&lt;p&gt;It is been 8 years in my Job career as an infrastructure&#x2F;DevSecOps engineer, I am much satisfied. But in the corner of my heart, I had the urge to learn programming so that I can relate my daily job to the developer program easily.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://samirparhi.com/why-i-was-encouraged-to-learn-rust/">&lt;p&gt;It is been 8 years in my Job career as an infrastructure&#x2F;DevSecOps engineer, I am much satisfied. But in the corner of my heart, I had the urge to learn programming so that I can relate my daily job to the developer program easily.&lt;&#x2F;p&gt;
 &lt;p&gt;Everyone knows there are a lot of great programming languages and also suggested some. Finally, I was left with python and Rust. When I started comparing both the below fact sheet concluded that I should start investing my time in learning Rust.&lt;&#x2F;p&gt;
 &lt;p&gt;The fact sheet:&lt;&#x2F;p&gt;
 &lt;p&gt;Facts	Rust	Python

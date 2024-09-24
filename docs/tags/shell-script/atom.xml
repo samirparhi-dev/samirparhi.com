@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-    <title>ls-lrt.com - Shell Script</title>
+    <title>samirparhi.com - Shell Script</title>
     <subtitle>Blog Site of Samir Parhi</subtitle>
-    <link rel="self" type="application/atom+xml" href="https://ls-lrt.com/tags/shell-script/atom.xml"/>
-    <link rel="alternate" type="text/html" href="https://ls-lrt.com"/>
+    <link rel="self" type="application/atom+xml" href="https://samirparhi.com/tags/shell-script/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://samirparhi.com"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
     <updated>2024-04-30T00:00:00+00:00</updated>
-    <id>https://ls-lrt.com/tags/shell-script/atom.xml</id>
+    <id>https://samirparhi.com/tags/shell-script/atom.xml</id>
     <entry xml:lang="en">
         <title>Shell script to Migrate Azure Container Registry</title>
         <published>2024-04-30T00:00:00+00:00</published>
@@ -20,10 +20,10 @@
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://ls-lrt.com/shell-script-for-migrating-azure-container-registry/"/>
-        <id>https://ls-lrt.com/shell-script-for-migrating-azure-container-registry/</id>
+        <link rel="alternate" type="text/html" href="https://samirparhi.com/shell-script-for-migrating-azure-container-registry/"/>
+        <id>https://samirparhi.com/shell-script-for-migrating-azure-container-registry/</id>
         
-        <content type="html" xml:base="https://ls-lrt.com/shell-script-for-migrating-azure-container-registry/">&lt;p&gt;When someone asks to migrate an ACR from one Azure subscription to another azure subscription, it feels like a tedious task. Because you must migrate Image repositories and all the image tags that are in those repositories.
+        <content type="html" xml:base="https://samirparhi.com/shell-script-for-migrating-azure-container-registry/">&lt;p&gt;When someone asks to migrate an ACR from one Azure subscription to another azure subscription, it feels like a tedious task. Because you must migrate Image repositories and all the image tags that are in those repositories.
 Traditionally, you can use az acr import command to achieve this. But when the number of repositories increases, it takes an exponentially high unproductive time.&lt;&#x2F;p&gt;
 &lt;p&gt;I have recently gone through this situation and thought to automate this process. Below z shell script, I have come up, which may help you in those scenarios.&lt;&#x2F;p&gt;
 &lt;p&gt;**Prerequisites to use this command: **&lt;&#x2F;p&gt;
@@ -85,10 +85,10 @@ Traditionally, you can use az acr import command to achieve this. But when the n
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://ls-lrt.com/shell-script-to-remove-history-from-a-git-branch/"/>
-        <id>https://ls-lrt.com/shell-script-to-remove-history-from-a-git-branch/</id>
+        <link rel="alternate" type="text/html" href="https://samirparhi.com/shell-script-to-remove-history-from-a-git-branch/"/>
+        <id>https://samirparhi.com/shell-script-to-remove-history-from-a-git-branch/</id>
         
-        <content type="html" xml:base="https://ls-lrt.com/shell-script-to-remove-history-from-a-git-branch/">&lt;p&gt;There are various instances where we decide to remove the history from a git repository.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://samirparhi.com/shell-script-to-remove-history-from-a-git-branch/">&lt;p&gt;There are various instances where we decide to remove the history from a git repository.&lt;&#x2F;p&gt;
 &lt;p&gt;The most common use case :&lt;&#x2F;p&gt;
 &lt;p&gt;You find out there are some secret information like credential or the database string that is been exposed to git hub and also it is recorded in the history. at this moment you may searching to delete the history.&lt;&#x2F;p&gt;
 &lt;p&gt;This shell script allows you to remove all the history of a given branch (please remember this shell script remove all the history of the branch), you can make use of this script which is combination of few git commands and has been clubbed to make this task easier for you.&lt;&#x2F;p&gt;

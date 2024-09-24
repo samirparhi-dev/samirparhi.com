@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-    <title>ls-lrt.com - vendor-lockin</title>
+    <title>samirparhi.com - vendor-lockin</title>
     <subtitle>Blog Site of Samir Parhi</subtitle>
-    <link rel="self" type="application/atom+xml" href="https://ls-lrt.com/tags/vendor-lockin/atom.xml"/>
-    <link rel="alternate" type="text/html" href="https://ls-lrt.com"/>
+    <link rel="self" type="application/atom+xml" href="https://samirparhi.com/tags/vendor-lockin/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://samirparhi.com"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
     <updated>2024-04-12T00:00:00+00:00</updated>
-    <id>https://ls-lrt.com/tags/vendor-lockin/atom.xml</id>
+    <id>https://samirparhi.com/tags/vendor-lockin/atom.xml</id>
     <entry xml:lang="en">
         <title>Tale of Dependencies (Vendor lock-in, vendor neutrality and Managed Services)</title>
         <published>2024-04-12T00:00:00+00:00</published>
@@ -20,10 +20,10 @@
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://ls-lrt.com/dependencies-tale/"/>
-        <id>https://ls-lrt.com/dependencies-tale/</id>
+        <link rel="alternate" type="text/html" href="https://samirparhi.com/dependencies-tale/"/>
+        <id>https://samirparhi.com/dependencies-tale/</id>
         
-        <content type="html" xml:base="https://ls-lrt.com/dependencies-tale/">&lt;p&gt;Once upon a time in the software industry, Big companies looked for reliable partners (aka vendors) to manage their services. Meanwhile, these vendors focused on retaining existing clients and offering tailored solutions or products directly. In this process Organizations of all sectors were investing double, even sometimes five or ten times the amount to support a product&#x2F;service. This sparked a global interest in service offerings, igniting a revolution in the software industry.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://samirparhi.com/dependencies-tale/">&lt;p&gt;Once upon a time in the software industry, Big companies looked for reliable partners (aka vendors) to manage their services. Meanwhile, these vendors focused on retaining existing clients and offering tailored solutions or products directly. In this process Organizations of all sectors were investing double, even sometimes five or ten times the amount to support a product&#x2F;service. This sparked a global interest in service offerings, igniting a revolution in the software industry.&lt;&#x2F;p&gt;
 &lt;p&gt;Imagine a Banking application:&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;Business partner (CRM) software was from vendor X,&lt;&#x2F;li&gt;
@@ -59,10 +59,10 @@ console.log(&quot;Hello, world!&quot;);
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://ls-lrt.com/which-service-to-use-azure/"/>
-        <id>https://ls-lrt.com/which-service-to-use-azure/</id>
+        <link rel="alternate" type="text/html" href="https://samirparhi.com/which-service-to-use-azure/"/>
+        <id>https://samirparhi.com/which-service-to-use-azure/</id>
         
-        <content type="html" xml:base="https://ls-lrt.com/which-service-to-use-azure/">&lt;p&gt;Following aspects are taken in to account in this article:&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://samirparhi.com/which-service-to-use-azure/">&lt;p&gt;Following aspects are taken in to account in this article:&lt;&#x2F;p&gt;
 &lt;pre style=&quot;background-color:#212121;color:#eeffff;&quot;&gt;&lt;code&gt;&lt;span&gt;• Deployment and Administration
 &lt;&#x2F;span&gt;&lt;span&gt;• Cost analysis
 &lt;&#x2F;span&gt;&lt;span&gt;• Value addition

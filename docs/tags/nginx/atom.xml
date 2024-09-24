@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-    <title>ls-lrt.com - NGINX</title>
+    <title>samirparhi.com - NGINX</title>
     <subtitle>Blog Site of Samir Parhi</subtitle>
-    <link rel="self" type="application/atom+xml" href="https://ls-lrt.com/tags/nginx/atom.xml"/>
-    <link rel="alternate" type="text/html" href="https://ls-lrt.com"/>
+    <link rel="self" type="application/atom+xml" href="https://samirparhi.com/tags/nginx/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://samirparhi.com"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
     <updated>2024-04-30T00:00:00+00:00</updated>
-    <id>https://ls-lrt.com/tags/nginx/atom.xml</id>
+    <id>https://samirparhi.com/tags/nginx/atom.xml</id>
     <entry xml:lang="en">
         <title>Imposing mandatory http(s) security headers in NGINX ingress in Kubernetes</title>
         <published>2024-04-30T00:00:00+00:00</published>
@@ -20,10 +20,10 @@
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://ls-lrt.com/imposing-mandatory-http-s-security-headers-in-nginx/"/>
-        <id>https://ls-lrt.com/imposing-mandatory-http-s-security-headers-in-nginx/</id>
+        <link rel="alternate" type="text/html" href="https://samirparhi.com/imposing-mandatory-http-s-security-headers-in-nginx/"/>
+        <id>https://samirparhi.com/imposing-mandatory-http-s-security-headers-in-nginx/</id>
         
-        <content type="html" xml:base="https://ls-lrt.com/imposing-mandatory-http-s-security-headers-in-nginx/">&lt;p&gt;Making an application up and running does not qualify as a full-fledged product. It is particularly important to have security measure in the Product. Now in the ever-increasing digital revolution, security flaws are really risk for an organisation as-well as the users. Though we cannot eliminate all the risks, we can always try to address most of them and the important CVEs. Earlier days these security considerations (Security headers in this context) are handled by application itself and coded by the developer in the application code but in the micro-service world it is especially important for developers to focus more on business logic rather than all these auxiliary tasks to reduce time to market of the product.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://samirparhi.com/imposing-mandatory-http-s-security-headers-in-nginx/">&lt;p&gt;Making an application up and running does not qualify as a full-fledged product. It is particularly important to have security measure in the Product. Now in the ever-increasing digital revolution, security flaws are really risk for an organisation as-well as the users. Though we cannot eliminate all the risks, we can always try to address most of them and the important CVEs. Earlier days these security considerations (Security headers in this context) are handled by application itself and coded by the developer in the application code but in the micro-service world it is especially important for developers to focus more on business logic rather than all these auxiliary tasks to reduce time to market of the product.&lt;&#x2F;p&gt;
 &lt;p&gt;The good news is, now DevOps team can handle few of these features with help of Kubernetes, Iingress Gateways and Service Meshes. In this blog post we will focus on how to impose the mandatory security headers in Kubernetes NGINX ingress controller.
 OWASP (Open Web Application Security Project) is a nonprofit foundation that works to improve the security of software, has recommended to below HTTP headers should be present by default.&lt;&#x2F;p&gt;
 &lt;p&gt;Important HTTP headers:&lt;&#x2F;p&gt;

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-    <title>ls-lrt.com - AI</title>
+    <title>samirparhi.com - AI</title>
     <subtitle>Blog Site of Samir Parhi</subtitle>
-    <link rel="self" type="application/atom+xml" href="https://ls-lrt.com/tags/ai/atom.xml"/>
-    <link rel="alternate" type="text/html" href="https://ls-lrt.com"/>
+    <link rel="self" type="application/atom+xml" href="https://samirparhi.com/tags/ai/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://samirparhi.com"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
     <updated>2024-04-30T00:00:00+00:00</updated>
-    <id>https://ls-lrt.com/tags/ai/atom.xml</id>
+    <id>https://samirparhi.com/tags/ai/atom.xml</id>
     <entry xml:lang="en">
         <title>Gen AI tools made my college days alive</title>
         <published>2024-04-30T00:00:00+00:00</published>
@@ -20,10 +20,10 @@
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://ls-lrt.com/the-gen-ai-tools-made-my-college-days-alive/"/>
-        <id>https://ls-lrt.com/the-gen-ai-tools-made-my-college-days-alive/</id>
+        <link rel="alternate" type="text/html" href="https://samirparhi.com/the-gen-ai-tools-made-my-college-days-alive/"/>
+        <id>https://samirparhi.com/the-gen-ai-tools-made-my-college-days-alive/</id>
         
-        <content type="html" xml:base="https://ls-lrt.com/the-gen-ai-tools-made-my-college-days-alive/">&lt;p&gt;This blog is a good read if you are still poking in to your mobile to read some interesting and relatable Tech stories. Here I share my Experience which resembles the way Generative AI is behaving these days.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://samirparhi.com/the-gen-ai-tools-made-my-college-days-alive/">&lt;p&gt;This blog is a good read if you are still poking in to your mobile to read some interesting and relatable Tech stories. Here I share my Experience which resembles the way Generative AI is behaving these days.&lt;&#x2F;p&gt;
 &lt;p&gt;Today I was curious to understand and learn the behaviour of Gen AI. So, I was learning a topic on a Kubernetes policy tool Gatekeeper that implements Open policy agent (OPA) a well know CNCF project. As GenAI has been trending in these days I thought of taking help of two well known tool ChatGPT and Gemini.&lt;&#x2F;p&gt;
 &lt;p&gt;I spent good amount of time on ChatGPT and Gemini, In this 3 hours I started asking about basic Questions and it worked liked wonder. I thought I am with the best companion ever for learning.&lt;&#x2F;p&gt;
 &lt;p&gt;Resemblance with Real experience:&lt;&#x2F;p&gt;

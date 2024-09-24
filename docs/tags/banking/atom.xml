@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-    <title>ls-lrt.com - Banking</title>
+    <title>samirparhi.com - Banking</title>
     <subtitle>Blog Site of Samir Parhi</subtitle>
-    <link rel="self" type="application/atom+xml" href="https://ls-lrt.com/tags/banking/atom.xml"/>
-    <link rel="alternate" type="text/html" href="https://ls-lrt.com"/>
+    <link rel="self" type="application/atom+xml" href="https://samirparhi.com/tags/banking/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://samirparhi.com"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
     <updated>2024-09-17T00:00:00+00:00</updated>
-    <id>https://ls-lrt.com/tags/banking/atom.xml</id>
+    <id>https://samirparhi.com/tags/banking/atom.xml</id>
     <entry xml:lang="en">
         <title>Battle of Programming Language: Statically Typed Vs Dynamically Typed ?</title>
         <published>2024-09-17T00:00:00+00:00</published>
@@ -20,10 +20,10 @@
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://ls-lrt.com/statically-typed-and-dynamically-typed-programing-language-intro/"/>
-        <id>https://ls-lrt.com/statically-typed-and-dynamically-typed-programing-language-intro/</id>
+        <link rel="alternate" type="text/html" href="https://samirparhi.com/statically-typed-and-dynamically-typed-programing-language-intro/"/>
+        <id>https://samirparhi.com/statically-typed-and-dynamically-typed-programing-language-intro/</id>
         
-        <content type="html" xml:base="https://ls-lrt.com/statically-typed-and-dynamically-typed-programing-language-intro/">&lt;h2 id=&quot;wood-the-tree-analogy-defining-tall-in-programming&quot;&gt;🪵 The Tree Analogy: Defining “Tall” in Programming&lt;&#x2F;h2&gt;
+        <content type="html" xml:base="https://samirparhi.com/statically-typed-and-dynamically-typed-programing-language-intro/">&lt;h2 id=&quot;wood-the-tree-analogy-defining-tall-in-programming&quot;&gt;🪵 The Tree Analogy: Defining “Tall” in Programming&lt;&#x2F;h2&gt;
 &lt;p&gt;Take a real-world object like a tree 🌴. When you describe it with an adjective, you define it based on that descriptor. The interesting thing about adjectives is that they’re not always tied to specific, measurable details. For instance, if you say the tree is tall, everyone understands the tree is tall, but how tall is subjective and varies from person to person, depending on their personal scale. For example, to me, a tree taller than 8 feet is considered tall, but for you, that might not be the case. You might think a tree over 10 feet is tall. Still, we both agree it’s tall.&lt;&#x2F;p&gt;
 &lt;p&gt;This concept of subjectivity in adjectives can be closely linked to understanding statically typed programming languages and general-purpose programming languages (which are often dynamically typed).&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;fast-forward-statically-typed-languages&quot;&gt;⏩ Statically Typed Languages&lt;&#x2F;h2&gt;

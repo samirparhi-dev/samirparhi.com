@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 Allow: /
-Sitemap: https://ls-lrt.com/sitemap.xml
+Sitemap: https://samirparhi.com/sitemap.xml

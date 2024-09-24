@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-    <title>ls-lrt.com - DataScience</title>
+    <title>samirparhi.com - DataScience</title>
     <subtitle>Blog Site of Samir Parhi</subtitle>
-    <link rel="self" type="application/atom+xml" href="https://ls-lrt.com/tags/datascience/atom.xml"/>
-    <link rel="alternate" type="text/html" href="https://ls-lrt.com"/>
+    <link rel="self" type="application/atom+xml" href="https://samirparhi.com/tags/datascience/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://samirparhi.com"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
     <updated>2024-09-18T00:00:00+00:00</updated>
-    <id>https://ls-lrt.com/tags/datascience/atom.xml</id>
+    <id>https://samirparhi.com/tags/datascience/atom.xml</id>
     <entry xml:lang="en">
         <title>Physics in Product Metaphor: Navigating Momentum Through Pivot</title>
         <published>2024-09-18T00:00:00+00:00</published>
@@ -20,10 +20,10 @@
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://ls-lrt.com/mastering-the-art-of-pivot/"/>
-        <id>https://ls-lrt.com/mastering-the-art-of-pivot/</id>
+        <link rel="alternate" type="text/html" href="https://samirparhi.com/mastering-the-art-of-pivot/"/>
+        <id>https://samirparhi.com/mastering-the-art-of-pivot/</id>
         
-        <content type="html" xml:base="https://ls-lrt.com/mastering-the-art-of-pivot/">&lt;h2 id=&quot;generalization&quot;&gt;♺ Generalization:&lt;&#x2F;h2&gt;
+        <content type="html" xml:base="https://samirparhi.com/mastering-the-art-of-pivot/">&lt;h2 id=&quot;generalization&quot;&gt;♺ Generalization:&lt;&#x2F;h2&gt;
 &lt;p&gt;Pivot! Simply put, it’s change—a sustainable and universal reality. Every entity on this planet, whether it’s an individual, a business, or anything else, inevitably goes through pivots.&lt;&#x2F;p&gt;
 &lt;p&gt;We tend to appreciate products that build momentum, and the same goes for businesses. Both continuously aim to gain momentum, which, in physics, is defined as the product of an object’s mass and velocity (momentum = mass × velocity).&lt;&#x2F;p&gt;
 &lt;p&gt;In the context of a business or product:&lt;&#x2F;p&gt;
@@ -94,10 +94,10 @@
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://ls-lrt.com/statically-typed-and-dynamically-typed-programing-language-intro/"/>
-        <id>https://ls-lrt.com/statically-typed-and-dynamically-typed-programing-language-intro/</id>
+        <link rel="alternate" type="text/html" href="https://samirparhi.com/statically-typed-and-dynamically-typed-programing-language-intro/"/>
+        <id>https://samirparhi.com/statically-typed-and-dynamically-typed-programing-language-intro/</id>
         
-        <content type="html" xml:base="https://ls-lrt.com/statically-typed-and-dynamically-typed-programing-language-intro/">&lt;h2 id=&quot;wood-the-tree-analogy-defining-tall-in-programming&quot;&gt;🪵 The Tree Analogy: Defining “Tall” in Programming&lt;&#x2F;h2&gt;
+        <content type="html" xml:base="https://samirparhi.com/statically-typed-and-dynamically-typed-programing-language-intro/">&lt;h2 id=&quot;wood-the-tree-analogy-defining-tall-in-programming&quot;&gt;🪵 The Tree Analogy: Defining “Tall” in Programming&lt;&#x2F;h2&gt;
 &lt;p&gt;Take a real-world object like a tree 🌴. When you describe it with an adjective, you define it based on that descriptor. The interesting thing about adjectives is that they’re not always tied to specific, measurable details. For instance, if you say the tree is tall, everyone understands the tree is tall, but how tall is subjective and varies from person to person, depending on their personal scale. For example, to me, a tree taller than 8 feet is considered tall, but for you, that might not be the case. You might think a tree over 10 feet is tall. Still, we both agree it’s tall.&lt;&#x2F;p&gt;
 &lt;p&gt;This concept of subjectivity in adjectives can be closely linked to understanding statically typed programming languages and general-purpose programming languages (which are often dynamically typed).&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;fast-forward-statically-typed-languages&quot;&gt;⏩ Statically Typed Languages&lt;&#x2F;h2&gt;

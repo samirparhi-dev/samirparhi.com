@@ -1,5 +1,5 @@
 +++
-title = "Know Us better"
+title = "Know Me better"
 date = 2020-07-09
 path = "about"
 paginate_by = 5

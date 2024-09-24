@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-    <title>ls-lrt.com - SSRF</title>
+    <title>samirparhi.com - SSRF</title>
     <subtitle>Blog Site of Samir Parhi</subtitle>
-    <link rel="self" type="application/atom+xml" href="https://ls-lrt.com/tags/ssrf/atom.xml"/>
-    <link rel="alternate" type="text/html" href="https://ls-lrt.com"/>
+    <link rel="self" type="application/atom+xml" href="https://samirparhi.com/tags/ssrf/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://samirparhi.com"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
     <updated>2024-04-30T00:00:00+00:00</updated>
-    <id>https://ls-lrt.com/tags/ssrf/atom.xml</id>
+    <id>https://samirparhi.com/tags/ssrf/atom.xml</id>
     <entry xml:lang="en">
         <title>Uncontrolled Data Used in Path Expression: A Cyber Security Threat</title>
         <published>2024-04-30T00:00:00+00:00</published>
@@ -20,10 +20,10 @@
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://ls-lrt.com/understanding-server-side-request-forgery/"/>
-        <id>https://ls-lrt.com/understanding-server-side-request-forgery/</id>
+        <link rel="alternate" type="text/html" href="https://samirparhi.com/understanding-server-side-request-forgery/"/>
+        <id>https://samirparhi.com/understanding-server-side-request-forgery/</id>
         
-        <content type="html" xml:base="https://ls-lrt.com/understanding-server-side-request-forgery/">&lt;h5 id=&quot;introduction&quot;&gt;Introduction:&lt;&#x2F;h5&gt;
+        <content type="html" xml:base="https://samirparhi.com/understanding-server-side-request-forgery/">&lt;h5 id=&quot;introduction&quot;&gt;Introduction:&lt;&#x2F;h5&gt;
 &lt;p&gt;In today’s interconnected world, web applications rely on various external services to provide dynamic content and functionality. However, this dependence on external resources can also create security vulnerabilities, one of which is Server-Side Request Forgery (SSRF). SSRF is a type of attack where an attacker manipulates a web application to send unauthorized requests to internal or external resources. In this blog, we will delve into the concept of SSRF, its potential impact on your Java applications, and discuss strategies to mitigate this critical security risk.&lt;&#x2F;p&gt;
 &lt;h5 id=&quot;what-is-server-side-request-forgery-ssrf&quot;&gt;What is Server-Side Request Forgery (SSRF)?&lt;&#x2F;h5&gt;
 &lt;p&gt;Server-Side Request Forgery is a web application vulnerability that enables attackers to make unauthorized requests from the server-side, bypassing the security controls implemented on the client-side. The attacker typically tricks the application into sending HTTP requests to internal systems, other applications, or even external services.&lt;&#x2F;p&gt;

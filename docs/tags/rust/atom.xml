@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-    <title>ls-lrt.com - RUST</title>
+    <title>samirparhi.com - RUST</title>
     <subtitle>Blog Site of Samir Parhi</subtitle>
-    <link rel="self" type="application/atom+xml" href="https://ls-lrt.com/tags/rust/atom.xml"/>
-    <link rel="alternate" type="text/html" href="https://ls-lrt.com"/>
+    <link rel="self" type="application/atom+xml" href="https://samirparhi.com/tags/rust/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://samirparhi.com"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
     <updated>2024-09-17T00:00:00+00:00</updated>
-    <id>https://ls-lrt.com/tags/rust/atom.xml</id>
+    <id>https://samirparhi.com/tags/rust/atom.xml</id>
     <entry xml:lang="en">
         <title>Battle of Programming Language: Statically Typed Vs Dynamically Typed ?</title>
         <published>2024-09-17T00:00:00+00:00</published>
@@ -20,10 +20,10 @@
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://ls-lrt.com/statically-typed-and-dynamically-typed-programing-language-intro/"/>
-        <id>https://ls-lrt.com/statically-typed-and-dynamically-typed-programing-language-intro/</id>
+        <link rel="alternate" type="text/html" href="https://samirparhi.com/statically-typed-and-dynamically-typed-programing-language-intro/"/>
+        <id>https://samirparhi.com/statically-typed-and-dynamically-typed-programing-language-intro/</id>
         
-        <content type="html" xml:base="https://ls-lrt.com/statically-typed-and-dynamically-typed-programing-language-intro/">&lt;h2 id=&quot;wood-the-tree-analogy-defining-tall-in-programming&quot;&gt;🪵 The Tree Analogy: Defining “Tall” in Programming&lt;&#x2F;h2&gt;
+        <content type="html" xml:base="https://samirparhi.com/statically-typed-and-dynamically-typed-programing-language-intro/">&lt;h2 id=&quot;wood-the-tree-analogy-defining-tall-in-programming&quot;&gt;🪵 The Tree Analogy: Defining “Tall” in Programming&lt;&#x2F;h2&gt;
 &lt;p&gt;Take a real-world object like a tree 🌴. When you describe it with an adjective, you define it based on that descriptor. The interesting thing about adjectives is that they’re not always tied to specific, measurable details. For instance, if you say the tree is tall, everyone understands the tree is tall, but how tall is subjective and varies from person to person, depending on their personal scale. For example, to me, a tree taller than 8 feet is considered tall, but for you, that might not be the case. You might think a tree over 10 feet is tall. Still, we both agree it’s tall.&lt;&#x2F;p&gt;
 &lt;p&gt;This concept of subjectivity in adjectives can be closely linked to understanding statically typed programming languages and general-purpose programming languages (which are often dynamically typed).&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;fast-forward-statically-typed-languages&quot;&gt;⏩ Statically Typed Languages&lt;&#x2F;h2&gt;
@@ -102,10 +102,10 @@
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://ls-lrt.com/recursion-in-rust/"/>
-        <id>https://ls-lrt.com/recursion-in-rust/</id>
+        <link rel="alternate" type="text/html" href="https://samirparhi.com/recursion-in-rust/"/>
+        <id>https://samirparhi.com/recursion-in-rust/</id>
         
-        <content type="html" xml:base="https://ls-lrt.com/recursion-in-rust/">&lt;h4 id=&quot;problem-statement&quot;&gt;Problem Statement:&lt;&#x2F;h4&gt;
+        <content type="html" xml:base="https://samirparhi.com/recursion-in-rust/">&lt;h4 id=&quot;problem-statement&quot;&gt;Problem Statement:&lt;&#x2F;h4&gt;
 &lt;p&gt;Build a cli using Rust that can search a given string in all files in a directory and Sub directory Recursively.&lt;&#x2F;p&gt;
 &lt;h3 id=&quot;building-the-logic&quot;&gt;Building the logic:&lt;&#x2F;h3&gt;
 &lt;p&gt;Lets Search from the &lt;code&gt;$PWD&lt;&#x2F;code&gt;, However you can start from any directory you want . First we have to see if there is any file in this current directory which is under this scope. after that lets find out if the search string is present in that if found return the file name and line no. If not found search the word in other file if it exist.&lt;&#x2F;p&gt;
@@ -233,10 +233,10 @@ fn main() -&gt; io::Result&lt;()&gt; {
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://ls-lrt.com/few-facts-about-rust-programming-language/"/>
-        <id>https://ls-lrt.com/few-facts-about-rust-programming-language/</id>
+        <link rel="alternate" type="text/html" href="https://samirparhi.com/few-facts-about-rust-programming-language/"/>
+        <id>https://samirparhi.com/few-facts-about-rust-programming-language/</id>
         
-        <content type="html" xml:base="https://ls-lrt.com/few-facts-about-rust-programming-language/">&lt;p&gt;This is the very first write-up of our Rust journey. In this part, we will learn a few interesting facts about Rust programming language. This will give us an overview of how and what of Rust at a high level.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://samirparhi.com/few-facts-about-rust-programming-language/">&lt;p&gt;This is the very first write-up of our Rust journey. In this part, we will learn a few interesting facts about Rust programming language. This will give us an overview of how and what of Rust at a high level.&lt;&#x2F;p&gt;
 &lt;p&gt;Every programming languages are special. Let’s take an overview of very charming Rust .&lt;&#x2F;p&gt;
 &lt;pre style=&quot;background-color:#212121;color:#eeffff;&quot;&gt;&lt;code&gt;&lt;span&gt;1. Like most programming languages, the rust logic execution starts from main() block.
 &lt;&#x2F;span&gt;&lt;span&gt;
@@ -278,10 +278,10 @@ fn main() -&gt; io::Result&lt;()&gt; {
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://ls-lrt.com/variable-and-datatypes-in-rust/"/>
-        <id>https://ls-lrt.com/variable-and-datatypes-in-rust/</id>
+        <link rel="alternate" type="text/html" href="https://samirparhi.com/variable-and-datatypes-in-rust/"/>
+        <id>https://samirparhi.com/variable-and-datatypes-in-rust/</id>
         
-        <content type="html" xml:base="https://ls-lrt.com/variable-and-datatypes-in-rust/">&lt;p&gt;Variables are the basic building blocks of a programming language. It holds data in the computer memory during runtime. The data that a variable hold can be different types. Like other languages, Rust has 2 kinds of high-level data types. Scalar and Compound . Scalar contains a single value whereas Compound holds multi-value data in the memory during run time. the default data types are explained in the figure below:&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://samirparhi.com/variable-and-datatypes-in-rust/">&lt;p&gt;Variables are the basic building blocks of a programming language. It holds data in the computer memory during runtime. The data that a variable hold can be different types. Like other languages, Rust has 2 kinds of high-level data types. Scalar and Compound . Scalar contains a single value whereas Compound holds multi-value data in the memory during run time. the default data types are explained in the figure below:&lt;&#x2F;p&gt;
 &lt;p&gt;Now if you mark in the figure we use let keyword to declare a variable and the value of the variable is on the right side of the = symbol.
 It is important to note that the variable in the rust is immutable (do not change the data once loaded) by default (why? please refer the part:0 of this series) However you can have the liberty to make it immutable by adding a mut keyword in front of any variable name. Example below:&lt;&#x2F;p&gt;
 &lt;pre style=&quot;background-color:#212121;color:#eeffff;&quot;&gt;&lt;code&gt;&lt;span&gt;let x = 10 ; &#x2F;&#x2F;this immutable 
@@ -340,10 +340,10 @@ Array operations:&lt;&#x2F;p&gt;
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://ls-lrt.com/why-i-was-encouraged-to-learn-rust/"/>
-        <id>https://ls-lrt.com/why-i-was-encouraged-to-learn-rust/</id>
+        <link rel="alternate" type="text/html" href="https://samirparhi.com/why-i-was-encouraged-to-learn-rust/"/>
+        <id>https://samirparhi.com/why-i-was-encouraged-to-learn-rust/</id>
         
-        <content type="html" xml:base="https://ls-lrt.com/why-i-was-encouraged-to-learn-rust/">&lt;p&gt;It is been 8 years in my Job career as an infrastructure&#x2F;DevSecOps engineer, I am much satisfied. But in the corner of my heart, I had the urge to learn programming so that I can relate my daily job to the developer program easily.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://samirparhi.com/why-i-was-encouraged-to-learn-rust/">&lt;p&gt;It is been 8 years in my Job career as an infrastructure&#x2F;DevSecOps engineer, I am much satisfied. But in the corner of my heart, I had the urge to learn programming so that I can relate my daily job to the developer program easily.&lt;&#x2F;p&gt;
 &lt;p&gt;Everyone knows there are a lot of great programming languages and also suggested some. Finally, I was left with python and Rust. When I started comparing both the below fact sheet concluded that I should start investing my time in learning Rust.&lt;&#x2F;p&gt;
 &lt;p&gt;The fact sheet:&lt;&#x2F;p&gt;
 &lt;p&gt;Facts	Rust	Python

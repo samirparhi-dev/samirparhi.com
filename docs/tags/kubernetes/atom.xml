@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-    <title>ls-lrt.com - Kubernetes</title>
+    <title>samirparhi.com - Kubernetes</title>
     <subtitle>Blog Site of Samir Parhi</subtitle>
-    <link rel="self" type="application/atom+xml" href="https://ls-lrt.com/tags/kubernetes/atom.xml"/>
-    <link rel="alternate" type="text/html" href="https://ls-lrt.com"/>
+    <link rel="self" type="application/atom+xml" href="https://samirparhi.com/tags/kubernetes/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://samirparhi.com"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
     <updated>2024-06-04T00:00:00+00:00</updated>
-    <id>https://ls-lrt.com/tags/kubernetes/atom.xml</id>
+    <id>https://samirparhi.com/tags/kubernetes/atom.xml</id>
     <entry xml:lang="en">
         <title>Cross-Site Scripting (XSS) Vulnerability and Mitigation in Web Applications</title>
         <published>2024-06-04T00:00:00+00:00</published>
@@ -20,10 +20,10 @@
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://ls-lrt.com/creating-a-aks-private-cluster-with-application-gateway-and-istio/"/>
-        <id>https://ls-lrt.com/creating-a-aks-private-cluster-with-application-gateway-and-istio/</id>
+        <link rel="alternate" type="text/html" href="https://samirparhi.com/creating-a-aks-private-cluster-with-application-gateway-and-istio/"/>
+        <id>https://samirparhi.com/creating-a-aks-private-cluster-with-application-gateway-and-istio/</id>
         
-        <content type="html" xml:base="https://ls-lrt.com/creating-a-aks-private-cluster-with-application-gateway-and-istio/">&lt;p&gt;Security has been a very key consideration in modern application architecture. When we talk about cloud-native application architecture, people tend to think about security a lot. That is why all the cloud providers have a bunch of features to make your application more secure and robust. For example, Azure provides various gateways like Network security groups, Application gateway, Azure front-door. These azure services provide a secure connection either by introducing a firewall or validating SSL certificates.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://samirparhi.com/creating-a-aks-private-cluster-with-application-gateway-and-istio/">&lt;p&gt;Security has been a very key consideration in modern application architecture. When we talk about cloud-native application architecture, people tend to think about security a lot. That is why all the cloud providers have a bunch of features to make your application more secure and robust. For example, Azure provides various gateways like Network security groups, Application gateway, Azure front-door. These azure services provide a secure connection either by introducing a firewall or validating SSL certificates.&lt;&#x2F;p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;people say “Security is a myth over the internet&lt;&#x2F;p&gt;
 &lt;&#x2F;blockquote&gt;
@@ -195,10 +195,10 @@ az network application-gateway create \
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://ls-lrt.com/configuring-meshery-behind-istio-ingress-gateway/"/>
-        <id>https://ls-lrt.com/configuring-meshery-behind-istio-ingress-gateway/</id>
+        <link rel="alternate" type="text/html" href="https://samirparhi.com/configuring-meshery-behind-istio-ingress-gateway/"/>
+        <id>https://samirparhi.com/configuring-meshery-behind-istio-ingress-gateway/</id>
         
-        <content type="html" xml:base="https://ls-lrt.com/configuring-meshery-behind-istio-ingress-gateway/">&lt;p&gt;Accessing Workloads behind a ingress-gateway always has been a  industry standard practice in Kubernetes setup. It facilitate single  entry point for all your services deployed in a production grade  Kubernetes. This setup also allows you to leverage the service-mesh  functionality of implementing policies and have a better authz and authn  to the deployed services. Meshery is no different, you can configure it  to be accessed through ingress gateway. Let’s see how can we configure  it.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://samirparhi.com/configuring-meshery-behind-istio-ingress-gateway/">&lt;p&gt;Accessing Workloads behind a ingress-gateway always has been a  industry standard practice in Kubernetes setup. It facilitate single  entry point for all your services deployed in a production grade  Kubernetes. This setup also allows you to leverage the service-mesh  functionality of implementing policies and have a better authz and authn  to the deployed services. Meshery is no different, you can configure it  to be accessed through ingress gateway. Let’s see how can we configure  it.&lt;&#x2F;p&gt;
 &lt;h4 id=&quot;prerequisite&quot;&gt;Prerequisite :&lt;&#x2F;h4&gt;
 &lt;ul&gt;
 &lt;li&gt;Kubernetes is up and running.&lt;&#x2F;li&gt;
@@ -331,10 +331,10 @@ http:&#x2F;&#x2F;20.204.19.97&#x2F;provider and you will she the meshery UI as b
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://ls-lrt.com/imposing-mandatory-http-s-security-headers-in-nginx/"/>
-        <id>https://ls-lrt.com/imposing-mandatory-http-s-security-headers-in-nginx/</id>
+        <link rel="alternate" type="text/html" href="https://samirparhi.com/imposing-mandatory-http-s-security-headers-in-nginx/"/>
+        <id>https://samirparhi.com/imposing-mandatory-http-s-security-headers-in-nginx/</id>
         
-        <content type="html" xml:base="https://ls-lrt.com/imposing-mandatory-http-s-security-headers-in-nginx/">&lt;p&gt;Making an application up and running does not qualify as a full-fledged product. It is particularly important to have security measure in the Product. Now in the ever-increasing digital revolution, security flaws are really risk for an organisation as-well as the users. Though we cannot eliminate all the risks, we can always try to address most of them and the important CVEs. Earlier days these security considerations (Security headers in this context) are handled by application itself and coded by the developer in the application code but in the micro-service world it is especially important for developers to focus more on business logic rather than all these auxiliary tasks to reduce time to market of the product.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://samirparhi.com/imposing-mandatory-http-s-security-headers-in-nginx/">&lt;p&gt;Making an application up and running does not qualify as a full-fledged product. It is particularly important to have security measure in the Product. Now in the ever-increasing digital revolution, security flaws are really risk for an organisation as-well as the users. Though we cannot eliminate all the risks, we can always try to address most of them and the important CVEs. Earlier days these security considerations (Security headers in this context) are handled by application itself and coded by the developer in the application code but in the micro-service world it is especially important for developers to focus more on business logic rather than all these auxiliary tasks to reduce time to market of the product.&lt;&#x2F;p&gt;
 &lt;p&gt;The good news is, now DevOps team can handle few of these features with help of Kubernetes, Iingress Gateways and Service Meshes. In this blog post we will focus on how to impose the mandatory security headers in Kubernetes NGINX ingress controller.
 OWASP (Open Web Application Security Project) is a nonprofit foundation that works to improve the security of software, has recommended to below HTTP headers should be present by default.&lt;&#x2F;p&gt;
 &lt;p&gt;Important HTTP headers:&lt;&#x2F;p&gt;
@@ -405,10 +405,10 @@ Hope this helps. Stay tuned for More!&lt;&#x2F;p&gt;
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://ls-lrt.com/securing-meshery-installation/"/>
-        <id>https://ls-lrt.com/securing-meshery-installation/</id>
+        <link rel="alternate" type="text/html" href="https://samirparhi.com/securing-meshery-installation/"/>
+        <id>https://samirparhi.com/securing-meshery-installation/</id>
         
-        <content type="html" xml:base="https://ls-lrt.com/securing-meshery-installation/">&lt;p&gt;We are delighted that you are loving Meshery, so it is our sole responsibility to make sure that you are in safe hands. The below few lines will describe how can you harden your security for accessing meshery so that you make eventually keep all your infrastructure sharing the same network are safe.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://samirparhi.com/securing-meshery-installation/">&lt;p&gt;We are delighted that you are loving Meshery, so it is our sole responsibility to make sure that you are in safe hands. The below few lines will describe how can you harden your security for accessing meshery so that you make eventually keep all your infrastructure sharing the same network are safe.&lt;&#x2F;p&gt;
 &lt;p&gt;There are 2 scenario that people use meshery :&lt;&#x2F;p&gt;
 &lt;p&gt;A standalone installation (May be in a VM)&lt;&#x2F;p&gt;
 &lt;p&gt;A deployment in a Kubernetes cluster.&lt;&#x2F;p&gt;

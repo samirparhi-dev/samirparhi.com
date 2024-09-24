@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-    <title>ls-lrt.com - Istio</title>
+    <title>samirparhi.com - Istio</title>
     <subtitle>Blog Site of Samir Parhi</subtitle>
-    <link rel="self" type="application/atom+xml" href="https://ls-lrt.com/tags/istio/atom.xml"/>
-    <link rel="alternate" type="text/html" href="https://ls-lrt.com"/>
+    <link rel="self" type="application/atom+xml" href="https://samirparhi.com/tags/istio/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://samirparhi.com"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
     <updated>2024-06-04T00:00:00+00:00</updated>
-    <id>https://ls-lrt.com/tags/istio/atom.xml</id>
+    <id>https://samirparhi.com/tags/istio/atom.xml</id>
     <entry xml:lang="en">
         <title>Cross-Site Scripting (XSS) Vulnerability and Mitigation in Web Applications</title>
         <published>2024-06-04T00:00:00+00:00</published>
@@ -20,10 +20,10 @@
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://ls-lrt.com/creating-a-aks-private-cluster-with-application-gateway-and-istio/"/>
-        <id>https://ls-lrt.com/creating-a-aks-private-cluster-with-application-gateway-and-istio/</id>
+        <link rel="alternate" type="text/html" href="https://samirparhi.com/creating-a-aks-private-cluster-with-application-gateway-and-istio/"/>
+        <id>https://samirparhi.com/creating-a-aks-private-cluster-with-application-gateway-and-istio/</id>
         
-        <content type="html" xml:base="https://ls-lrt.com/creating-a-aks-private-cluster-with-application-gateway-and-istio/">&lt;p&gt;Security has been a very key consideration in modern application architecture. When we talk about cloud-native application architecture, people tend to think about security a lot. That is why all the cloud providers have a bunch of features to make your application more secure and robust. For example, Azure provides various gateways like Network security groups, Application gateway, Azure front-door. These azure services provide a secure connection either by introducing a firewall or validating SSL certificates.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://samirparhi.com/creating-a-aks-private-cluster-with-application-gateway-and-istio/">&lt;p&gt;Security has been a very key consideration in modern application architecture. When we talk about cloud-native application architecture, people tend to think about security a lot. That is why all the cloud providers have a bunch of features to make your application more secure and robust. For example, Azure provides various gateways like Network security groups, Application gateway, Azure front-door. These azure services provide a secure connection either by introducing a firewall or validating SSL certificates.&lt;&#x2F;p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;people say “Security is a myth over the internet&lt;&#x2F;p&gt;
 &lt;&#x2F;blockquote&gt;

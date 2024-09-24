@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-    <title>ls-lrt.com - Cyber Security</title>
+    <title>samirparhi.com - Cyber Security</title>
     <subtitle>Blog Site of Samir Parhi</subtitle>
-    <link rel="self" type="application/atom+xml" href="https://ls-lrt.com/tags/cyber-security/atom.xml"/>
-    <link rel="alternate" type="text/html" href="https://ls-lrt.com"/>
+    <link rel="self" type="application/atom+xml" href="https://samirparhi.com/tags/cyber-security/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://samirparhi.com"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
     <updated>2024-04-30T00:00:00+00:00</updated>
-    <id>https://ls-lrt.com/tags/cyber-security/atom.xml</id>
+    <id>https://samirparhi.com/tags/cyber-security/atom.xml</id>
     <entry xml:lang="en">
         <title>Cross-Site Scripting (XSS) Vulnerability and Mitigation in Web Applications</title>
         <published>2024-04-30T00:00:00+00:00</published>
@@ -20,10 +20,10 @@
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://ls-lrt.com/cross-site-scripting-xss-vulnerability-and-mitigation-in-web-applications/"/>
-        <id>https://ls-lrt.com/cross-site-scripting-xss-vulnerability-and-mitigation-in-web-applications/</id>
+        <link rel="alternate" type="text/html" href="https://samirparhi.com/cross-site-scripting-xss-vulnerability-and-mitigation-in-web-applications/"/>
+        <id>https://samirparhi.com/cross-site-scripting-xss-vulnerability-and-mitigation-in-web-applications/</id>
         
-        <content type="html" xml:base="https://ls-lrt.com/cross-site-scripting-xss-vulnerability-and-mitigation-in-web-applications/">&lt;h4 id=&quot;introduction&quot;&gt;Introduction&lt;&#x2F;h4&gt;
+        <content type="html" xml:base="https://samirparhi.com/cross-site-scripting-xss-vulnerability-and-mitigation-in-web-applications/">&lt;h4 id=&quot;introduction&quot;&gt;Introduction&lt;&#x2F;h4&gt;
 &lt;p&gt;In the realm of web security, Cross-Site Scripting (XSS) stands as one of the most prevalent and hazardous vulnerabilities. With its ability to manipulate the interaction between a web application and its users, XSS can lead to unauthorized data exposure, session hijacking, and even malware distribution. This article delves into the concept of XSS, highlighting its potential impact and providing insight into securing applications against this threat.
 Understanding Cross-Site Scripting (XSS)&lt;&#x2F;p&gt;
 &lt;p&gt;At its core, XSS is a vulnerability that arises when a web application incorporates untrusted data into its output, allowing attackers to inject malicious scripts into the content delivered to other users. This often happens when user-generated content isn’t properly sanitized before being displayed. The impact of an XSS attack can vary, from stealing sensitive information to impersonating users or even taking control of their accounts.&lt;&#x2F;p&gt;
@@ -117,10 +117,10 @@ Happy Learning 🎉&lt;&#x2F;p&gt;
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://ls-lrt.com/protecting-apps-from-sql-injection/"/>
-        <id>https://ls-lrt.com/protecting-apps-from-sql-injection/</id>
+        <link rel="alternate" type="text/html" href="https://samirparhi.com/protecting-apps-from-sql-injection/"/>
+        <id>https://samirparhi.com/protecting-apps-from-sql-injection/</id>
         
-        <content type="html" xml:base="https://ls-lrt.com/protecting-apps-from-sql-injection/">&lt;p&gt;It is essential in the field of software development to provide people control over their data and experiences. Users’ experiences are improved when they can build unique queries using user-controlled sources, which also gives them a sense of control and flexibility. This strategy has a lot of advantages, but it also has its share of drawbacks and potential problems.
+        <content type="html" xml:base="https://samirparhi.com/protecting-apps-from-sql-injection/">&lt;p&gt;It is essential in the field of software development to provide people control over their data and experiences. Users’ experiences are improved when they can build unique queries using user-controlled sources, which also gives them a sense of control and flexibility. This strategy has a lot of advantages, but it also has its share of drawbacks and potential problems.
 Security Concerns:
 The security of user-controlled queries is one of the most important challenges. Malicious users could take advantage of security flaws like SQL injection, giving them access to the application’s data or the ability to change it. The following recommendation can be used to resolve this problem:
 a. Input Validation: Thoroughly validate and sanitize user input to prevent unauthorized characters or SQL commands from being executed.
@@ -181,10 +181,10 @@ a. Limit Complexity: Set reasonable constraints on the complexity and size of us
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://ls-lrt.com/uncontrolled-data-used-in-path-expression-a-cyber-security-threat/"/>
-        <id>https://ls-lrt.com/uncontrolled-data-used-in-path-expression-a-cyber-security-threat/</id>
+        <link rel="alternate" type="text/html" href="https://samirparhi.com/uncontrolled-data-used-in-path-expression-a-cyber-security-threat/"/>
+        <id>https://samirparhi.com/uncontrolled-data-used-in-path-expression-a-cyber-security-threat/</id>
         
-        <content type="html" xml:base="https://ls-lrt.com/uncontrolled-data-used-in-path-expression-a-cyber-security-threat/">&lt;p&gt;Path expressions are used in a variety of software applications to construct file paths. However, if these expressions are not properly validated, they can be used by attackers to gain unauthorized access to sensitive data or systems.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://samirparhi.com/uncontrolled-data-used-in-path-expression-a-cyber-security-threat/">&lt;p&gt;Path expressions are used in a variety of software applications to construct file paths. However, if these expressions are not properly validated, they can be used by attackers to gain unauthorized access to sensitive data or systems.&lt;&#x2F;p&gt;
 &lt;p&gt;This type of attack is known as path traversal, and it can be used to access files that are outside of the intended directory structure. For example, an attacker could provide a path expression that includes a “..&#x2F;” sequence, which would cause the application to traverse up one directory level. This could allow the attacker to access files that they would not otherwise be able to see.&lt;&#x2F;p&gt;
 &lt;p&gt;Path traversal attacks can also be used to exploit vulnerabilities in web applications. For example, an attacker could provide a path expression that includes a “..” sequence in a web form. If the application does not properly validate the input, the attacker could use this to access the application’s filesystem.&lt;&#x2F;p&gt;
 &lt;p&gt;To prevent path traversal attacks, it is important to properly validate all user input that is used to construct path expressions. This can be done by using a regular expression to ensure that the input only contains valid characters. Additionally, it is important to restrict the access that users have to sensitive files and directories.&lt;&#x2F;p&gt;
@@ -246,10 +246,10 @@ are a few things you can do:&lt;&#x2F;p&gt;
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://ls-lrt.com/understanding-server-side-request-forgery/"/>
-        <id>https://ls-lrt.com/understanding-server-side-request-forgery/</id>
+        <link rel="alternate" type="text/html" href="https://samirparhi.com/understanding-server-side-request-forgery/"/>
+        <id>https://samirparhi.com/understanding-server-side-request-forgery/</id>
         
-        <content type="html" xml:base="https://ls-lrt.com/understanding-server-side-request-forgery/">&lt;h5 id=&quot;introduction&quot;&gt;Introduction:&lt;&#x2F;h5&gt;
+        <content type="html" xml:base="https://samirparhi.com/understanding-server-side-request-forgery/">&lt;h5 id=&quot;introduction&quot;&gt;Introduction:&lt;&#x2F;h5&gt;
 &lt;p&gt;In today’s interconnected world, web applications rely on various external services to provide dynamic content and functionality. However, this dependence on external resources can also create security vulnerabilities, one of which is Server-Side Request Forgery (SSRF). SSRF is a type of attack where an attacker manipulates a web application to send unauthorized requests to internal or external resources. In this blog, we will delve into the concept of SSRF, its potential impact on your Java applications, and discuss strategies to mitigate this critical security risk.&lt;&#x2F;p&gt;
 &lt;h5 id=&quot;what-is-server-side-request-forgery-ssrf&quot;&gt;What is Server-Side Request Forgery (SSRF)?&lt;&#x2F;h5&gt;
 &lt;p&gt;Server-Side Request Forgery is a web application vulnerability that enables attackers to make unauthorized requests from the server-side, bypassing the security controls implemented on the client-side. The attacker typically tricks the application into sending HTTP requests to internal systems, other applications, or even external services.&lt;&#x2F;p&gt;
