@@ -135,6 +135,8 @@ Cyber_security_skills = [
     "Tool Integrations"
 ]
 my_collab = [
-    { url = "https://capita7.com/", name = "Capita7" },
-    { url = "https://sharang.s9lab.dev/", name = "S9-lab" },
+    { url = "https://sharang.s9lab.dev/", name = "Sharang App", Techstack= "Julia, PlotlyDash" },
+    { url = "https://asteria.co.in/skydeck", name = "Skydeck", Techstack= "Go, Python, TailwindCSS" },
+    { url = "https://capita7.com/", name = "Capita7", Techstack= "Rust, Cargo TailwinCss" },
+    { url = "https://github.com/samirparhi-dev/fuse", name = "Fuse-cli", Techstack= "Rust, Cargo" }
 ]

@@ -23,8 +23,7 @@
         <link rel="alternate" type="text/html" href="https://samirparhi.com/devsecops-pipeline-setup-for-fully-automated-deployment/"/>
         <id>https://samirparhi.com/devsecops-pipeline-setup-for-fully-automated-deployment/</id>
         
-        <content type="html" xml:base="https://samirparhi.com/devsecops-pipeline-setup-for-fully-automated-deployment/">&lt;h4 id=&quot;devsecops-pipeline&quot;&gt;DevSecOps Pipeline&lt;&#x2F;h4&gt;
-&lt;p&gt;This pipeline automates the process of building, scanning, signing, and deploying container images while ensuring compliance with security policies. Here’s how it works:&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://samirparhi.com/devsecops-pipeline-setup-for-fully-automated-deployment/">&lt;p&gt;This pipeline automates the process of building, scanning, signing, and deploying container images while ensuring compliance with security policies. Here’s how it works:&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;strong&gt;Code Base (GitHub):&lt;&#x2F;strong&gt; The pipeline is triggered when a pull request (PR) is raised.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;strong&gt;Build Code and Container:&lt;&#x2F;strong&gt; The application code is built, followed by container creation.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;strong&gt;Trivy Static Container Scan:&lt;&#x2F;strong&gt; A security scan is performed to check for vulnerabilities and misconfigurations.&lt;&#x2F;p&gt;
