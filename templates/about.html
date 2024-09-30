@@ -7,7 +7,7 @@
     <div class="flex flex-wrap justify-between">
         <div>
         <p class="text-2xl px-10 py-10 text-wrap text-justify">
-            <span class="text-5xl font-bold text-fuchsia-900">A</span> passionate Technologist, Independent Thinker and Developer. ❤️ for Open-Source Software. Enjoys Designing, Tinkering and Break-fixing System. I believe Privacy and security is one of the fundamental rights not an Option. Curious to learn more techs. Lets work together for a transparent Livelihood enriched with Privacy and security.
+            <span class="text-5xl font-bold text-fuchsia-900">A</span> passionate Technologist, Independent Thinker, Developer and DevSecOps professional . ❤️ for Open-Source Software. Enjoys Designing, Tinkering and Break-fixing System. I believe Privacy and security is one of the fundamental rights not an Option. Curious to learn more techs. Lets work together for a transparent Livelihood enriched with Privacy and security.
         </p>
         
     </div>
@@ -16,8 +16,30 @@
     <div class="flex-wrap py-5 ">
         <p class="text-3xl font-sm py-5 px-10 zigzag-underline "><span class="text-4xl font-bold text-fuchsia-900">E</span>xpertise 📱 </p>
 
+        <p class="text-3xl font-sm py-5 px-10 zigzag-underline "><span class="text-4xl font-bold text-fuchsia-900">D</span>evSecOps</p>
+
         <ul class=" list-none flex space-x-2 space-y-1 px-10 py-3 flex-wrap ">
-            {% for item in config.extra.skills %}
+            {% for item in config.extra.DevSecOps_skills %}
+            <li class="p-2 font-mono text-wrap shadow bg-purple-50 bg-gradient-to-r from-transparent to-zinc-50 hover:bg-teal-50 text-slate-500 hover:text-lime-900 border-red-500 rounded-md border-2">
+                    {{ item }}
+            </li>
+            {% endfor %}
+        </ul>
+
+        <p class="text-3xl font-sm py-5 px-10 zigzag-underline "><span class="text-4xl font-bold text-fuchsia-900">P</span>rogramming & AI</p>
+
+        <ul class=" list-none flex space-x-2 space-y-1 px-10 py-3 flex-wrap ">
+            {% for item in config.extra.Programming_skills%}
+            <li class="p-2 font-mono text-wrap shadow bg-purple-50 bg-gradient-to-r from-transparent to-zinc-50 hover:bg-teal-50 text-slate-500 hover:text-lime-900 border-red-500 rounded-md border-2">
+                    {{ item }}
+            </li>
+            {% endfor %}
+        </ul>
+
+        <p class="text-3xl font-sm py-5 px-10 zigzag-underline "><span class="text-4xl font-bold text-fuchsia-900">C</span>yber Security</p>
+
+        <ul class=" list-none flex space-x-2 space-y-1 px-10 py-3 flex-wrap ">
+            {% for item in config.extra.Cyber_security_skills%}
             <li class="p-2 font-mono text-wrap shadow bg-purple-50 bg-gradient-to-r from-transparent to-zinc-50 hover:bg-teal-50 text-slate-500 hover:text-lime-900 border-red-500 rounded-md border-2">
                     {{ item }}
             </li>

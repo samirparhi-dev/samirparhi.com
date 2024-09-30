@@ -74,12 +74,17 @@ social_handle = [
 company_logo = [{ url = "img/brand/ls-lrt-logo-2024.png" }]
 profile_pic = [{ profile_pic_path = "img/profile_pic/my-portrait-recent.png" }]
 
-skills = [
+DevSecOps_skills = [
     "DevOps",
+    "System Design",
+    "Open Source",
+    "Linux",
+    "GitHub",
     "PODMAN",
     "Docker",
     "Kubernetes",
     "Terraform",
+    "OpenTofu",
     "Serverless",
     "AWS",
     "Azure",
@@ -89,6 +94,10 @@ skills = [
     "OpenTelemetry",
     "Microservices",
     "CI & CD",
+    "JWT",
+    "Shell",
+    ]
+Programming_skills = [
     "Python",
     "PyTorch", 
     "NumPy",
@@ -98,12 +107,12 @@ skills = [
     "Mili Search",
     "julia",
     "Dash",
-    "Cyber Security",
-    "Open Source",
-    "Linux",
-    "GitHub",
-    "JWT",
-    "Shell",
+    "OpenAPI",
+    "Anthropic",
+    "GPT-3",
+    "OLLAMA"]
+
+Cyber_security_skills = [
     "Python",
     "TDD",
     "Code Scanning",
@@ -122,10 +131,8 @@ skills = [
     "SPDX",
     "Cosign",
     "OpenSSL",
-    
     "Custom Code",
-    "Automation",
-    "Tool Integrations",
+    "Tool Integrations"
 ]
 my_collab = [
     { url = "https://capita7.com/", name = "Capita7" },
