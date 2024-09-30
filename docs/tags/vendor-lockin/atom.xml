@@ -8,45 +8,6 @@
     <updated>2024-04-12T00:00:00+00:00</updated>
     <id>https://samirparhi.com/tags/vendor-lockin/atom.xml</id>
     <entry xml:lang="en">
-        <title>Tale of Dependencies (Vendor lock-in, vendor neutrality and Managed Services)</title>
-        <published>2024-04-12T00:00:00+00:00</published>
-        <updated>2024-04-12T00:00:00+00:00</updated>
-        
-        <author>
-          <name>
-            
-              Samir Ranjan Parhi
-            
-          </name>
-        </author>
-        
-        <link rel="alternate" type="text/html" href="https://samirparhi.com/dependencies-tale/"/>
-        <id>https://samirparhi.com/dependencies-tale/</id>
-        
-        <content type="html" xml:base="https://samirparhi.com/dependencies-tale/">&lt;p&gt;Once upon a time in the software industry, Big companies looked for reliable partners (aka vendors) to manage their services. Meanwhile, these vendors focused on retaining existing clients and offering tailored solutions or products directly. In this process Organizations of all sectors were investing double, even sometimes five or ten times the amount to support a product&#x2F;service. This sparked a global interest in service offerings, igniting a revolution in the software industry.&lt;&#x2F;p&gt;
-&lt;p&gt;Imagine a Banking application:&lt;&#x2F;p&gt;
-&lt;ul&gt;
-&lt;li&gt;Business partner (CRM) software was from vendor X,&lt;&#x2F;li&gt;
-&lt;li&gt;Loan and CIBIL management software from company Y, and&lt;&#x2F;li&gt;
-&lt;li&gt;Staff management (HR) software from company Z.&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;p&gt;Sounds like a robust setup, Actually Not?&lt;&#x2F;p&gt;
-&lt;p&gt;Yes, stitching these pieces together (integration), wasn’t as simple as snapping Lego bricks together. There is a dependency on these three companies, anytime you try to do some changes to one or the other software in this eco system . This is what we know as vendor lock-in.&lt;&#x2F;p&gt;
-&lt;p&gt;This situation was well leveraged by a lot of vendors to create business suite software (like ERPs and CRMs) Down the lane leads to monopolize the market and further tightening the grip of vendor lock-in. Unfortunately Start-Ups were not able to leverage these kind of software as these solutions were not just expensive but also monopolized the market.&lt;&#x2F;p&gt;
-&lt;p&gt;Every challenge birth innovation, and that’s where APIs (Application programming interfaces) came into existence. APIs made software more extensible, structured and work independently. This empowered organizations to embrace open-source solutions (though not directly) and break free from vendor lock-in.&lt;&#x2F;p&gt;
-&lt;p&gt;test when we talk about adaptation of opensource, of course we give the business to foster on their expertise without fearing about technological enablement, in the same time security risks lurked around the corner as opensource project embrace the code commits from a wide audience worldwide. Fear tends to business opportunity you are watching at my space&lt;&#x2F;p&gt;
-&lt;pre&gt;&lt;code class=&quot;text-sm&quot;&gt;
-console.log(&quot;Hello, world!&quot;);
-&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;p&gt;when we talk about adaptation of opensource, of course we give the business to foster on their expertise without fearing about technological enablement, in the same time security risks lurked around the corner as opensource project embrace the code commits from a wide audience worldwide. Fear tends to business opportunities, several companies and consulting firms stepped in to provide managed services by adapting open-source solutions and specializing in managed services and offer a unique way of utilizing open-source software, sometimes referred to as SaaS. With a focus on security, upgrades, and scalability, managed services bridged the gap between vendor locking and vendor neutrality in the economic way.&lt;&#x2F;p&gt;
-&lt;p&gt;Now the trend is freemium, which hurts the Open-source contributors at a point of time, but no worries we can always fork&lt;&#x2F;p&gt;
-&lt;p&gt;With each chapter, innovation paves the way for businesses to thrive, breaking barriers and embracing new possibilities.&lt;&#x2F;p&gt;
-&lt;p&gt;This was a quick take from my experience :-)&lt;&#x2F;p&gt;
-&lt;p&gt;Stay tuned for more!&lt;&#x2F;p&gt;
-</content>
-        
-    </entry>
-    <entry xml:lang="en">
         <title>Which service to Use Azure Kubernetes Services or Azure App service (A curated topic)</title>
         <published>2024-04-12T00:00:00+00:00</published>
         <updated>2024-04-12T00:00:00+00:00</updated>

@@ -75,6 +75,10 @@ company_logo = [{ url = "img/brand/ls-lrt-logo-2024.png" }]
 profile_pic = [{ profile_pic_path = "img/profile_pic/my-portrait-recent.png" }]
 
 skills = [
+    "Python",
+    "PyTorch", 
+    "NumPy",
+    "Pandas",
     "Rust",
     "Leptos",
     "Mili Search",

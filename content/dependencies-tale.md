@@ -1,44 +1,148 @@
 +++
-title = "Tale of Dependencies (Vendor lock-in, vendor neutrality and Managed Services)"
-description = "Once upon a time in the software industry, Big companies looked for reliable partners (aka vendors) to manage their services. Meanwhile, these vendors focused on retaining existing clients and offering tailored solutions or products directly. In this process Organizations of all sectors were investing double, even sometimes five or ten times the amount to support a product/service. This sparked a global interest in service offerings, igniting a revolution in the software industry."
+title = "Building a Dynamic Data Pipeline from Scratch with Snowflake and Python"
+description = "Data Pipelines are very crucial to data modeling and training. Inthis blog we will design a pipeline from very scratch using Python , snowflake and numpy."
 date = 2024-04-12
 [taxonomies] 
-tags = ["CyberSecurity", "vendor-lockin"]
+tags = ["DataPipeline", "python", "snowflake"]
 +++
 
+### The problem statement
+
+Sells 44 is an E-comerce platform which need some user data for it campaign. you are hence asked to extracts sales data from Snowflake, performs transformation using Pandas and NumPy (e.g., handling missing values and aggregating sales by region), and then saves the final output back to Snowflake or to a CSV for further analysis.
+
+### System Design
+
+#### 1. Components
+- *Snowflake:* The cloud-based data warehouse where the raw sales data is stored.
+- Python: The programming language used for data pipeline orchestration.
+- Snowflake Connector for Python: This allows seamless interaction with Snowflake to extract and load data.
+- Pandas: Used for data manipulation, cleaning, and transformation.
+- NumPy: Used for numerical operations and advanced calculations.
+- CSV Output or Data Persistence: The final transformed data can be written back to Snowflake or exported as a CSV for external use. 
+
+#### 2. Flow (The ETL)
+- Extract: Fetch raw sales data from Snowflake.
+- Transform: Clean the data using Pandas (handle missing values, filter, group, and calculate). Use NumPy for any complex numerical operations.
+- Load: Save the transformed data either back into Snowflake or export as a CSV for further reporting.
+- Establish a Snowflake Connection: Connects to Snowflake using your credentials and account information.
+- Extract: Runs a SQL query to fetch sales data.
+- Pandas Transformation:
+   - Missing Values: Fills missing values in the sales_amount column with the mean.
+   - NumPy Transformation: Applies a log transformation to scale the sales data using NumPy.
+   - Aggregation: Groups the data by region and aggregates the total sales.
+   - Load: Saves the transformed data to a CSV file or writes it back to Snowflake.
+
+### Lets Code it 
+
+1. Setup the Snowflake Connector
+You'll need to install the Snowflake connector and Pandas library:
+
+```pip install snowflake-connector-python pandas numpy```
+
+2. Code for the Data Pipeline:
+
+```
+import snowflake.connector
+import pandas as pd
+import numpy as np
+
+# Step 1: Establish connection to Snowflake
+conn = snowflake.connector.connect(
+    user='your_username',
+    password='your_password',
+    account='your_account_url'
+)
+
+# Step 2: Query Snowflake to extract data
+query = """
+SELECT region, sales_amount, sales_date
+FROM sales_data
+WHERE sales_date >= '2024-01-01'
+"""
+
+# Step 3: Execute the query and fetch data
+cur = conn.cursor()
+cur.execute(query)
+data = cur.fetchall()
+
+# Step 4: Load the data into a Pandas DataFrame
+columns = ['region', 'sales_amount', 'sales_date']
+df = pd.DataFrame(data, columns=columns)
+
+# Step 5: Data Cleaning and Transformation
+# Fill missing values in the 'sales_amount' column with the mean
+df['sales_amount'].fillna(df['sales_amount'].mean(), inplace=True)
+
+# Use NumPy to apply advanced numerical transformations (e.g., scaling)
+df['scaled_sales'] = np.log(df['sales_amount'] + 1)
+
+# Aggregate sales by region
+aggregated_data = df.groupby('region')['sales_amount'].sum().reset_index()
+
+# Step 6: Save the transformed data back to Snowflake or to a CSV
+# Save to CSV
+aggregated_data.to_csv('aggregated_sales_data.csv', index=False)
+
+# Alternatively, you can write the data back to Snowflake:
+# cur.execute("CREATE OR REPLACE TABLE transformed_sales_data (region STRING, total_sales FLOAT)")
+# for index, row in aggregated_data.iterrows():
+#     cur.execute(f"INSERT INTO transformed_sales_data (region, total_sales) VALUES ('{row['region']}', {row['sales_amount']})")
+
+# Close the cursor and connection
+cur.close()
+conn.close()
+
+print("Data pipeline completed successfully!")
+```
+### Scalability:
+
+The architecture allows easy scaling as Snowflake handles large datasets efficiently.
+Python’s flexibility enables more complex transformations if needed.
+
+### Deployment Considerations:
+
+The pipeline can be scheduled using Jenkins jobs or GitHub Action 
+```
+name: Snowflake Pipeline Schedule
+
+# Schedule to run daily at 12:00 AM (UTC)
+on:
+  schedule:
+    - cron: '0 0 * * *'
+
+  workflow_dispatch: # Allows manual trigger
+
+jobs:
+  run-snowflake-pipeline:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Step 1: Checkout the repository code
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    # Step 2: Set up Python environment
+    - name: Set up Python 3.x
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+
+    # Step 3: Install dependencies
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install snowflake-connector-python pandas numpy
+
+    # Step 4: Run the Snowflake pipeline
+    - name: Run Snowflake Data Pipeline
+      env:
+        SNOWFLAKE_USER: ${{ secrets.SNOWFLAKE_USER }}
+        SNOWFLAKE_PASSWORD: ${{ secrets.SNOWFLAKE_PASSWORD }}
+        SNOWFLAKE_ACCOUNT: ${{ secrets.SNOWFLAKE_ACCOUNT }}
+      run: |
+        python snowflake_pipeline.py
+```
 
 
-Once upon a time in the software industry, Big companies looked for reliable partners (aka vendors) to manage their services. Meanwhile, these vendors focused on retaining existing clients and offering tailored solutions or products directly. In this process Organizations of all sectors were investing double, even sometimes five or ten times the amount to support a product/service. This sparked a global interest in service offerings, igniting a revolution in the software industry.
-
-
-Imagine a Banking application:
-
-- Business partner (CRM) software was from vendor X,
-- Loan and CIBIL management software from company Y, and
-- Staff management (HR) software from company Z.
-
-Sounds like a robust setup, Actually Not?
-
-Yes, stitching these pieces together (integration), wasn't as simple as snapping Lego bricks together. There is a dependency on these three companies, anytime you try to do some changes to one or the other software in this eco system . This is what we know as vendor lock-in.
-
-This situation was well leveraged by a lot of vendors to create business suite software (like ERPs and CRMs) Down the lane leads to monopolize the market and further tightening the grip of vendor lock-in. Unfortunately Start-Ups were not able to leverage these kind of software as these solutions were not just expensive but also monopolized the market.
-
-Every challenge birth innovation, and that's where APIs (Application programming interfaces) came into existence. APIs made software more extensible, structured and work independently. This empowered organizations to embrace open-source solutions (though not directly) and break free from vendor lock-in.
-
-test when we talk about adaptation of opensource, of course we give the business to foster on their expertise without fearing about technological enablement, in the same time security risks lurked around the corner as opensource project embrace the code commits from a wide audience worldwide. Fear tends to business opportunity you are watching at my space 
-
-<pre><code class="text-sm">
-console.log("Hello, world!");
-</code></pre>
-
-when we talk about adaptation of opensource, of course we give the business to foster on their expertise without fearing about technological enablement, in the same time security risks lurked around the corner as opensource project embrace the code commits from a wide audience worldwide. Fear tends to business opportunities, several companies and consulting firms stepped in to provide managed services by adapting open-source solutions and specializing in managed services and offer a unique way of utilizing open-source software, sometimes referred to as SaaS. With a focus on security, upgrades, and scalability, managed services bridged the gap between vendor locking and vendor neutrality in the economic way.
-
-Now the trend is freemium, which hurts the Open-source contributors at a point of time, but no worries we can always fork
-
-With each chapter, innovation paves the way for businesses to thrive, breaking barriers and embracing new possibilities.
-
-This was a quick take from my experience :-)
-
-Stay tuned for more!
 
 

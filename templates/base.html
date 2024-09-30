@@ -18,80 +18,68 @@
 
 </head>
 
-    <body class="paper-like bg-opacity-80 min-h-40">
-    <header class=" mx-auto flex flex-wrap rounded-lg from-cyan-100 to-rose-50 backdrop-blur-sm bg-gradient-to-l shadow-inner">
-
-        <!-- <header class="mx-auto flex flex-wrap rounded-lg bg-white backdrop-blur-sm drop-shadow-md shadow-inner">
-        </header> -->
-
-        <div class="flex flex-wrap px-10 py-10 mt-10 justify-center items-center text-center">
+    <body class="paper-like bg-opacity-80 min-h-40 from-cyan-100 to-rose-50 bg-gradient-to-l">
+    <header class=" px-10 justify-evenly mx-auto from-cyan-100 to-rose-50 bg-gradient-to-l py-5 ">
+        <div class="flex flex-wrap px-auto py-5 justify-center">
                 <div class="mx-10 px-auto ">
                 <ul class="flex">
                     <a href="/#"><p class="lg:text-3xl sm:text-2xl md:text-2xl py-auto px-auto">
-                        <span class="font-semibold text-purple-900 zigzag-underline">Samir </span>
-                        <span class="font-semibold text-fuchsia-600 zigzag-underline">Ranjan Parhi</span>
-                    </p>
-                        <!-- {% set mdata = get_image_metadata(path="img/brand/ls-lrt-logo-2024.png") %}
-                        {% set w = (mdata.width/2) | int %}
-                        {% set h = (mdata.height/2) | int %}
-
-                        {% set image = resize_image(path="img/brand/ls-lrt-logo-2024.png", width=w, height=h, op="fit_width") %}
-
-                        <img src="{{ image.url }}" srcset="/{{"img/brand/ls-lrt-logo-2024.png"}} 2x"/> -->
-
+                        <span class="font-semibold text-purple-900">Samir Ranjan Parhi </span>
                     </a>
                 </ul>
             </div>
-            <div class="relative list-none flex flex-wrap">
-                <!-- Hamburger Icon (hidden on larger screens) -->
-                <!-- <button id="menu-toggle" class="block lg:hidden px-auto py-auto focus:outline-none">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button> -->
-
-                <!-- Sliding Drawer Menu (hidden on smaller screens, flex on larger screens) -->
+            <div class="list-none flex flex-wrap">
                 <div id="menu" class="lg:relative lg:flex lg:flex-wrap lg:justify-between lg:bg-transparent lg:w-auto">
                     <ul class="list-none flex flex-wrap space-x-4">
                         {% for item in config.extra.my_blog_menu %}
-                        <li class="sm:text-sm md:text-sm lg:text-xl xl:text-xl p-2 hover:text-violet-900 text-fuchsia-800">
+                        <li class="p-2 hover:text-violet-900 text-fuchsia-800">
                             <a href="{{ item.url }}">{{ item.menu }}</a>
                         </li>
                         {% endfor %}
-                        <!-- {% for item in config.extra.social_handle %}
-                        <li class=" sm:text-sm md:text-sm lg:text-xl xl:text-xl p-2 hover:text-violet-900 text-fuchsia-800">
-                            <a href="{{ item.url }}"> {{ item.social_handle}}
-                            </a>
-                        </li>
-                        {% endfor %} -->
                     </ul>
                 </div>
             </div>
 
-            <!-- <script>
-                // JavaScript for toggling the sliding drawer menu on smaller screens
-                const menuToggle = document.getElementById('menu-toggle');
-                const menu = document.getElementById('menu');
-
-                menuToggle.addEventListener('click', function() {
-                    // Toggle the transform property to slide the menu in/out
-                    if (menu.classList.contains('-translate-x-full')) {
-                        menu.classList.remove('-translate-x-full');
-                        menu.classList.add('translate-x-0');
-                    } else {
-                        menu.classList.remove('translate-x-0');
-                        menu.classList.add('-translate-x-full');
-                    }
-                });
-            </script> -->
         </div>
 
     </header>
 
+    <!-- <footer class=" py-4 from-cyan-100 to-rose-50 bg-gradient-to-l backdrop-blur-md">
+
+        <div class="px-auto flex flex-wrap justify-evenly">
+            <ul class="flex">
+                <a href="/#">
+                    <p class="py-auto px-auto">
+                    <span class="font-semibold text-purple-900">Samir Ranjan Parhi </span>
+                </a>
+            </ul>
+            <ul class=" px-5 list-none flex justify-evenly space-x-6 py-2 px-auto mx-auto rounded-xl">
+                {% for item in config.extra.my_blog_menu %}
+                <li class=" text-xl text-purple-700 hover:underline border-1 hover:text-indigo-600 flex rounded-lg  border-fuchsia-900">
+                    <a href="{{ item.url }}">{{ item.menu }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class=" flex py-5 text-purple-700 justify-center text-xl text-blue-700dark:divide-purple-50">
+            <p>
+                © {{ config.title }} {{ config.extra.current_year }}
+
+            </p>
+
+        </div>
+
+        <div class=" flex py-5 text-purple-700 justify-center text-xl text-blue-700dark:divide-purple-50">
+            <p>
+                Coded 💙 by samirparhi-dev
+            </p>
+        </div>
+    </footer> -->
+
     {% block body %}
     {% endblock %}
 
-    <footer class=" py-4 border-2 border-black bg-white">
+    <footer class=" py-4 from-cyan-100 to-rose-50 bg-gradient-to-l backdrop-blur-md">
 
         <div class="px-auto flex flex-wrap justify-evenly">
             <ul class=" px-5 list-none flex justify-evenly space-x-6 py-2 px-auto mx-auto rounded-xl">

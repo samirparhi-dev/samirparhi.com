@@ -133,6 +133,12 @@
         <loc>https://samirparhi.com/tags/cybersecurity/page/1/</loc>
     </url>
     <url>
+        <loc>https://samirparhi.com/tags/datapipeline/</loc>
+    </url>
+    <url>
+        <loc>https://samirparhi.com/tags/datapipeline/page/1/</loc>
+    </url>
+    <url>
         <loc>https://samirparhi.com/tags/datascience/</loc>
     </url>
     <url>
@@ -235,6 +241,12 @@
         <loc>https://samirparhi.com/tags/productengineering/page/1/</loc>
     </url>
     <url>
+        <loc>https://samirparhi.com/tags/python/</loc>
+    </url>
+    <url>
+        <loc>https://samirparhi.com/tags/python/page/1/</loc>
+    </url>
+    <url>
         <loc>https://samirparhi.com/tags/rust/</loc>
     </url>
     <url>
@@ -251,6 +263,12 @@
     </url>
     <url>
         <loc>https://samirparhi.com/tags/shell-script/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://samirparhi.com/tags/snowflake/</loc>
+    </url>
+    <url>
+        <loc>https://samirparhi.com/tags/snowflake/page/1/</loc>
     </url>
     <url>
         <loc>https://samirparhi.com/tags/sql-injection/</loc>
