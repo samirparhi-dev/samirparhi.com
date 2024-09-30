@@ -105,7 +105,7 @@
 
     <div class="container mx-auto py-10 flex-col-reverse  ">
       <p class="text-4xl text-center py-10 text-sky-600">
-        Cross-Site Scripting (XSS) Vulnerability and Mitigation in Web Applications
+        Creating An Aks Private cluster with Istio and Application Gateway
       </p>
 
       <div class="flex container flex-wrap text-lg justify-center px-10 py-1 space-x-5 md:text-sm lg:text-xl">
@@ -118,12 +118,12 @@
         <div class="flex flex-wrap">
         <p class="text-violet-950 font-bold">Date:</p>
         <p class="text-red-800">
-           4 June 2024
+           4 July 2024
         </p>
       </div>
       <div class="flex flex-wrap">
         <p class="text-violet-950 font-bold">Word Count:</p>
-        <p class="text-red-800">2257</p>
+        <p class="text-red-800">2225</p>
       </div>
       <div class="flex flex-wrap">
         <p class="text-violet-950 font-bold">Estimated Read Time:</p>
@@ -142,33 +142,38 @@
 </blockquote>
 <p>Among all the various way of the application deployment strategy, Most of the organisation has adopted or are adopting to containerise their application and run in a Kubernetes cluster. This adaptation is influenced by the features and the advantages provided by Kubernetes. Due to this popularity, all the cloud providers had also introduced the managed Kubernetes clusters. In the case of Azure, it is known as Azure Kubernetes services (aka AKS).</p>
 <p>In this article, we will talk about how we can create a more secure infrastructure with the azure Kubernetes services and azure application gateway. It has all the information and detailed explanations to get your cluster bootstrapped and start serving your production workload. Let’s get started.</p>
-<h3 id="prerequisite">Prerequisite:</h3>
-<pre style="background-color:#212121;color:#eeffff;"><code><span>1. You should have a valid subscription and proper access in Azure to create an AKS service. Essentially, it better to have a dedicated resource group created for the AKS and you should have the owner permission to that resource group.
-</span><span>2. Understanding of Azure private DNS zone.
-</span><span>3. Understanding of Istio service mesh. In case you don&#39;t know how to deploy, make use of Meshery (https://meshery.io/) which will install and configure the service mesh for you.
-</span><span>4. Should know various K8s concepts essentially the POD, Services, Deployment, Namespace, Ingress Controller, and ingress gateway. Helm and kubectl should be installed.
-</span><span>5. Idea about the CIDR block.
-</span><span>6. Of course azure-cli should be installed and have an Idea to run az Command.
-</span></code></pre>
-<p>Networking Concept in AKS:</p>
+<h3 id="prerequisite">Prerequisite</h3>
+<ol>
+<li>You should have a valid subscription and proper access in Azure to create an AKS service.
+Essentially, it better to have a dedicated resource group created for the AKS and you should have the owner permission to that resource group.</li>
+<li>Understanding of Azure private DNS zone.</li>
+<li>Understanding of Istio service mesh. In case you don’t know how to deploy, make use of Meshery (https://meshery.io/) which will install and configure the service mesh for you.</li>
+<li>Should know various K8s concepts essentially the POD, Services, Deployment, Namespace, Ingress Controller, and ingress gateway. Helm and kubectl should be installed.</li>
+<li>Idea about the CIDR block.</li>
+<li>Of course azure-cli should be installed and have an Idea to run az Command.</li>
+</ol>
+<h4 id="networking-concept-in-aks">Networking Concept in AKS:</h4>
 <p>Before getting into the configuration, let’s understand the concept of networking used in the azure Kubernetes cluster which with ease our process of setting up the private cluster. Azure provides two kinds of networking in AKS namely kubenet and azure CNI.</p>
-<p>Kubenet : This is the default networking being used by AKS cluster. This by default takes care of all the networking behind the scene.</p>
+<ul>
+<li><strong>Kubenet :</strong>  This is the default networking being used by AKS cluster. This by default takes care of all the networking behind the scene.</li>
+</ul>
 <blockquote>
 <p>Note: All AKS nodes get an IP address from the Azure virtual network subnet. Pods receive an IP address from a logically different address space to the Azure virtual network subnet of the nodes. Network address translation (NAT) is then configured so that the pods can reach resources on the Azure virtual network.</p>
 </blockquote>
-<p>Azure CNI: This is also termed advance networking. If you choose to go with the CNI route you have to do some more homework but the beauty is you can customize the networking the way you want. We will be using CNI in our context.</p>
+<ul>
+<li><strong>Azure CNI:</strong> This is also termed advance networking. If you choose to go with the CNI route you have to do some more homework but the beauty is you can customize the networking the way you want. We will be using CNI in our context.</li>
+</ul>
 <blockquote>
 <p>Note:Every pod gets an IP address from the subnet and can be accessed directly. These IP addresses must be unique across your network space, and must be planned in advance. Each node has a configuration parameter for the maximum number of pods that it supports. The equivalent number of IP addresses per node is then reserved upfront for that node. You can configure the maximum pods deployable to a node at cluster create time or when creating new node pools. If you don’t specify maxPods when creating new node pools, you receive a default value of 110 for kubenet.</p>
 </blockquote>
 <h3 id="ip-planning">IP planning</h3>
 <p>As discussed, Azure CNI assigns all the real IP to both Nodes and the pods from a given subnet space, So the Subnet should be capable enough to hold these IP ranges
 The calculation below explains the min requirement of no IPs.</p>
-<p>Assumption :</p>
-<pre style="background-color:#212121;color:#eeffff;"><code><span>• We are creating a 3 node cluster - Means 3 IPs will be taken from the subnet assigned to K8s.
-</span><span>• By default each node can have a max of 30 Pods i.e., 30*3=90 IP should be taken from the same subnet.
-</span><span>• From a subnet, azure reserves 5 IP addresses for its internal use.
-</span><span>• One extra node to be considered for the rolling update which will occupy 31 IPs (considering 30 pods per node by default)
-</span></code></pre>
+<p><strong>Assumption :</strong></p>
+<p>• We are creating a 3 node cluster - Means 3 IPs will be taken from the subnet assigned to K8s.</p>
+<p>• By default each node can have a max of 30 Pods i.e., 30*3=90 IP should be taken from the same subnet.</p>
+<p>• From a subnet, azure reserves 5 IP addresses for its internal use.</p>
+<p>• One extra node to be considered for the rolling update which will occupy 31 IPs (considering 30 pods per node by default)</p>
 <blockquote>
 <p>Note: Maximum Pod per node are limited to 250</p>
 </blockquote>
@@ -178,73 +183,71 @@ The calculation below explains the min requirement of no IPs.</p>
 </blockquote>
 <h3 id="cidrs">CIDRs :</h3>
 <p>Let’s Design our CIDR for various network requirements of AKS cluster via Azure CNI Approach.   Vnet CIDR: 192.168.0.0/20 - total 4,096 Ips (192.168.0.0 to 192.168.15.255)   AKS primary Subnet CIDR: 192.168.0.0/21 - total 2043 IPs (192.168.0.0 - 192.168.7.255)</p>
-<p>Terminology Used in Azure CNI:</p>
-<p>Virtual network: This is the virtual network, where you want to create your K8S Cluster. Here, I have taken my Vnet range as 192.168.0.0/20.</p>
-<p>**Cluster Subnet: ** This is the Subnet inside which your K8S cluster will be created. Please note that you Should create the subnet prior to create the AKS cluster and, it should have sufficient address space. The address space requirement explained at the beginning of this document. For example, I am choosing 192.168.0.0/21 range as my subnet for the cluster.</p>
-<p>**Kubernetes service address range: ** This is the  CIDR or IP range that is the K8S services will be using. Please note that this IP range must not be part of any of the subnets in your cluster. In simple words, it should be different from your subnet IP ranges. Important to note that this IP range should be in the range of your VNET IP range.</p>
+<h4 id="terminology-used-in-azure-cni">Terminology Used in Azure CNI:</h4>
+<p><strong>Virtual network:</strong>  This is the virtual network, where you want to create your K8S Cluster. Here, I have taken my Vnet range as <code>192.168.0.0/20</code>.</p>
+<p><strong>Cluster Subnet:</strong> This is the Subnet inside which your K8S cluster will be created. Please note that you Should create the subnet prior to create the AKS cluster and, it should have sufficient address space. The address space requirement explained at the beginning of this document. For example, I am choosing <code>192.168.0.0/21</code> range as my subnet for the cluster.</p>
+<p><strong>Kubernetes service address range:</strong> This is the  CIDR or IP range that is the K8S services will be using. Please note that this IP range must not be part of any of the subnets in your cluster. In simple words, it should be different from your subnet IP ranges. Important to note that this IP range should be in the range of your VNET IP range.</p>
+<blockquote>
 <p>For example, this address range can not be in 192.168.0.0/21 range, as my cluster subnet is using it, but it should be in 192.168.0.0/20 range. So I am choosing 192.168.8.0/22 (total 1024 IPs (192.168.8.0 - 192.168.11.255))</p>
-<p>Kubernetes DNS service IP address: This is a Distinct IP address from your Kubernetes service address range. Please note that this should be the first and last IP address of your Kubernetes service address range.   For example,  in Kubernetes service address range is 192.168.8.0/22. Kubernetes DNS service IP address can not be 192.168.8.0 or 192.168.11.255. So I am choosing 192.168.8.8.</p>
+</blockquote>
+<p><strong>Kubernetes DNS service IP address:</strong> This is a Distinct IP address from your Kubernetes service address range. Please note that this should be the first and last IP address of your Kubernetes service address range.   For example,  in Kubernetes service address range is <code>192.168.8.0/22</code>. Kubernetes DNS service IP address can not be <code>192.168.8.0</code> or <code>192.168.11.255</code>. So I am choosing <code>192.168.8.8</code>.</p>
 <p>Docker Bridge address: this is the address range that will be used for docker bridge networking.</p>
-<p>**Few things to remember :  **</p>
-<pre style="background-color:#212121;color:#eeffff;"><code><span>1. This range should not be in the range of the Kubernetes service address range. In this case 192.168.8.0/22.
-</span><span>2. Addresses matching the format ...0 or ...255 are reserved and cannot be used.
-</span><span>3. The prefix must be between 1 and 29.
-</span><span>4. The IP address cannot be the first or last address in its CIDR block In my scenario, I am choosing 192.168.12.2/28(total 16 IPs (192.168.12.0 - 192.168.12.15)), which satisfies all the above conditions.
-</span></code></pre>
-<p>**DNS name prefix: ** This is the DNS name that will be resolved for the API server of the Kubernetes cluster. You will use this FQDN to access your API server after you host your AKS cluster and the application.</p>
-<p>What is Azure Application Gateway?</p>
+<p><strong>Few things to remember :</strong></p>
+<ol>
+<li>This range should not be in the range of the Kubernetes service address range. In this case <code>192.168.8.0/22</code>.</li>
+<li>Addresses matching the format <code>...0 or ...255</code> are reserved and cannot be used.</li>
+<li>The prefix must be between 1 and 29.</li>
+<li>The IP address cannot be the first or last address in its CIDR block In my scenario, I am choosing <code>192.168.12.2/28</code>(total 16 IPs (<code>192.168.12.0</code> - <code>192.168.12.15</code>)), which satisfies all the above conditions.</li>
+</ol>
+<p><strong>DNS name prefix:</strong> This is the DNS name that will be resolved for the API server of the Kubernetes cluster. You will use this FQDN to access your API server after you host your AKS cluster and the application.</p>
+<h4 id="what-is-azure-application-gateway">What is Azure Application Gateway?</h4>
 <p>Azure Application Gateway is a web traffic load balancer that enables you to manage traffic to your web applications. This also provides the firewall capability to secure the traffic to your application. Below image from Microsoft documentation.</p>
-<p>Our Solution Architecture Diagram: {moved to Premium content}</p>
-<p>**Explanation: **</p>
+<h5 id="our-solution-architecture-diagram">Our Solution Architecture Diagram:</h5>
+<p><img src="https://raw.githubusercontent.com/samirparhi-dev/samirparhi-dev/main/blog/sol-arch-azure.png" alt="Our Architechture" /></p>
+<p><strong>Explanation:</strong></p>
 <p>When users request for the website, it reaches the name server from where you have purchased your DNS (it can be azure or any 3rd party). From the name server, it finds A record and directed to the public IP of the Azure application gateway. When the request reaches the Application gateway, it validates the SSL certificate and runs the firewall rules too. then the Rules in the application gateway redirect it to its proper backend. The backend-pool for the application gateway is the istio ingress gateway. As we are constructing a fully private cluster (meaning all the IPs in the AKS cluster are private IPs) we have used DNS private Zone to implement a trusted connection between all the azure services in our VNET.</p>
 <h3 id="put-things-to-action">Put things to Action:</h3>
 <h4 id="step-1">Step 1:</h4>
 <p>Create a resource group name k8s-rg in centralindia location (make sure to set the subscription first( here I am using my subscription named Azure)</p>
-<pre><code class="text-sm">
-az account set --subscription “Azure”
-az group create -l centralindia -n k8s-rg
-</code></pre>
+<p><code>az account set --subscription "Azure" &amp;&amp; az group create -l centralindia -n k8s-rg</code></p>
 <h4 id="step-2-create-vnet-and-subnet-in-the-above-created-resource-group">Step 2: Create vnet and subnet in the above-created resource group.</h4>
-<p>az network vnet create -g k8s-rg -n k8s-vnet –address-prefix 192.168.0.0/20 <br />
-–subnet-name k8s-subnet –subnet-prefix 192.168.0.0/21</p>
+<pre style="background-color:#212121;color:#eeffff;"><code><span>az network vnet create -g k8s-rg -n k8s-vnet --address-prefix 192.168.0.0/20 \
+</span><span>--subnet-name k8s-subnet --subnet-prefix 192.168.0.0/21
+</span></code></pre>
+<blockquote>
 <p>Note: I have used the CIDR that is discussed above. Please refer earlier section.</p>
+</blockquote>
 <h4 id="step-3-now-let-s-get-the-id-of-the-subnet-we-created-earlier">Step 3: Now let’s get the ID of the subnet we created earlier</h4>
-<pre><code class="text-sm">
-    az network vnet subnet list \     
---resource-group k8s-rg \     
---vnet-name k8s-vnet \     
---query "[0].id" --output tsv
-</code></pre>
+<pre style="background-color:#212121;color:#eeffff;"><code><span>    az network vnet subnet list \     
+</span><span>--resource-group k8s-rg \     
+</span><span>--vnet-name k8s-vnet \     
+</span><span>--query &quot;[0].id&quot; --output tsv
+</span></code></pre>
 <p>you will get the below output, save it for use in the next step:</p>
 <p><code>/subscriptions/&lt;subscriptionID&gt;/resourceGroups/rg-k8s/providers/Microsoft.Network/virtualNetworks/k8s-vnet/subnets/k8s-subnet</code></p>
 <h4 id="step-4-let-s-create-our-aks-cluster">Step 4. Let’s create our AKS cluster:</h4>
-<pre><code class="text-sm">
-az aks create \
-    --resource-group k8s-rg \
-    --name k8s-private \
-    --network-plugin azure \
-    --vnet-subnet-id /subscriptions/<subscriptionID>/resourceGroups/rg-k8s/providers/Microsoft.Network/virtualNetworks/k8s-vnet/subnets/k8s-subnet \
-    --docker-bridge-address 192.168.12.2/28 \
-    --dns-service-ip 192.168.8.8 \
-    --service-cidr 192.168.8.0/22 \
-    --generate-ssh-keys
-</code></pre>
+<pre style="background-color:#212121;color:#eeffff;"><code><span>az aks create \
+</span><span>    --resource-group k8s-rg \
+</span><span>    --name k8s-private \
+</span><span>    --network-plugin azure \
+</span><span>    --vnet-subnet-id /subscriptions/&lt;subscriptionID&gt;/resourceGroups/rg-k8s/providers/Microsoft.Network/virtualNetworks/k8s-vnet/subnets/k8s-subnet \
+</span><span>    --docker-bridge-address 192.168.12.2/28 \
+</span><span>    --dns-service-ip 192.168.8.8 \
+</span><span>    --service-cidr 192.168.8.0/22 \
+</span><span>    --generate-ssh-keys
+</span></code></pre>
 <h4 id="step-5-add-node-pool-to-aks-cluster">Step 5. add node pool to AKS Cluster:</h4>
-<pre><code class="text-sm">
-az aks nodepool add \
-    --cluster-name k8s-private \
-    --resource-group \
-    --name k8s-pool \ 
-    --vnet-subnet-id /subscriptions/<subscriptionID>/resourceGroups/rg-k8s/providers/Microsoft.Network/virtualNetworks/k8s-vnet/subnets/k8s-subnet
-
-</code></pre>
-<h4 id="step-6-connect-to-your-cluster">Step 6. Connect to your cluster:</h4>
-<pre><code class="text-sm">
-az aks get-credentials --resource-group k8s-rg --name k8s-private \
-kubectl get nodes
-NAME                               STATUS   ROLES   AGE     VERSION
-aks-k8s-pool-63828758-vmss000002   Ready    agent   6d11h   v1.19.11
-</code></pre>
+<pre style="background-color:#212121;color:#eeffff;"><code><span>az aks nodepool add \
+</span><span>    --cluster-name k8s-private \
+</span><span>    --resource-group \
+</span><span>    --name k8s-pool \ 
+</span><span>    --vnet-subnet-id /subscriptions/&lt;subscriptionID&gt;/resourceGroups/rg-k8s/providers/Microsoft.Network/virtualNetworks/k8s-vnet/subnets/k8s-subnet
+</span></code></pre>
+<pre style="background-color:#212121;color:#eeffff;"><code><span>az aks get-credentials --resource-group k8s-rg --name k8s-private \
+</span><span>kubectl get nodes
+</span><span>NAME                               STATUS   ROLES   AGE     VERSION
+</span><span>aks-k8s-pool-63828758-vmss000002   Ready    agent   6d11h   v1.19.11
+</span></code></pre>
 <p>Now the AKS cluster is ready.</p>
 <h4 id="step-7-install-istio-through-meshery">Step 7. Install Istio through Meshery.</h4>
 <p>Meshery is an open-source, service mesh management plane that enables the adoption, operation, and management of any service mesh and its workloads.</p>

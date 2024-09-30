@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>samirparhi.com - CI &amp; CD</title>
+    <subtitle>Blog Site of Samir Parhi</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://samirparhi.com/tags/ci-cd/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://samirparhi.com"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2024-04-30T00:00:00+00:00</updated>
+    <id>https://samirparhi.com/tags/ci-cd/atom.xml</id>
+    <entry xml:lang="en">
+        <title>The System Design for Various Usecase Fully Automated</title>
+        <published>2024-04-30T00:00:00+00:00</published>
+        <updated>2024-04-30T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Samir Ranjan Parhi
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://samirparhi.com/devsecops-pipeline-setup-for-fully-automated-deployment/"/>
+        <id>https://samirparhi.com/devsecops-pipeline-setup-for-fully-automated-deployment/</id>
+        
+        <content type="html" xml:base="https://samirparhi.com/devsecops-pipeline-setup-for-fully-automated-deployment/">&lt;h4 id=&quot;devsecops-pipeline&quot;&gt;DevSecOps Pipeline&lt;&#x2F;h4&gt;
+&lt;p&gt;This pipeline automates the process of building, scanning, signing, and deploying container images while ensuring compliance with security policies. Here’s how it works:&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Code Base (GitHub):&lt;&#x2F;strong&gt; The pipeline is triggered when a pull request (PR) is raised.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Build Code and Container:&lt;&#x2F;strong&gt; The application code is built, followed by container creation.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Trivy Static Container Scan:&lt;&#x2F;strong&gt; A security scan is performed to check for vulnerabilities and misconfigurations.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Condition Check:&lt;&#x2F;strong&gt; The scan results are analyzed. If the container passes, the process continues. If it fails, the team is notified via email or Slack.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Attach Image Using Cosign:&lt;&#x2F;strong&gt; If the scan is successful, the container image is signed using Cosign for added security.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Upload Image to Registry:&lt;&#x2F;strong&gt; The signed image is pushed to the container registry for deployment.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Visualize with Grafana:&lt;&#x2F;strong&gt; The metrics related to the build and scan processes are visualized using Grafana for continuous monitoring.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;samirparhi-dev&#x2F;samirparhi-dev&#x2F;main&#x2F;blog&#x2F;DevSecOpsPipeline.png&quot; alt=&quot;Our Architechture&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Infrastructure as Code Pipeline
+This pipeline leverages IaC (Infrastructure as Code) and GitOps principles to provision and secure Kubernetes clusters.&lt;&#x2F;p&gt;
+&lt;h4 id=&quot;iac-pipeline-steps&quot;&gt;IaC Pipeline Steps:&lt;&#x2F;h4&gt;
+&lt;p&gt;&lt;strong&gt;Infra as Code (GitHub):&lt;&#x2F;strong&gt; The process starts with version-controlled infrastructure code scripts.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Release Candidate:&lt;&#x2F;strong&gt; A PR is raised, signaling the release of the new infrastructure configuration.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;OpenTofu Script Execution:&lt;&#x2F;strong&gt; The OpenTofu tool is used to apply the infrastructure changes.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Provision Kubernetes Cluster:&lt;&#x2F;strong&gt; A new Kubernetes cluster is provisioned using the approved configurations.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Security Scans (Kube-Bench):&lt;&#x2F;strong&gt; The newly created cluster is scanned for vulnerabilities using tools like kube-bench, Trivy, and others.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Continuous Deployment:&lt;&#x2F;strong&gt; After the scans pass, the infrastructure is deployed.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Observability:&lt;&#x2F;strong&gt; Metrics related to infrastructure health and security are monitored using Grafana and other observability tools.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Improvements:&lt;&#x2F;strong&gt; The pipeline continuously loops back for improvements based on the observability insights.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;samirparhi-dev&#x2F;samirparhi-dev&#x2F;main&#x2F;blog&#x2F;Infra-as-a-code-pipeline.png&quot; alt=&quot;Our Architechture&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;These are just Fundamentals for Achiving Basic Security Ops using cloud Technology.&lt;&#x2F;p&gt;
+&lt;p&gt;Happy Learning !&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>
