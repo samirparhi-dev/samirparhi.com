@@ -98,6 +98,7 @@ DevSecOps_skills = [
     "Shell",
     ]
 Programming_skills = [
+    "LangChain",
     "Python",
     "PyTorch", 
     "NumPy",
