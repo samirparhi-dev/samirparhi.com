@@ -13,20 +13,17 @@
     </div>
     </div>
 
-    <div class="flex-wrap py-5 ">
-        <p class="text-3xl font-sm py-5 px-10 zigzag-underline "><span class="text-4xl font-bold text-fuchsia-900">E</span>xpertise 📱 </p>
-
         <div class="flex-wrap py-5 px-5 ">
             <p class="text-3xl font-extrabold zigzag-underline py-5 px-5 "><span class="text-4xl font-bold text-red-700">C</span>reator of:  </p>
     
             <div class="px-5 flex flex-wrap justify-center">
-                <ul class=" px-5 list-none flex text-xl space-x-6 py-2 px-auto mx-auto rounded-xl">
+                <ul class="list-none flex flex-wrap text-xl space-x-2 space-y-1 px-auto mx-auto rounded-xl">
                     {% for item in config.extra.my_collab %}
-                    <li class=" px-5 text-wrap shadow bg-purple-50 bg-gradient-to-r from-transparent to-zinc-50 hover:bg-teal-50 text-slate-500 hover:text-lime-900 border-cyan-400 rounded-xl border-2">
-                        <p>
+                    <li class=" px-5 space-x-2 space-y-1 text-wrap flex-wrap shadow bg-purple-50 bg-gradient-to-r from-transparent to-zinc-50 hover:bg-teal-50 hover:text-lime-900 border-cyan-400 rounded-xl border-2"> 
+                        <p class="p-1 font-extrabold text-emerald-600">
                         <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer"> {{ item.name }}
                         </a>
-                        <p class="p-1 font-mono">
+                        <p class="p-1 font-extralight font-mono">
                             <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">
                             Crafted With : {{ item.Techstack}}
                             </a>
@@ -42,7 +39,7 @@
 
         <p class="text-3xl font-sm py-5 px-10 zigzag-underline "><span class="text-4xl font-bold text-fuchsia-900">D</span>evSecOps</p>
 
-        <ul class=" list-none flex space-x-2 space-y-1 px-10 py-3 flex-wrap ">
+        <ul class=" list-none flex space-x-2 space-y-1 px-10 py-auto flex-wrap ">
             {% for item in config.extra.DevSecOps_skills %}
             <li class="p-2 font-mono text-wrap shadow bg-purple-50 bg-gradient-to-r from-transparent to-zinc-50 hover:bg-teal-50 text-slate-500 hover:text-lime-900 border-red-500 rounded-md border-2">
                     {{ item }}
