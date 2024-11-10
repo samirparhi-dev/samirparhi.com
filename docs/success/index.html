@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Check Response</title>
+</head>
+<body>
+  <pre id="dataContainer" class="font-mono p-4 bg-gray-100"></pre>
+    <script id="jsonData" type="application/json">
+        {
+            "response": "Success"
+            "code":200
+        }
+    </script>
+    <script>
+        const jsonData = document.getElementById('jsonData').textContent;
+        const dataContainer = document.getElementById('dataContainer');
+        dataContainer.textContent = jsonData;
+    </script>
+</body>
+</html>
