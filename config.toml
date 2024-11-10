@@ -59,7 +59,7 @@ my_blog_menu = [
     { url = "https://samirparhi.com/#", menu = "Home" },
     { url = "https://samirparhi.com/about", menu = "About" },
     { url = "https://samirparhi.com/collab", menu = "Collaboration" },
-    { url = "https://samirparhi.com/connect", menu = "Get In Touch" },
+    { url = "https://samirparhi.com/connect", menu = "Connect" },
 
 ]
 
@@ -72,7 +72,8 @@ social_handle = [
 
 ]
 company_logo = [{ url = "img/brand/ls-lrt-logo-2024.png" }]
-profile_pic = [{ profile_pic_path = "img/profile_pic/my-portrait-recent.png" }]
+profile_pic = [{ profile_pic_path = "img/profile_pic/samir-profile-pic.png" }]
+brand_logo = [{ brand_logo_path = "img/brand/samirparhi-logo.png" }]
 
 DevSecOps_skills = [
     "DevOps",

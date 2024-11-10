@@ -2,7 +2,7 @@
 
 {% block body %}
 
-<div class=" from-cyan-100 to-rose-50 bg-gradient-to-l">
+<div class="from-cyan-500 via-indigo-600 to-rose-400">
     <div class="container mx-auto flex flex-wrap justify-between items-center py-3">
         <!-- Left side text -->
         <p class="text-fuchsia-600 lg:text-6xl text-2xl md:text-3xl py-auto px-auto px-5">
@@ -48,17 +48,17 @@
            Latest Featured Blogs  📖
         </p>
     </div>
-    <div class="container flex flex-wrap justify-center" id="posts-container">
+    <div class="container flex flex-wrap justify-center">
         {% for post in section.pages %}
-        <div class="w-full md:w-1/2 lg:w-1/3 p-4 post-card hidden">
-            <div class="bg-white bg-opacity-10 backdrop-blur-lg rounded-lg shadow-lg overflow-hidden h-full flex flex-col">
-                <div class="p-6 border border-fuchsia-900 h-full flex flex-col">
+        <div class="w-full md:w-1/2 lg:w-1/3 p-4 post-card">
+            <div class="bg-white bg-opacity-10 backdrop-blur-lg rounded-lg shadow-lg overflow-hidden h-auto">
+                <div class="p-6 border border-fuchsia-900">
                     <p class="text-2xl text-purple-700">
                         <a href="{{ post.permalink }}">
                             {{ post.title }}
                         </a>
                     </p>
-                    <p class="text-base text-slate-950 mt-4 flex-grow overflow-hidden text-ellipsis h-32">
+                    <p class="text-base text-slate-950 mt-4 flex-grow overflow-hidden text-ellipsis h-auto">
                         {{ post.description }}
                     </p>
                     <p class="text-fuchsia-900 mt-4">
@@ -71,14 +71,14 @@
         </div>
         {% endfor %}
     </div>
-    <div class="flex justify-between my-5 px-6">
+    <!-- <div class="flex justify-between my-5 px-6">
         <button id="prev-btn" class="bg-purple-500 text-white py-2 px-4 rounded-lg hover:bg-blue-700 disabled:opacity-50" disabled>⬅</button>
         <button id="next-btn" class="bg-purple-500 text-white py-2 px-4 rounded-lg hover:bg-blue-700 disabled:opacity-50">➡</button>
-    </div>
+    </div> -->
 
 </div>
 
-<script>
+<!-- <script>
     const postsPerPage = 5;
     const posts = document.querySelectorAll('.post-card');
     let currentPage = 1;
@@ -111,7 +111,7 @@
 
     // Initial Display
     showPosts(currentPage);
-</script>
+</script> -->
 
 
 

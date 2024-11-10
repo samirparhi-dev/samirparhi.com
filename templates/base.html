@@ -14,20 +14,44 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" href="{{ get_url(path="styles/styles.css") | safe }}" />
 </head>
-<body class="paper-like bg-opacity-80 min-h-40 from-cyan-100 to-rose-50 bg-gradient-to-l">
-    <header class="px-10 mx-auto from-cyan-100 to-rose-50 bg-gradient-to-l py-5">
-        <div class="mx-auto flex flex-nowrap items-center justify-between py-5">
+<body class="min-h-40">
+    <header class="py-5 px-5 from-cyan-500 via-indigo-600 to-rose-400 bg-gradient-to-r">
+        <div class="flex flex-nowrap items-center justify-between py-5 from-cyan-500 via-indigo-600 to-rose-400">
             <!-- Fixed-size, non-wrapping text -->
-            <div class="whitespace-nowrap">
-                <a href="/#" class="px-5 text-3xl font-semibold font-Comforta text-purple-900">
-                    Samir Ranjan Parhi
+            <div class="cursor-pointer">
+                <div class="px-5">
+                    <ul class="flex">
+                        <a href="/#">
+                            {% set mdata = get_image_metadata(path="img/brand/samirparhi-logo.png") %}
+                            {% set w = (mdata.width/2) | int %}
+                            {% set h = (mdata.height/2) | int %}
+    
+                            <ul class="flex">
+                                <a href="/#">
+                                    {% set mdata = get_image_metadata(path="img/brand/samirparhi-logo.png") %}
+                                    {% set w = (mdata.width/2) | int %}
+                                    {% set h = (mdata.height/2) | int %}
+            
+                                    {% set image = resize_image(path="img/brand/samirparhi-logo.png", width=w, height=h, op="fit_width") %}
+            
+                                    <img src="{{ image.url }}" srcset="/{{"img/brand/samirparhi-logo.png"}} 2x"/>
+                                
+                                </a>
+                            </ul>
+                        </a>
+                    </ul>
+                {% for item in config.extra.brand_logo %}
+                <a href="/#" class="flex px-5">
+                    
                 </a>
+                {% endfor %}
             </div>
+            
 
             <!-- Menu that wraps below the name on smaller screens -->
-            <div id="menu" class="list-none flex justify-center lg:justify-end space-x-4 lg:text-2xl sm:text-xs md:text-sm mt-4 lg:mt-0">
+            <div class="list-none px-5 flex flex-wrap justify-center lg:justify-end space-x-5 lg:text-xl sm:text-xs md:text-sm mt-4 lg:mt-0">
                 {% for item in config.extra.my_blog_menu %}
-                <li class="p-2 hover:text-violet-900 text-fuchsia-800">
+                <li class=" hover:text-violet-900 text-fuchsia-800 px-3">
                     <a href="{{ item.url }}">{{ item.menu }}</a>
                 </li>
                 {% endfor %}
