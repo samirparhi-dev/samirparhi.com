@@ -30,49 +30,55 @@
 For instance, in a blockchain scenario:&lt;&#x2F;p&gt;
 &lt;p&gt;when purchasing a diamond ring, the blockchain ensures the authenticity of the product from its mining origins to its delivery to the customer, despite involving numerous vendors and steps in the supply chain.&lt;&#x2F;p&gt;
 &lt;p&gt;Similarly, SBOM applies this logic to software. While we may utilise various modules or dependencies in our codebase to create impressive products, SBOM provides crucial information regarding the authenticity and vulnerabilities of these third-party components.&lt;&#x2F;p&gt;
-&lt;p&gt;So, SBOM is for Whom?&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;So, SBOM is for Whom?&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;Technically for Everyone (because privacy is our Rights not an option 😊)
 1. Primarily for developers, solution architects&#x2F;Consultants, delivery partners,
 2. Companies or individuals consuming the software
 3. Vendors or agencies providing its ongoing support (AMC).&lt;&#x2F;p&gt;
-&lt;p&gt;For whom it is a whistle blower?&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;For whom it is a whistle blower?&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;Based on recent analyses from various articles, it’s evident that there’s a growing trend towards embracing and promoting open source. While this is a positive development, the open nature of such projects means that they attract contributors and collaborators from around the globe who share their code. However, this openness also introduces potential risks. In some cases, developers may not adhere to best coding practices, particularly in popular codebases where thorough code reviews might not occur. Consequently, there’s a heightened risk of subpar code being committed to the codebase.&lt;&#x2F;p&gt;
-&lt;p&gt;What’s the solution then?&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;What’s the solution then?&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;Indeed, thanks to the global open-source community, initiatives have been taken to develop and promote SBOM tools, enabling meticulous scrutiny of each code segment. These tools can operate during various stages, including raising a PR, building applications, and containerizing code, ensuring thorough checks even when end customers consume the software. This advancement provides developers and technical professionals involved in product development with peace of mind. The SBOM tool space continues to evolve and improve daily. Let’s delve into some of these open-source SBOM tools:&lt;&#x2F;p&gt;
 &lt;ol&gt;
-&lt;li&gt;Sbomit: https:&#x2F;&#x2F;sbomit.dev&lt;&#x2F;li&gt;
-&lt;li&gt;Fossology: https:&#x2F;&#x2F;www.fossology.org&lt;&#x2F;li&gt;
-&lt;li&gt;Cyclonedx: https:&#x2F;&#x2F;cyclonedx.org&lt;&#x2F;li&gt;
-&lt;li&gt;Tldrlegal: https:&#x2F;&#x2F;www.tldrlegal.com&lt;&#x2F;li&gt;
-&lt;li&gt;Dep Scan:  https:&#x2F;&#x2F;github.com&#x2F;owasp-dep-scan&#x2F;dep-scan&lt;&#x2F;li&gt;
-&lt;li&gt;BOM for K8S:  https:&#x2F;&#x2F;github.com&#x2F;kubernetes-sigs&#x2F;bom&lt;&#x2F;li&gt;
-&lt;li&gt;SW360:  https:&#x2F;&#x2F;projects.eclipse.org&#x2F;projects&#x2F;technology.sw360&lt;&#x2F;li&gt;
-&lt;li&gt;Tern:  https:&#x2F;&#x2F;github.com&#x2F;tern-tools&#x2F;tern&lt;&#x2F;li&gt;
-&lt;li&gt;scancode-toolkit:  https:&#x2F;&#x2F;github.com&#x2F;nexB&#x2F;scancode-toolkit&lt;&#x2F;li&gt;
-&lt;li&gt;Fossid:  https:&#x2F;&#x2F;fossid.com&#x2F;open-source-audit-services&#x2F;&lt;&#x2F;li&gt;
-&lt;li&gt;Leanix:  https:&#x2F;&#x2F;www.leanix.net&#x2F;en&#x2F;wiki&#x2F;trm&#x2F;software-bill-of-materials&lt;&#x2F;li&gt;
-&lt;li&gt;Yoctoproject: https:&#x2F;&#x2F;www.yoctoproject.org&lt;&#x2F;li&gt;
-&lt;li&gt;Bomutils:  https:&#x2F;&#x2F;github.com&#x2F;hogliux&#x2F;bomutils&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;sbomit.dev&quot;&gt;Sbomit&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.fossology.org&quot;&gt;Fossology&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;cyclonedx.org&quot;&gt;Cyclonedx&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.tldrlegal.com&quot;&gt;Tldrlegal&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;owasp-dep-scan&#x2F;dep-scan&quot;&gt;Dep Scan&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;kubernetes-sigs&#x2F;bom&quot;&gt;BOM for K8S&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;projects.eclipse.org&#x2F;projects&#x2F;technology.sw360&quot;&gt;SW360&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;tern-tools&#x2F;tern&quot;&gt;Tern&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;nexB&#x2F;scancode-toolkit&quot;&gt;scancode-toolkit&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;fossid.com&#x2F;open-source-audit-services&#x2F;&quot;&gt;Fossid&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.leanix.net&#x2F;en&#x2F;wiki&#x2F;trm&#x2F;software-bill-of-materials&quot;&gt;Leanix&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.yoctoproject.org&quot;&gt;Yoctoproject&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;hogliux&#x2F;bomutils&quot;&gt;Bomutils&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ol&gt;
-&lt;p&gt;Popular Reporting Standards:
-SPDX :  https:&#x2F;&#x2F;spdx.dev&#x2F;use&#x2F;tools&#x2F;open-source-tools&#x2F;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Popular Reporting Standards:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;spdx.dev&#x2F;use&#x2F;tools&#x2F;open-source-tools&#x2F;&quot;&gt;SPDX&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
 &lt;p&gt;Is there a way to ensure End-user Confidence ?&lt;&#x2F;p&gt;
 &lt;p&gt;Absolutely, we possess the means to attest and sign our products, thereby offering transparency regarding the risk posture to end customers. Credit goes to the open-source community for dedicating efforts to develop tools capable of attesting and verifying containerized binaries and files. This allows any end customer to verify the risk posture of the software being consumed using the generated certificate.&lt;&#x2F;p&gt;
 &lt;p&gt;Few Open Source Attestation Tools are listed below :&lt;&#x2F;p&gt;
-&lt;p&gt;Tools:&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;tools&quot;&gt;Tools:&lt;&#x2F;h3&gt;
 &lt;ol&gt;
-&lt;li&gt;Sigstore’s Cosign: https:&#x2F;&#x2F;www.sigstore.dev  (GitHub:  https:&#x2F;&#x2F;github.com&#x2F;sigstore&#x2F;cosign)&lt;&#x2F;li&gt;
-&lt;li&gt;Notary:  https:&#x2F;&#x2F;github.com&#x2F;notaryproject&#x2F;notary&lt;&#x2F;li&gt;
-&lt;li&gt;DCT: https:&#x2F;&#x2F;docs.docker.com&#x2F;engine&#x2F;security&#x2F;trust&lt;&#x2F;li&gt;
-&lt;li&gt;In-toto:  https:&#x2F;&#x2F;github.com&#x2F;in-toto&#x2F;attestation&lt;&#x2F;li&gt;
-&lt;li&gt;Portieris:  https:&#x2F;&#x2F;github.com&#x2F;IBM&#x2F;portieris&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.sigstore.dev&quot;&gt;Sigstore’s Cosign&lt;&#x2F;a&gt; (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;sigstore&#x2F;cosign&quot;&gt;GitHub&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;notaryproject&#x2F;notary&quot;&gt;Notary&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;docs.docker.com&#x2F;engine&#x2F;security&#x2F;trust&quot;&gt;DCT (Docker Content Trust)&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;in-toto&#x2F;attestation&quot;&gt;In-toto&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;IBM&#x2F;portieris&quot;&gt;Portieris&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ol&gt;
-&lt;p&gt;Open Source Frameworks:&lt;&#x2F;p&gt;
-&lt;p&gt;TUF: https:&#x2F;&#x2F;theupdateframework.io
-Open Source Registries:
-Harbor:  https:&#x2F;&#x2F;goharbor.io&#x2F;docs&#x2F;2.7.0&#x2F;working-with-projects&#x2F;working-with-images&#x2F;sign-images&#x2F;
-Docker Hub: &amp;lt;you know the link right🤔&amp;gt;&lt;&#x2F;p&gt;
-&lt;p&gt;In conclusion, SBOM is becoming indispensable in ensuring software authenticity and security, benefiting stakeholders across the development and consumption spectrum.
+&lt;h3 id=&quot;open-source-frameworks&quot;&gt;Open Source Frameworks:&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;theupdateframework.io&quot;&gt;TUF (The Update Framework)&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;open-source-registries&quot;&gt;Open Source Registries:&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;goharbor.io&#x2F;docs&#x2F;2.7.0&#x2F;working-with-projects&#x2F;working-with-images&#x2F;sign-images&#x2F;&quot;&gt;Harbor&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Docker Hub: &lt;em&gt;you know the link right 🤔&lt;&#x2F;em&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;After All, SBOM is becoming indispensable in ensuring software authenticity and security, benefiting stakeholders across the development and consumption spectrum.
 Hope you loved reading it. 🍻&lt;&#x2F;p&gt;
 </content>
         

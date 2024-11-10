@@ -14,33 +14,57 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" href="https://samirparhi.com/styles/styles.css" />
 </head>
-<body class="paper-like bg-opacity-80 min-h-40 from-cyan-100 to-rose-50 bg-gradient-to-l">
-    <header class="px-10 mx-auto from-cyan-100 to-rose-50 bg-gradient-to-l py-5">
-        <div class="mx-auto flex flex-nowrap items-center justify-between py-5">
+<body class="min-h-40">
+    <header class="py-5 px-5 from-cyan-500 via-indigo-600 to-rose-400 bg-gradient-to-r">
+        <div class="flex flex-nowrap items-center justify-between py-5 from-cyan-500 via-indigo-600 to-rose-400">
             <!-- Fixed-size, non-wrapping text -->
-            <div class="whitespace-nowrap">
-                <a href="/#" class="px-5 text-3xl font-semibold font-Comforta text-purple-900">
-                    Samir Ranjan Parhi
+            <div class="cursor-pointer">
+                <div class="px-5">
+                    <ul class="flex">
+                        <a href="/#">
+                            
+                            
+                            
+    
+                            <ul class="flex">
+                                <a href="/#">
+                                    
+                                    
+                                    
+            
+                                    
+            
+                                    <img src="https:&#x2F;&#x2F;samirparhi.com&#x2F;processed_images&#x2F;samirparhi-logo.b634d9429bb5a861.png" srcset="/img&#x2F;brand&#x2F;samirparhi-logo.png 2x"/>
+                                
+                                </a>
+                            </ul>
+                        </a>
+                    </ul>
+                
+                <a href="/#" class="flex px-5">
+                    
                 </a>
+                
             </div>
+            
 
             <!-- Menu that wraps below the name on smaller screens -->
-            <div id="menu" class="list-none flex justify-center lg:justify-end space-x-4 lg:text-2xl sm:text-xs md:text-sm mt-4 lg:mt-0">
+            <div class="list-none px-5 flex flex-wrap justify-center lg:justify-end space-x-5 lg:text-xl sm:text-xs md:text-sm mt-4 lg:mt-0">
                 
-                <li class="p-2 hover:text-violet-900 text-fuchsia-800">
+                <li class=" hover:text-violet-900 text-fuchsia-800 px-3">
                     <a href="https:&#x2F;&#x2F;samirparhi.com&#x2F;#">Home</a>
                 </li>
                 
-                <li class="p-2 hover:text-violet-900 text-fuchsia-800">
+                <li class=" hover:text-violet-900 text-fuchsia-800 px-3">
                     <a href="https:&#x2F;&#x2F;samirparhi.com&#x2F;about">About</a>
                 </li>
                 
-                <li class="p-2 hover:text-violet-900 text-fuchsia-800">
+                <li class=" hover:text-violet-900 text-fuchsia-800 px-3">
                     <a href="https:&#x2F;&#x2F;samirparhi.com&#x2F;collab">Collaboration</a>
                 </li>
                 
-                <li class="p-2 hover:text-violet-900 text-fuchsia-800">
-                    <a href="https:&#x2F;&#x2F;samirparhi.com&#x2F;connect">Get In Touch</a>
+                <li class=" hover:text-violet-900 text-fuchsia-800 px-3">
+                    <a href="https:&#x2F;&#x2F;samirparhi.com&#x2F;connect">Connect</a>
                 </li>
                 
             </div>
@@ -70,7 +94,7 @@
       </div>
       <div class="flex flex-wrap">
         <p class="text-violet-950 font-bold">Word Count:</p>
-        <p class="text-red-800">700</p>
+        <p class="text-red-800">706</p>
       </div>
       <div class="flex flex-wrap">
         <p class="text-violet-950 font-bold">Estimated Read Time:</p>
@@ -90,49 +114,55 @@
 For instance, in a blockchain scenario:</p>
 <p>when purchasing a diamond ring, the blockchain ensures the authenticity of the product from its mining origins to its delivery to the customer, despite involving numerous vendors and steps in the supply chain.</p>
 <p>Similarly, SBOM applies this logic to software. While we may utilise various modules or dependencies in our codebase to create impressive products, SBOM provides crucial information regarding the authenticity and vulnerabilities of these third-party components.</p>
-<p>So, SBOM is for Whom?</p>
+<p><strong>So, SBOM is for Whom?</strong></p>
 <p>Technically for Everyone (because privacy is our Rights not an option 😊)
 1. Primarily for developers, solution architects/Consultants, delivery partners,
 2. Companies or individuals consuming the software
 3. Vendors or agencies providing its ongoing support (AMC).</p>
-<p>For whom it is a whistle blower?</p>
+<p><strong>For whom it is a whistle blower?</strong></p>
 <p>Based on recent analyses from various articles, it’s evident that there’s a growing trend towards embracing and promoting open source. While this is a positive development, the open nature of such projects means that they attract contributors and collaborators from around the globe who share their code. However, this openness also introduces potential risks. In some cases, developers may not adhere to best coding practices, particularly in popular codebases where thorough code reviews might not occur. Consequently, there’s a heightened risk of subpar code being committed to the codebase.</p>
-<p>What’s the solution then?</p>
+<p><strong>What’s the solution then?</strong></p>
 <p>Indeed, thanks to the global open-source community, initiatives have been taken to develop and promote SBOM tools, enabling meticulous scrutiny of each code segment. These tools can operate during various stages, including raising a PR, building applications, and containerizing code, ensuring thorough checks even when end customers consume the software. This advancement provides developers and technical professionals involved in product development with peace of mind. The SBOM tool space continues to evolve and improve daily. Let’s delve into some of these open-source SBOM tools:</p>
 <ol>
-<li>Sbomit: https://sbomit.dev</li>
-<li>Fossology: https://www.fossology.org</li>
-<li>Cyclonedx: https://cyclonedx.org</li>
-<li>Tldrlegal: https://www.tldrlegal.com</li>
-<li>Dep Scan:  https://github.com/owasp-dep-scan/dep-scan</li>
-<li>BOM for K8S:  https://github.com/kubernetes-sigs/bom</li>
-<li>SW360:  https://projects.eclipse.org/projects/technology.sw360</li>
-<li>Tern:  https://github.com/tern-tools/tern</li>
-<li>scancode-toolkit:  https://github.com/nexB/scancode-toolkit</li>
-<li>Fossid:  https://fossid.com/open-source-audit-services/</li>
-<li>Leanix:  https://www.leanix.net/en/wiki/trm/software-bill-of-materials</li>
-<li>Yoctoproject: https://www.yoctoproject.org</li>
-<li>Bomutils:  https://github.com/hogliux/bomutils</li>
+<li><a href="https://sbomit.dev">Sbomit</a></li>
+<li><a href="https://www.fossology.org">Fossology</a></li>
+<li><a href="https://cyclonedx.org">Cyclonedx</a></li>
+<li><a href="https://www.tldrlegal.com">Tldrlegal</a></li>
+<li><a href="https://github.com/owasp-dep-scan/dep-scan">Dep Scan</a></li>
+<li><a href="https://github.com/kubernetes-sigs/bom">BOM for K8S</a></li>
+<li><a href="https://projects.eclipse.org/projects/technology.sw360">SW360</a></li>
+<li><a href="https://github.com/tern-tools/tern">Tern</a></li>
+<li><a href="https://github.com/nexB/scancode-toolkit">scancode-toolkit</a></li>
+<li><a href="https://fossid.com/open-source-audit-services/">Fossid</a></li>
+<li><a href="https://www.leanix.net/en/wiki/trm/software-bill-of-materials">Leanix</a></li>
+<li><a href="https://www.yoctoproject.org">Yoctoproject</a></li>
+<li><a href="https://github.com/hogliux/bomutils">Bomutils</a></li>
 </ol>
-<p>Popular Reporting Standards:
-SPDX :  https://spdx.dev/use/tools/open-source-tools/</p>
+<p><strong>Popular Reporting Standards:</strong></p>
+<ul>
+<li><a href="https://spdx.dev/use/tools/open-source-tools/">SPDX</a></li>
+</ul>
 <p>Is there a way to ensure End-user Confidence ?</p>
 <p>Absolutely, we possess the means to attest and sign our products, thereby offering transparency regarding the risk posture to end customers. Credit goes to the open-source community for dedicating efforts to develop tools capable of attesting and verifying containerized binaries and files. This allows any end customer to verify the risk posture of the software being consumed using the generated certificate.</p>
 <p>Few Open Source Attestation Tools are listed below :</p>
-<p>Tools:</p>
+<h3 id="tools">Tools:</h3>
 <ol>
-<li>Sigstore’s Cosign: https://www.sigstore.dev  (GitHub:  https://github.com/sigstore/cosign)</li>
-<li>Notary:  https://github.com/notaryproject/notary</li>
-<li>DCT: https://docs.docker.com/engine/security/trust</li>
-<li>In-toto:  https://github.com/in-toto/attestation</li>
-<li>Portieris:  https://github.com/IBM/portieris</li>
+<li><a href="https://www.sigstore.dev">Sigstore’s Cosign</a> (<a href="https://github.com/sigstore/cosign">GitHub</a>)</li>
+<li><a href="https://github.com/notaryproject/notary">Notary</a></li>
+<li><a href="https://docs.docker.com/engine/security/trust">DCT (Docker Content Trust)</a></li>
+<li><a href="https://github.com/in-toto/attestation">In-toto</a></li>
+<li><a href="https://github.com/IBM/portieris">Portieris</a></li>
 </ol>
-<p>Open Source Frameworks:</p>
-<p>TUF: https://theupdateframework.io
-Open Source Registries:
-Harbor:  https://goharbor.io/docs/2.7.0/working-with-projects/working-with-images/sign-images/
-Docker Hub: &lt;you know the link right🤔&gt;</p>
-<p>In conclusion, SBOM is becoming indispensable in ensuring software authenticity and security, benefiting stakeholders across the development and consumption spectrum.
+<h3 id="open-source-frameworks">Open Source Frameworks:</h3>
+<ul>
+<li><a href="https://theupdateframework.io">TUF (The Update Framework)</a></li>
+</ul>
+<h3 id="open-source-registries">Open Source Registries:</h3>
+<ul>
+<li><a href="https://goharbor.io/docs/2.7.0/working-with-projects/working-with-images/sign-images/">Harbor</a></li>
+<li>Docker Hub: <em>you know the link right 🤔</em></li>
+</ul>
+<p>After All, SBOM is becoming indispensable in ensuring software authenticity and security, benefiting stakeholders across the development and consumption spectrum.
 Hope you loved reading it. 🍻</p>
 
           
@@ -148,6 +178,10 @@ Hope you loved reading it. 🍻</p>
               
               <a href="https://samirparhi.com/tags/sbom/" class="text-sky-700 flex hover:underline mx-2">
                 #SBOM 
+              </a>
+              
+              <a href="https://samirparhi.com/tags/opensource/" class="text-sky-700 flex hover:underline mx-2">
+                #OpenSource 
               </a>
               
             </p>
