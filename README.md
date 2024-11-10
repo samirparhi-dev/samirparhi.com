@@ -2,4 +2,4 @@
 
 The is the 💼  Website of `https://samirparhi.com`.
 
-📝 Maintained and Createdby @samirparhi-dev.
+📝 Maintained and Createdby @samirparhi-dev
