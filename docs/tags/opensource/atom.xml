@@ -82,10 +82,12 @@ For instance, in a blockchain scenario:&lt;&#x2F;p&gt;
 &lt;p&gt;when purchasing a diamond ring, the blockchain ensures the authenticity of the product from its mining origins to its delivery to the customer, despite involving numerous vendors and steps in the supply chain.&lt;&#x2F;p&gt;
 &lt;p&gt;Similarly, SBOM applies this logic to software. While we may utilise various modules or dependencies in our codebase to create impressive products, SBOM provides crucial information regarding the authenticity and vulnerabilities of these third-party components.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;strong&gt;So, SBOM is for Whom?&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
-&lt;p&gt;Technically for Everyone (because privacy is our Rights not an option 😊)
-1. Primarily for developers, solution architects&#x2F;Consultants, delivery partners,
-2. Companies or individuals consuming the software
-3. Vendors or agencies providing its ongoing support (AMC).&lt;&#x2F;p&gt;
+&lt;p&gt;Technically for Everyone (because privacy is our Rights not an option 😊)&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Primarily for developers, solution architects&#x2F;Consultants, delivery partners,&lt;&#x2F;li&gt;
+&lt;li&gt;Companies or individuals consuming the software&lt;&#x2F;li&gt;
+&lt;li&gt;Vendors or agencies providing its ongoing support (AMC).&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
 &lt;p&gt;&lt;strong&gt;For whom it is a whistle blower?&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;Based on recent analyses from various articles, it’s evident that there’s a growing trend towards embracing and promoting open source. While this is a positive development, the open nature of such projects means that they attract contributors and collaborators from around the globe who share their code. However, this openness also introduces potential risks. In some cases, developers may not adhere to best coding practices, particularly in popular codebases where thorough code reviews might not occur. Consequently, there’s a heightened risk of subpar code being committed to the codebase.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;strong&gt;What’s the solution then?&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
