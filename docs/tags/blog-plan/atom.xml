@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>samirparhi.com - blog-plan</title>
+    <subtitle>Blog Site of Samir Parhi</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://samirparhi.com/tags/blog-plan/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://samirparhi.com"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2024-06-13T00:00:00+00:00</updated>
+    <id>https://samirparhi.com/tags/blog-plan/atom.xml</id>
+    <entry xml:lang="en">
+        <title>The Plan 🤞🏼</title>
+        <published>2024-06-13T00:00:00+00:00</published>
+        <updated>2024-06-13T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Samir Ranjan Parhi
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://samirparhi.com/the-plan/"/>
+        <id>https://samirparhi.com/the-plan/</id>
+        
+        <content type="html" xml:base="https://samirparhi.com/the-plan/">&lt;h4 id=&quot;the-p1-s&quot;&gt;The P1 (s)&lt;&#x2F;h4&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th style=&quot;text-align: center&quot;&gt;Focus&lt;&#x2F;th&gt;&lt;th style=&quot;text-align: center&quot;&gt;Category&lt;&#x2F;th&gt;&lt;th style=&quot;text-align: center&quot;&gt;Now&lt;&#x2F;th&gt;&lt;th style=&quot;text-align: center&quot;&gt;live On&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: center&quot;&gt;👓 Curated List of Rust Github Repos&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;page 📃&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;Live tomorrow&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;Pre Prod📱&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: center&quot;&gt;👓 Read time and Word Count&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;🌏 Enhancement&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;Live&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;🛑 Live Now&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: center&quot;&gt;⚙️ Part-2: Rust Recursive search with Code&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;📝Blog &amp;amp; 🔖 Tags&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;Review ✅&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;🛑 Live Now&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: center&quot;&gt;β End of Beta&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;🌏 Enhancement&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;🗞️ Rolling&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;20th June 2024&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: center&quot;&gt;🏃🏻‍➡️ Marathon blogs&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;📝Blog &amp;amp; 🔖 Tags&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;10 Contents ready ᚦ&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;30th June 2024&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;h5 id=&quot;the-p2-s&quot;&gt;The P2 (s)&lt;&#x2F;h5&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th style=&quot;text-align: right&quot;&gt;Focus&lt;&#x2F;th&gt;&lt;th style=&quot;text-align: center&quot;&gt;Category&lt;&#x2F;th&gt;&lt;th style=&quot;text-align: center&quot;&gt;Now&lt;&#x2F;th&gt;&lt;th style=&quot;text-align: center&quot;&gt;live On&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: right&quot;&gt;⚙️ Special blogs on Rust&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;📖 Page &amp;amp; 🔖 Tags&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;Content Ready under Review&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;In July 2024&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: right&quot;&gt;〄 Standardizing API trading platform&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;📝 Blog&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;🔬 Incubation&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;In July 2024&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: right&quot;&gt;🗒️ My System Design notes&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;📑 page&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;🔎 Under Content Consolidation&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;⏱️ Scheduled&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: right&quot;&gt;🗒️ My Kubernetes Design notes&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;📑 page&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;🔎 Under Content Consolidation&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;⏱️ Scheduled&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: right&quot;&gt;🗝️ Secure and Mobile first Coding&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;⌨️ System Designs, &amp;gt; coding&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;🔬 Incubation&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;⏱️ Scheduled&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: right&quot;&gt;⺵ Running Service mesh On a Scale&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;✍🏼 Writing&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;🔬 Incubation&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;⏱️ Scheduled&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: right&quot;&gt;Training juggernaut Model My Pi&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;💬 Pouring Thoughts&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;🔬 Incubation&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;🔜 Coming&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: right&quot;&gt;🧩 Hacking K8s on My Pi&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;💬 Pouring Thoughts&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;🔬 Incubation&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;🔜 Coming&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: right&quot;&gt;🛜 The power of Routing (VPNs vs. Proxy )&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;💬 Pouring Thoughts&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;🔬 Incubation&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;🔜 Coming&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: right&quot;&gt;🐧 The eBPF Hacks&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;✍🏼 Writing&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;💬 Pouring Thoughts&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;🔜 Coming&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: right&quot;&gt;∪ Union of ServiceMesh &amp;amp;eBPF Hacks&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;💬 Pouring Thoughts&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;🔬 Incubation&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;🔜 Coming&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;h5 id=&quot;the-p3-s&quot;&gt;The P3 (s)&lt;&#x2F;h5&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th style=&quot;text-align: center&quot;&gt;Focus&lt;&#x2F;th&gt;&lt;th style=&quot;text-align: center&quot;&gt;Category&lt;&#x2F;th&gt;&lt;th style=&quot;text-align: center&quot;&gt;Now&lt;&#x2F;th&gt;&lt;th style=&quot;text-align: center&quot;&gt;live On&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: center&quot;&gt;💬 Cementing Feature On Blog&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;🌏 Enhancement&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;🔬 Incubation&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;In Sept 2024&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: center&quot;&gt;🚊 Training juggernaut Model My Pi&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;✍🏼 Writing&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;🔬 Incubation&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: center&quot;&gt;👨🏻‍💻 Designing Decentralized System&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;📝Blog &amp;amp; Page&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;Review ✅&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;🔜 Coming&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: center&quot;&gt;ᐖ Ask Me Anything (AMA)&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;💬 Commenting&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;🔬 Incubation&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;🔜 Coming&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: center&quot;&gt;🎨 Blogs on Art Culture and Heritage&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;Section, Tag &amp;amp; Blog&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;Ideation&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;🔜 Coming&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: center&quot;&gt;♻️ My Contribution to Green Computing&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;🛟 Accountability&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;📘 Content ready&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;🔜 Coming&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;h4 id=&quot;more-coming-soon&quot;&gt;More Coming Soon..&lt;&#x2F;h4&gt;
+</content>
+        
+    </entry>
+</feed>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>samirparhi.com</title>
+    <meta name="description" content="Blog Site of Samir Parhi">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="https://samirparhi.com/img/generic/fv.png">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&family=Comfortaa:wght@300..700&family=Raleway&family=Syne+Mono&display=swap" rel="stylesheet">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://samirparhi.com/styles/styles.css" />
+</head>
+<body class="min-h-40">
+    <header class="py-5 px-5 from-sky-200 via-indigo-100 to-rose-50 bg-gradient-to-r backdrop-blur-2xl">
+        <div class="flex px-5flex-nowrap items-center justify-between py-5 from-cyan-500 via-indigo-600 to-rose-400">
+            <!-- Fixed-size, non-wrapping text -->
+            <div class="cursor-pointer">
+                <div class="px-5">
+                    <ul class="flex px-2">
+                        <a href="/#">
+                            
+                            
+                            
+    
+                            <ul class="flex">
+                                <a href="/#">
+                                    
+                                    
+                                    
+            
+                                    
+            
+                                    <img src="https:&#x2F;&#x2F;samirparhi.com&#x2F;processed_images&#x2F;samirparhi-logo.b634d9429bb5a861.png" srcset="/img&#x2F;brand&#x2F;samirparhi-logo.png 2x"/>
+                                
+                                </a>
+                            </ul>
+                        </a>
+                    </ul>
+            </div>
+            
+            <!-- Menu that wraps below the name on smaller screens -->
+            <div class="list-none px-5 mx-5 py-5 flex flex-wrap justify-center lg:justify-end space-x-5 lg:text-xl sm:text-xs md:text-sm mt-4 lg:mt-0">
+                
+                <li class=" hover:text-violet-900 text-fuchsia-800 font-semibold">
+                    <a href="https:&#x2F;&#x2F;samirparhi.com&#x2F;#">Home</a>
+                </li>
+                
+                <li class=" hover:text-violet-900 text-fuchsia-800 font-semibold">
+                    <a href="https:&#x2F;&#x2F;samirparhi.com&#x2F;about">About</a>
+                </li>
+                
+                <li class=" hover:text-violet-900 text-fuchsia-800 font-semibold">
+                    <a href="https:&#x2F;&#x2F;samirparhi.com&#x2F;collab">Collaboration</a>
+                </li>
+                
+                <li class=" hover:text-violet-900 text-fuchsia-800 font-semibold">
+                    <a href="https:&#x2F;&#x2F;samirparhi.com&#x2F;connect">Connect</a>
+                </li>
+                
+            </div>
+        </div>
+    </header>
+    
+    
+
+
+    <div class="container mx-auto py-10 flex-col-reverse  ">
+      <p class="text-4xl text-center py-10 text-sky-600">
+        Uncontrolled Data Used in Path Expression: A Cyber Security Threat
+      </p>
+
+      <div class="flex container flex-wrap text-lg justify-center px-10 py-1 space-x-5 md:text-sm lg:text-xl">
+        <div class="flex flex-wrap">
+        <p class="text-violet-950 font-bold">Author:</p>
+        <p class="text-red-800">
+          <a href="/about">Samir Ranjan Parhi</a>
+        </p>
+        </div>
+        <div class="flex flex-wrap">
+        <p class="text-violet-950 font-bold">Date:</p>
+        <p class="text-red-800">
+          30 April 2024
+        </p>
+      </div>
+      <div class="flex flex-wrap">
+        <p class="text-violet-950 font-bold">Word Count:</p>
+        <p class="text-red-800">617</p>
+      </div>
+      <div class="flex flex-wrap">
+        <p class="text-violet-950 font-bold">Estimated Read Time:</p>
+        <p class="text-red-800">4 minutes</p>
+      </div>
+    </div>
+
+  </div>
+
+    <div class=" container py-5 mx-auto rounded-lg ml-15 px-15 flex justify-between flex-wrap">
+
+      <article class=" container text-purple-700 overflow-hidden prose mx-auto p-5 text-justify text-wrap md:text-3xl lg:text-2xl text-sm ">
+        <p>Path expressions are used in a variety of software applications to construct file paths. However, if these expressions are not properly validated, they can be used by attackers to gain unauthorized access to sensitive data or systems.</p>
+<p>This type of attack is known as path traversal, and it can be used to access files that are outside of the intended directory structure. For example, an attacker could provide a path expression that includes a “../” sequence, which would cause the application to traverse up one directory level. This could allow the attacker to access files that they would not otherwise be able to see.</p>
+<p>Path traversal attacks can also be used to exploit vulnerabilities in web applications. For example, an attacker could provide a path expression that includes a “..” sequence in a web form. If the application does not properly validate the input, the attacker could use this to access the application’s filesystem.</p>
+<p>To prevent path traversal attacks, it is important to properly validate all user input that is used to construct path expressions. This can be done by using a regular expression to ensure that the input only contains valid characters. Additionally, it is important to restrict the access that users have to sensitive files and directories.</p>
+<p>Here are some tips for preventing path traversal attacks:</p>
+<pre style="background-color:#212121;color:#eeffff;"><code><span>• Use a regular expression to validate all user input that is used to construct path expressions.
+</span><span>• Restrict the access that users have to sensitive files and directories.
+</span><span>• Use a web application firewall (WAF) to filter out malicious requests.
+</span><span>• Keep your software up to date with the latest security patches.
+</span></code></pre>
+<p>By following these tips, you can help to protect your applications from path traversal attacks.</p>
+<p>Here are some examples of path traversal attacks:</p>
+<pre style="background-color:#212121;color:#eeffff;"><code><span>• file:///etc/passwd - This path expression would allow an attacker to access the passwd file, which contains the usernames and passwords of all users on the system.
+</span><span>
+</span><span>• http://localhost/../etc/passwd - This path expression would allow an attacker to access the passwd file from a web application.
+</span><span>
+</span><span>• c:\\windows\\system32\\cmd.exe - This path expression would allow an attacker to execute a command on a Windows system.
+</span></code></pre>
+<p>Code:</p>
+<p>This example illustrates how important it is to properly validate all user input that is used to construct path expressions. By validating the input, you can help to protect your applications from path traversal attacks.</p>
+<pre style="background-color:#212121;color:#eeffff;"><code><span>import java.io.File;
+</span><span>import java.io.IOException;
+</span><span>public class PathTraversalExample {
+</span><span>public static void main(String[] args) throws IOException {
+</span><span>        String filename = &quot;/etc/passwd&quot;;
+</span><span>// This code is vulnerable to path traversal attacks.
+</span><span>        File file = new File(filename);
+</span><span>        System.out.println(file.exists());
+</span><span>// This code is safe from path traversal attacks.
+</span><span>        String sanitizedFilename = filename.replaceAll(&quot;../&quot;, &quot;&quot;);
+</span><span>        File safeFile = new File(sanitizedFilename);
+</span><span>        System.out.println(safeFile.exists());
+</span><span>    }
+</span><span>}
+</span></code></pre>
+<p>In this example, the filename variable is used to construct a file path. If the user provides a path that includes a “..” sequence, the application will traverse up one directory level. This could allow the attacker to access the etc/passwd file, which contains the usernames and passwords of all users on the system.</p>
+<p>The sanitizedFilename variable is created by replacing all occurrences of the “..” sequence with an empty string. This ensures that the path expression is safe from path traversal attacks.</p>
+<p>If you provide a path that includes a “..” sequence, the application will print false. If you provide a safe path, the application will print true.</p>
+<p>If you think that your application may be vulnerable to path traversal attacks, there
+are a few things you can do:</p>
+<pre style="background-color:#212121;color:#eeffff;"><code><span>• Scan your application for vulnerabilities using a security scanner.
+</span><span>• Review the source code of your application to look for potential vulnerabilities.
+</span><span>• Contact the vendor of your application for security updates.
+</span></code></pre>
+<p>By taking these steps, you can help to protect your application from path traversal attacks.</p>
+<p>Happy Learning</p>
+
+          
+        </article>
+        
+          <div class=" flex mx-auto text-center flex-wrap p-4 justify-center">
+            
+            <p class="text-fuchsia-800 flex flex-wrap"> Tags 🔖 :
+              
+              <a href="https://samirparhi.com/tags/cyber-security/" class="text-sky-700 flex hover:underline mx-2">
+                #Cyber Security 
+              </a>
+              
+              <a href="https://samirparhi.com/tags/open-source/" class="text-sky-700 flex hover:underline mx-2">
+                #Open -Source 
+              </a>
+              
+            </p>
+          </div>
+          
+
+
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          // Select all code blocks
+          const codeBlocks = document.querySelectorAll("pre");
+    
+          codeBlocks.forEach((block, index) => {
+              // Create a copy button
+              const copyButton = document.createElement("button");
+              copyButton.innerText = "Copy";
+              copyButton.classList.add("copy-btn", "bg-fuchsia-700", "text-white", "px-3", "py-1", "rounded-lg", "hover:bg-fuchsia-900", "absolute", "top-2", "right-2", "text-xs");
+    
+              // Add event listener to handle copying
+              copyButton.addEventListener("click", () => {
+                  const codeText = block.innerText;
+                  navigator.clipboard.writeText(codeText).then(() => {
+                      copyButton.innerText = "Copied!";
+                      setTimeout(() => {
+                          copyButton.innerText = "Copy";
+                      }, 2000);
+                  });
+              });
+    
+              // Wrap the code block in a relative container and add the button
+              const wrapper = document.createElement("div");
+              wrapper.classList.add("relative", "code-block-wrapper", "mb-6");
+              wrapper.appendChild(block.cloneNode(true));
+              wrapper.appendChild(copyButton);
+    
+              block.replaceWith(wrapper);
+          });
+      });
+    </script>
+
+ 
+
+
+    <footer class="py-4 from-cyan-100 to-rose-50 bg-gradient-to-l backdrop-blur-md">
+        <div class="px-auto flex flex-wrap justify-evenly">
+            <ul class="px-5 list-none flex justify-evenly space-x-6 py-2 mx-auto rounded-xl">
+                
+                <li class="text-xl text-purple-700 hover:underline border-1 hover:text-indigo-600 flex rounded-lg border-fuchsia-900">
+                    <a href="https:&#x2F;&#x2F;github.com&#x2F;samirparhi-dev"> GitHub</a>
+                </li>
+                
+                <li class="text-xl text-purple-700 hover:underline border-1 hover:text-indigo-600 flex rounded-lg border-fuchsia-900">
+                    <a href="https:&#x2F;&#x2F;linkedin.com&#x2F;in&#x2F;samir-parhi"> LinkedIn</a>
+                </li>
+                
+                <li class="text-xl text-purple-700 hover:underline border-1 hover:text-indigo-600 flex rounded-lg border-fuchsia-900">
+                    <a href="https:&#x2F;&#x2F;twitter.com&#x2F;samirparhi"> X</a>
+                </li>
+                
+                <li class="text-xl text-purple-700 hover:underline border-1 hover:text-indigo-600 flex rounded-lg border-fuchsia-900">
+                    <a href="mailto:samirparhi@gmail.com"> Mail</a>
+                </li>
+                
+                <li class="text-xl text-purple-700 hover:underline border-1 hover:text-indigo-600 flex rounded-lg border-fuchsia-900">
+                    <a href="https:&#x2F;&#x2F;mastodon.social&#x2F;@samirparhi"> Mastodon</a>
+                </li>
+                
+            </ul>
+        </div>
+        <div class="flex py-5 text-purple-700 justify-center text-xl">
+            <p>© samirparhi.com 2024</p>
+        </div>
+        <div class="flex py-5 text-purple-700 justify-center text-xl">
+            <p>Coded 💙 by samirparhi-dev</p>
+        </div>
+    </footer>
+</body>
+</html>

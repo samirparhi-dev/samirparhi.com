@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>samirparhi.com</title>
+    <meta name="description" content="Blog Site of Samir Parhi">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="https://samirparhi.com/img/generic/fv.png">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&family=Comfortaa:wght@300..700&family=Raleway&family=Syne+Mono&display=swap" rel="stylesheet">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://samirparhi.com/styles/styles.css" />
+</head>
+<body class="min-h-40">
+    <header class="py-5 px-5 from-sky-200 via-indigo-100 to-rose-50 bg-gradient-to-r backdrop-blur-2xl">
+        <div class="flex px-5flex-nowrap items-center justify-between py-5 from-cyan-500 via-indigo-600 to-rose-400">
+            <!-- Fixed-size, non-wrapping text -->
+            <div class="cursor-pointer">
+                <div class="px-5">
+                    <ul class="flex px-2">
+                        <a href="/#">
+                            
+                            
+                            
+    
+                            <ul class="flex">
+                                <a href="/#">
+                                    
+                                    
+                                    
+            
+                                    
+            
+                                    <img src="https:&#x2F;&#x2F;samirparhi.com&#x2F;processed_images&#x2F;samirparhi-logo.b634d9429bb5a861.png" srcset="/img&#x2F;brand&#x2F;samirparhi-logo.png 2x"/>
+                                
+                                </a>
+                            </ul>
+                        </a>
+                    </ul>
+            </div>
+            
+            <!-- Menu that wraps below the name on smaller screens -->
+            <div class="list-none px-5 mx-5 py-5 flex flex-wrap justify-center lg:justify-end space-x-5 lg:text-xl sm:text-xs md:text-sm mt-4 lg:mt-0">
+                
+                <li class=" hover:text-violet-900 text-fuchsia-800 font-semibold">
+                    <a href="https:&#x2F;&#x2F;samirparhi.com&#x2F;#">Home</a>
+                </li>
+                
+                <li class=" hover:text-violet-900 text-fuchsia-800 font-semibold">
+                    <a href="https:&#x2F;&#x2F;samirparhi.com&#x2F;about">About</a>
+                </li>
+                
+                <li class=" hover:text-violet-900 text-fuchsia-800 font-semibold">
+                    <a href="https:&#x2F;&#x2F;samirparhi.com&#x2F;collab">Collaboration</a>
+                </li>
+                
+                <li class=" hover:text-violet-900 text-fuchsia-800 font-semibold">
+                    <a href="https:&#x2F;&#x2F;samirparhi.com&#x2F;connect">Connect</a>
+                </li>
+                
+            </div>
+        </div>
+    </header>
+    
+    
+
+
+    <div class="container mx-auto py-10 flex-col-reverse  ">
+      <p class="text-4xl text-center py-10 text-sky-600">
+        Uncontrolled Data Used in Path Expression: A Cyber Security Threat
+      </p>
+
+      <div class="flex container flex-wrap text-lg justify-center px-10 py-1 space-x-5 md:text-sm lg:text-xl">
+        <div class="flex flex-wrap">
+        <p class="text-violet-950 font-bold">Author:</p>
+        <p class="text-red-800">
+          <a href="/about">Samir Ranjan Parhi</a>
+        </p>
+        </div>
+        <div class="flex flex-wrap">
+        <p class="text-violet-950 font-bold">Date:</p>
+        <p class="text-red-800">
+          30 April 2024
+        </p>
+      </div>
+      <div class="flex flex-wrap">
+        <p class="text-violet-950 font-bold">Word Count:</p>
+        <p class="text-red-800">993</p>
+      </div>
+      <div class="flex flex-wrap">
+        <p class="text-violet-950 font-bold">Estimated Read Time:</p>
+        <p class="text-red-800">5 minutes</p>
+      </div>
+    </div>
+
+  </div>
+
+    <div class=" container py-5 mx-auto rounded-lg ml-15 px-15 flex justify-between flex-wrap">
+
+      <article class=" container text-purple-700 overflow-hidden prose mx-auto p-5 text-justify text-wrap md:text-3xl lg:text-2xl text-sm ">
+        <h5 id="introduction">Introduction:</h5>
+<p>In today’s interconnected world, web applications rely on various external services to provide dynamic content and functionality. However, this dependence on external resources can also create security vulnerabilities, one of which is Server-Side Request Forgery (SSRF). SSRF is a type of attack where an attacker manipulates a web application to send unauthorized requests to internal or external resources. In this blog, we will delve into the concept of SSRF, its potential impact on your Java applications, and discuss strategies to mitigate this critical security risk.</p>
+<h5 id="what-is-server-side-request-forgery-ssrf">What is Server-Side Request Forgery (SSRF)?</h5>
+<p>Server-Side Request Forgery is a web application vulnerability that enables attackers to make unauthorized requests from the server-side, bypassing the security controls implemented on the client-side. The attacker typically tricks the application into sending HTTP requests to internal systems, other applications, or even external services.</p>
+<h5 id="impact-of-ssrf">Impact of SSRF:</h5>
+<p>The consequences of a successful SSRF attack can be severe. Some of the potential risks include:</p>
+<pre style="background-color:#212121;color:#eeffff;"><code><span>1. Unauthorized access to sensitive data: An attacker might be able to retrieve sensitive information from internal resources like databases, storage systems, or other applications that should not be exposed publicly.
+</span><span>
+</span><span>2. Exploiting internal services: If the web application is hosted on a cloud infrastructure, an attacker can abuse SSRF to access internal metadata services or obtain temporary credentials, leading to further compromise of the cloud environment.
+</span><span>
+</span><span>3. Bypassing security controls: SSRF can be utilized to bypass firewall restrictions and access restricted resources, potentially causing significant security breaches.
+</span></code></pre>
+<p>Java Code Example:</p>
+<p>Let’s take a look at a simple Java code snippet that showcases an SSRF-vulnerable function:</p>
+<pre style="background-color:#212121;color:#eeffff;"><code><span>javaCopy codeimport java.io.BufferedReader;
+</span><span>import java.io.IOException;
+</span><span>import java.io.InputStreamReader;
+</span><span>import java.net.HttpURLConnection;
+</span><span>import java.net.URL;
+</span><span>public class SSRFExample {
+</span><span>public static void main(String[] args) {
+</span><span>        String urlToFetch = args[0]; // URL provided by the user as input
+</span><span>        fetchUrlContents(urlToFetch);
+</span><span>    }
+</span><span>public static void fetchUrlContents(String urlToFetch) {
+</span><span>        try {
+</span><span>            URL url = new URL(urlToFetch);
+</span><span>            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+</span><span>            connection.setRequestMethod(&quot;GET&quot;);
+</span><span>BufferedReader reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+</span><span>            String line;
+</span><span>            while ((line = reader.readLine()) != null) {
+</span><span>                System.out.println(line);
+</span><span>            }
+</span><span>            reader.close();
+</span><span>            connection.disconnect();
+</span><span>        } catch (IOException e) {
+</span><span>            System.err.println(&quot;Error: &quot; + e.getMessage());
+</span><span>        }
+</span><span>    }
+</span><span>}
+</span><span>
+</span></code></pre>
+<p>The above code is a basic Java program that takes a URL as input and fetches its contents using an HTTP GET request. However, this code is susceptible to SSRF attacks, as it does not validate or sanitize the input URL. An attacker could provide a malicious URL that targets internal resources, thereby initiating an unauthorized request.</p>
+<h5 id="securing-your-applications-against-ssrf">Securing Your Applications against SSRF:</h5>
+<p>To protect your applications from SSRF attacks, consider implementing the following security measures:</p>
+<pre style="background-color:#212121;color:#eeffff;"><code><span>1. Whitelisting: Maintain a list of approved URLs that your application is allowed to access. Validate user-provided URLs against this whitelist to ensure that only permitted resources can be accessed.
+</span><span>
+</span><span>2. Use Framework-level Protection: Modern web frameworks often offer built-in protections against SSRF attacks. For example, the Spring Framework provides mechanisms like URL validation through a whitelist of allowed URLs.
+</span><span>
+</span><span>3. Input Validation and Sanitization: Always validate and sanitize any input coming from users or external sources. Ensure that the input adheres to the expected format and restricts access to sensitive URLs.
+</span><span>
+</span><span>4. Network-level Controls: Use network-level controls such as firewalls and security groups to limit the communication between your application and internal systems.
+</span><span>
+</span><span>5. Disable or Restrict Access to Metadata Services: If your application is hosted on a cloud platform, disable or restrict access to metadata services to prevent attackers from obtaining sensitive information about the cloud environment.
+</span></code></pre>
+<p>To fix the SSRF issue in the previous example, we need to validate the input URL to ensure it only points to allowed resources. We can implement a simple whitelist approach to restrict the URLs that our application is allowed to access. Here’s the updated Java code with the SSRF issue fixed:</p>
+<pre style="background-color:#212121;color:#eeffff;"><code><span>javaCopy codeimport java.io.BufferedReader;
+</span><span>import java.io.IOException;
+</span><span>import java.io.InputStreamReader;
+</span><span>import java.net.HttpURLConnection;
+</span><span>import java.net.URL;
+</span><span>public class SecureSSRFExample {
+</span><span>// Whitelist of allowed URLs
+</span><span>    private static final String[] ALLOWED_URLS = {
+</span><span>        &quot;https://api.example.com/data&quot;,
+</span><span>        &quot;https://www.publicapi.com/info&quot;,
+</span><span>        // Add more trusted URLs as needed
+</span><span>    };
+</span><span>public static void main(String[] args) {
+</span><span>        String urlToFetch = args[0]; // URL provided by the user as input
+</span><span>        fetchUrlContents(urlToFetch);
+</span><span>    }
+</span><span>public static void fetchUrlContents(String urlToFetch) {
+</span><span>        try {
+</span><span>            // Validate the input URL against the whitelist
+</span><span>            if (!isUrlAllowed(urlToFetch)) {
+</span><span>                System.err.println(&quot;Error: The provided URL is not allowed.&quot;);
+</span><span>                return;
+</span><span>            }
+</span><span>URL url = new URL(urlToFetch);
+</span><span>            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+</span><span>            connection.setRequestMethod(&quot;GET&quot;);
+</span><span>BufferedReader reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+</span><span>            String line;
+</span><span>            while ((line = reader.readLine()) != null) {
+</span><span>                System.out.println(line);
+</span><span>            }
+</span><span>            reader.close();
+</span><span>            connection.disconnect();
+</span><span>        } catch (IOException e) {
+</span><span>            System.err.println(&quot;Error: &quot; + e.getMessage());
+</span><span>        }
+</span><span>    }
+</span><span>// Function to check if the provided URL is allowed
+</span><span>    private static boolean isUrlAllowed(String url) {
+</span><span>        for (String allowedUrl : ALLOWED_URLS) {
+</span><span>            if (url.startsWith(allowedUrl)) {
+</span><span>                return true;
+</span><span>            }
+</span><span>        }
+</span><span>        return false;
+</span><span>    }
+</span><span>}
+</span></code></pre>
+<p>In this updated code, we introduced a SecureSSRFExample class. We defined a ALLOWED_URLS array, which contains a list of trusted URLs that our application is allowed to access. The isUrlAllowed() function checks whether the provided URL starts with any of the allowed URLs. If the URL is present in the whitelist, the request will proceed; otherwise, an error message will be displayed, and the request will not be executed.</p>
+<p>By using this whitelisting approach, we ensure that the application can only make requests to specified, trusted resources, effectively mitigating the SSRF vulnerability. It’s important to regularly review and update the whitelist to include new trusted URLs and remove any unnecessary entries. Additionally, consider implementing other security measures, such as input validation and using framework-level protections, to further enhance the security of your Java applications.</p>
+<h5 id="conclusion">Conclusion:</h5>
+<p>Server-Side Request Forgery (SSRF) can pose a significant threat to your Java applications, potentially leading to unauthorized access, data leakage, and security breaches. As a responsible developer, it is crucial to be aware of this vulnerability and implement best practices to secure your applications. By validating and sanitizing user input, employing whitelisting, and utilizing framework-level protections, you can reduce the risk of SSRF attacks and safeguard your application and data. Stay vigilant, keep your systems up to date, and adhere to secure coding practices to stay one step ahead of potential attackers.</p>
+
+          
+        </article>
+        
+          <div class=" flex mx-auto text-center flex-wrap p-4 justify-center">
+            
+            <p class="text-fuchsia-800 flex flex-wrap"> Tags 🔖 :
+              
+              <a href="https://samirparhi.com/tags/cyber-security/" class="text-sky-700 flex hover:underline mx-2">
+                #Cyber Security 
+              </a>
+              
+              <a href="https://samirparhi.com/tags/ssrf/" class="text-sky-700 flex hover:underline mx-2">
+                #SSRF 
+              </a>
+              
+            </p>
+          </div>
+          
+
+
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          // Select all code blocks
+          const codeBlocks = document.querySelectorAll("pre");
+    
+          codeBlocks.forEach((block, index) => {
+              // Create a copy button
+              const copyButton = document.createElement("button");
+              copyButton.innerText = "Copy";
+              copyButton.classList.add("copy-btn", "bg-fuchsia-700", "text-white", "px-3", "py-1", "rounded-lg", "hover:bg-fuchsia-900", "absolute", "top-2", "right-2", "text-xs");
+    
+              // Add event listener to handle copying
+              copyButton.addEventListener("click", () => {
+                  const codeText = block.innerText;
+                  navigator.clipboard.writeText(codeText).then(() => {
+                      copyButton.innerText = "Copied!";
+                      setTimeout(() => {
+                          copyButton.innerText = "Copy";
+                      }, 2000);
+                  });
+              });
+    
+              // Wrap the code block in a relative container and add the button
+              const wrapper = document.createElement("div");
+              wrapper.classList.add("relative", "code-block-wrapper", "mb-6");
+              wrapper.appendChild(block.cloneNode(true));
+              wrapper.appendChild(copyButton);
+    
+              block.replaceWith(wrapper);
+          });
+      });
+    </script>
+
+ 
+
+
+    <footer class="py-4 from-cyan-100 to-rose-50 bg-gradient-to-l backdrop-blur-md">
+        <div class="px-auto flex flex-wrap justify-evenly">
+            <ul class="px-5 list-none flex justify-evenly space-x-6 py-2 mx-auto rounded-xl">
+                
+                <li class="text-xl text-purple-700 hover:underline border-1 hover:text-indigo-600 flex rounded-lg border-fuchsia-900">
+                    <a href="https:&#x2F;&#x2F;github.com&#x2F;samirparhi-dev"> GitHub</a>
+                </li>
+                
+                <li class="text-xl text-purple-700 hover:underline border-1 hover:text-indigo-600 flex rounded-lg border-fuchsia-900">
+                    <a href="https:&#x2F;&#x2F;linkedin.com&#x2F;in&#x2F;samir-parhi"> LinkedIn</a>
+                </li>
+                
+                <li class="text-xl text-purple-700 hover:underline border-1 hover:text-indigo-600 flex rounded-lg border-fuchsia-900">
+                    <a href="https:&#x2F;&#x2F;twitter.com&#x2F;samirparhi"> X</a>
+                </li>
+                
+                <li class="text-xl text-purple-700 hover:underline border-1 hover:text-indigo-600 flex rounded-lg border-fuchsia-900">
+                    <a href="mailto:samirparhi@gmail.com"> Mail</a>
+                </li>
+                
+                <li class="text-xl text-purple-700 hover:underline border-1 hover:text-indigo-600 flex rounded-lg border-fuchsia-900">
+                    <a href="https:&#x2F;&#x2F;mastodon.social&#x2F;@samirparhi"> Mastodon</a>
+                </li>
+                
+            </ul>
+        </div>
+        <div class="flex py-5 text-purple-700 justify-center text-xl">
+            <p>© samirparhi.com 2024</p>
+        </div>
+        <div class="flex py-5 text-purple-700 justify-center text-xl">
+            <p>Coded 💙 by samirparhi-dev</p>
+        </div>
+    </footer>
+</body>
+</html>
