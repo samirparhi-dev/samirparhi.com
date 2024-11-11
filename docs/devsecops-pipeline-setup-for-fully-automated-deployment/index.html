@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>samirparhi.com</title>
+    <meta name="description" content="Blog Site of Samir Parhi">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="https://samirparhi.com/img/generic/fv.png">
+    <link href="https://fonts.googleapis.com/css2?family=Jura&family=Work+Sans&family=Comfortaa:wght@300..700&family=Raleway&family=Syne+Mono&display=swap" rel="stylesheet">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://samirparhi.com/styles/styles.css" />
+</head>
+<body class="min-h-40">
+    <header class="py-5 px-5 from-sky-200 via-indigo-100 to-rose-50 bg-gradient-to-r backdrop-blur-2xl">
+        <div class="flex px-5flex-nowrap items-center justify-between py-5 from-cyan-500 via-indigo-600 to-rose-400">
+            <!-- Fixed-size, non-wrapping text -->
+            <div class="cursor-pointer">
+                <div class="px-5">
+                    <ul class="flex px-2">
+                        <a href="/#">
+                            
+                            
+                            
+    
+                            <ul class="flex">
+                                <a href="/#">
+                                    
+                                    
+                                    
+            
+                                    
+            
+                                    <img src="https:&#x2F;&#x2F;samirparhi.com&#x2F;processed_images&#x2F;samirparhi-logo.b634d9429bb5a861.png" srcset="/img&#x2F;brand&#x2F;samirparhi-logo.png 2x"/>
+                                
+                                </a>
+                            </ul>
+                        </a>
+                    </ul>
+            </div>
+            
+            <!-- Menu that wraps below the name on smaller screens -->
+            <div class="list-none px-5 mx-5 py-5 flex flex-wrap justify-center lg:justify-end space-x-5 lg:text-xl sm:text-xs md:text-sm mt-4 lg:mt-0">
+                
+                <li class=" hover:text-violet-900 text-fuchsia-800 font-semibold">
+                    <a href="https:&#x2F;&#x2F;samirparhi.com&#x2F;#">Home</a>
+                </li>
+                
+                <li class=" hover:text-violet-900 text-fuchsia-800 font-semibold">
+                    <a href="https:&#x2F;&#x2F;samirparhi.com&#x2F;about">About</a>
+                </li>
+                
+                <li class=" hover:text-violet-900 text-fuchsia-800 font-semibold">
+                    <a href="https:&#x2F;&#x2F;samirparhi.com&#x2F;collab">Collaboration</a>
+                </li>
+                
+                <li class=" hover:text-violet-900 text-fuchsia-800 font-semibold">
+                    <a href="https:&#x2F;&#x2F;samirparhi.com&#x2F;connect">Connect</a>
+                </li>
+                
+            </div>
+        </div>
+    </header>
+    
+    
+
+
+    <div class="container mx-auto py-10 flex-col-reverse  ">
+      <p class="text-4xl text-center py-10 text-sky-600">
+        The System Design for Various Usecase Fully Automated
+      </p>
+
+      <div class="flex container flex-wrap text-lg justify-center px-10 py-1 space-x-5 md:text-sm lg:text-xl">
+        <div class="flex flex-wrap">
+        <p class="text-violet-950 font-bold">Author:</p>
+        <p class="text-red-800">
+          <a href="/about">Samir Ranjan Parhi</a>
+        </p>
+        </div>
+        <div class="flex flex-wrap">
+        <p class="text-violet-950 font-bold">Date:</p>
+        <p class="text-red-800">
+          30 April 2024
+        </p>
+      </div>
+      <div class="flex flex-wrap">
+        <p class="text-violet-950 font-bold">Word Count:</p>
+        <p class="text-red-800">318</p>
+      </div>
+      <div class="flex flex-wrap">
+        <p class="text-violet-950 font-bold">Estimated Read Time:</p>
+        <p class="text-red-800">2 minutes</p>
+      </div>
+    </div>
+
+  </div>
+
+    <div class=" container py-5 mx-auto rounded-lg ml-15 px-15 flex justify-between flex-wrap">
+
+      <article class=" container text-purple-700 overflow-hidden prose mx-auto p-5 text-justify text-wrap md:text-3xl lg:text-2xl text-sm ">
+        <p>This pipeline automates the process of building, scanning, signing, and deploying container images while ensuring compliance with security policies. Here’s how it works:</p>
+<p><strong>Code Base (GitHub):</strong> The pipeline is triggered when a pull request (PR) is raised.</p>
+<p><strong>Build Code and Container:</strong> The application code is built, followed by container creation.</p>
+<p><strong>Trivy Static Container Scan:</strong> A security scan is performed to check for vulnerabilities and misconfigurations.</p>
+<p><strong>Condition Check:</strong> The scan results are analyzed. If the container passes, the process continues. If it fails, the team is notified via email or Slack.</p>
+<p><strong>Attach Image Using Cosign:</strong> If the scan is successful, the container image is signed using Cosign for added security.</p>
+<p><strong>Upload Image to Registry:</strong> The signed image is pushed to the container registry for deployment.</p>
+<p><strong>Visualize with Grafana:</strong> The metrics related to the build and scan processes are visualized using Grafana for continuous monitoring.</p>
+<p><img src="https://raw.githubusercontent.com/samirparhi-dev/samirparhi-dev/main/blog/DevSecOpsPipeline.png" alt="Our Architechture" /></p>
+<p>Infrastructure as Code Pipeline
+This pipeline leverages IaC (Infrastructure as Code) and GitOps principles to provision and secure Kubernetes clusters.</p>
+<h4 id="iac-pipeline-steps">IaC Pipeline Steps:</h4>
+<p><strong>Infra as Code (GitHub):</strong> The process starts with version-controlled infrastructure code scripts.</p>
+<p><strong>Release Candidate:</strong> A PR is raised, signaling the release of the new infrastructure configuration.</p>
+<p><strong>OpenTofu Script Execution:</strong> The OpenTofu tool is used to apply the infrastructure changes.</p>
+<p><strong>Provision Kubernetes Cluster:</strong> A new Kubernetes cluster is provisioned using the approved configurations.</p>
+<p><strong>Security Scans (Kube-Bench):</strong> The newly created cluster is scanned for vulnerabilities using tools like kube-bench, Trivy, and others.</p>
+<p><strong>Continuous Deployment:</strong> After the scans pass, the infrastructure is deployed.</p>
+<p><strong>Observability:</strong> Metrics related to infrastructure health and security are monitored using Grafana and other observability tools.</p>
+<p><strong>Improvements:</strong> The pipeline continuously loops back for improvements based on the observability insights.</p>
+<p><img src="https://raw.githubusercontent.com/samirparhi-dev/samirparhi-dev/main/blog/Infra-as-a-code-pipeline.png" alt="Our Architechture" /></p>
+<p>These are just Fundamentals for Achiving Basic Security Ops using cloud Technology.</p>
+<p>Happy Learning !</p>
+
+          
+        </article>
+        
+          <div class=" flex mx-auto text-center flex-wrap p-4 justify-center">
+            
+            <p class="text-fuchsia-800 flex flex-wrap"> Tags 🔖 :
+              
+              <a href="https://samirparhi.com/tags/open-source/" class="text-sky-700 flex hover:underline mx-2">
+                #Open-Source 
+              </a>
+              
+              <a href="https://samirparhi.com/tags/ci-cd/" class="text-sky-700 flex hover:underline mx-2">
+                #CI &amp; CD 
+              </a>
+              
+              <a href="https://samirparhi.com/tags/azure/" class="text-sky-700 flex hover:underline mx-2">
+                #Azure 
+              </a>
+              
+              <a href="https://samirparhi.com/tags/devsecops/" class="text-sky-700 flex hover:underline mx-2">
+                #DevSecOps 
+              </a>
+              
+            </p>
+          </div>
+          
+
+
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          // Select all code blocks
+          const codeBlocks = document.querySelectorAll("pre");
+    
+          codeBlocks.forEach((block, index) => {
+              // Create a copy button
+              const copyButton = document.createElement("button");
+              copyButton.innerText = "Copy";
+              copyButton.classList.add("copy-btn", "bg-fuchsia-700", "text-white", "px-3", "py-1", "rounded-lg", "hover:bg-fuchsia-900", "absolute", "top-2", "right-2", "text-xs");
+    
+              // Add event listener to handle copying
+              copyButton.addEventListener("click", () => {
+                  const codeText = block.innerText;
+                  navigator.clipboard.writeText(codeText).then(() => {
+                      copyButton.innerText = "Copied!";
+                      setTimeout(() => {
+                          copyButton.innerText = "Copy";
+                      }, 2000);
+                  });
+              });
+    
+              // Wrap the code block in a relative container and add the button
+              const wrapper = document.createElement("div");
+              wrapper.classList.add("relative", "code-block-wrapper", "mb-6");
+              wrapper.appendChild(block.cloneNode(true));
+              wrapper.appendChild(copyButton);
+    
+              block.replaceWith(wrapper);
+          });
+      });
+    </script>
+
+ 
+
+
+    <footer class="py-4 from-cyan-100 to-rose-50 bg-gradient-to-l backdrop-blur-md">
+        <div class="px-auto flex flex-wrap justify-evenly">
+            <ul class="px-5 list-none flex justify-evenly space-x-6 py-2 mx-auto rounded-xl">
+                
+                <li class="text-xl text-purple-700 hover:underline border-1 hover:text-indigo-600 flex rounded-lg border-fuchsia-900">
+                    <a href="https:&#x2F;&#x2F;github.com&#x2F;samirparhi-dev"> GitHub</a>
+                </li>
+                
+                <li class="text-xl text-purple-700 hover:underline border-1 hover:text-indigo-600 flex rounded-lg border-fuchsia-900">
+                    <a href="https:&#x2F;&#x2F;linkedin.com&#x2F;in&#x2F;samir-parhi"> LinkedIn</a>
+                </li>
+                
+                <li class="text-xl text-purple-700 hover:underline border-1 hover:text-indigo-600 flex rounded-lg border-fuchsia-900">
+                    <a href="https:&#x2F;&#x2F;twitter.com&#x2F;samirparhi"> X</a>
+                </li>
+                
+                <li class="text-xl text-purple-700 hover:underline border-1 hover:text-indigo-600 flex rounded-lg border-fuchsia-900">
+                    <a href="mailto:samirparhi@gmail.com"> Mail</a>
+                </li>
+                
+                <li class="text-xl text-purple-700 hover:underline border-1 hover:text-indigo-600 flex rounded-lg border-fuchsia-900">
+                    <a href="https:&#x2F;&#x2F;mastodon.social&#x2F;@samirparhi"> Mastodon</a>
+                </li>
+                
+            </ul>
+        </div>
+        <div class="flex py-5 text-purple-700 justify-center text-xl">
+            <p>© samirparhi.com 2024</p>
+        </div>
+        <div class="flex py-5 text-purple-700 justify-center text-xl">
+            <p>Coded 💙 by samirparhi-dev</p>
+        </div>
+    </footer>
+</body>
+</html>
