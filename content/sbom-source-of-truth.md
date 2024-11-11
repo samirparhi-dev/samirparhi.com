@@ -21,9 +21,9 @@ Similarly, SBOM applies this logic to software. While we may utilise various mod
 **So, SBOM is for Whom?**
 
 Technically for Everyone (because privacy is our Rights not an option 😊)
-    1. Primarily for developers, solution architects/Consultants, delivery partners,
-    2. Companies or individuals consuming the software
-    3. Vendors or agencies providing its ongoing support (AMC).
+- Primarily for developers, solution architects/Consultants, delivery partners,
+- Companies or individuals consuming the software
+- Vendors or agencies providing its ongoing support (AMC).
 
 **For whom it is a whistle blower?**
 
