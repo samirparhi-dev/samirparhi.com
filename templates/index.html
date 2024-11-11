@@ -9,9 +9,9 @@
             <span class="lg:text-6xl text-20xl font-semibold text-purple-900">Open</span> <span class="lg:text-6xl text-20xl font-bold text-purple-900"></span>Thoughts ⊷
         </p>
 
-        <div class="flex circular-container py-15 px-auto ">
+        <div class="flex py-15 px-auto ">
             {% for item in config.extra.profile_pic %}
-            <img class=" py-5 pl-10 w-auto h-auto object-cover rounded-3xl " src="{{ get_url(path=item.profile_pic_path) }}" alt="Samir's Profile Pic">
+            <img class=" py-5 pl-10 w-auto h-auto circular-container" src="{{ get_url(path=item.profile_pic_path) }}" alt="Samir's Profile Pic">
             {% endfor %}
         </div>
 

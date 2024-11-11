@@ -14,8 +14,8 @@
 }
 
 .circular-container {
-  width: 215px;
-  height: 215px;
+  width: 207px;
+  height: 207px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -52,7 +52,7 @@
 }
 
 html, body {
-    font-family: "Raleway", "Noto Sans", "Comfortaa", "Moderustic","IBM Plex Sans", "Space Mono", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "sans-serif";
+    font-family: "Jura", "Moderustic","IBM Plex Sans", "Space Mono", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
   }
 
   .paper-like {
@@ -60,42 +60,3 @@ html, body {
     background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, transparent 75%, transparent);
     background-size: 50px 50px;
   }
-
-  .capitalize-first-on-hover::first-letter {
-    transition: all 0.3s ease;
-  }
-  
-  .capitalize-first-on-hover:hover::first-letter {
-    text-transform: uppercase;
-  }
-
-  .hamburger {
-    cursor: pointer;
-    position: relative;
-  }
-  
-  .line {
-    display: block;
-    width: 100%;
-    height: 2px;
-    background-color: black;
-    margin: 5px 0;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .hamburger.active .line:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
-  }
-  
-  .hamburger.active .line:nth-child(2) {
-    opacity: 0;
-  }
-  
-  .hamburger.active .line:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
-  }
-
-
-
-
-

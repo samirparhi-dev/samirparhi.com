@@ -1,17 +1,15 @@
 module.exports = {
-  mode: "jit",
+  mode: 'jit',
   content: [
-    "./templates/**/*.{html,js}",
-    "./pages/**/*.{html,js}",
-    "./templates/base.html",
+    './templates/**/*.{html,js}',
+    './pages/**/*.{html,js}',
+    './templates/base.html',
   ],
   theme: {
-    extend: {
-      fontFamily: {
-        worksans: ['"Work Sans"', "sans-serif"],
-      },
-    },
+    extend: {}
   },
   variants: {},
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ]
 };
