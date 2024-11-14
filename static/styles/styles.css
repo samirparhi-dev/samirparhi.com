@@ -1174,14 +1174,6 @@ video {
   height: auto;
 }
 
-.h-\[75px\] {
-  height: 75px;
-}
-
-.max-h-\[70px\] {
-  max-height: 70px;
-}
-
 .max-h-\[75px\] {
   max-height: 75px;
 }
