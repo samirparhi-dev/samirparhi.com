@@ -1166,24 +1166,24 @@ video {
   display: none;
 }
 
-.h-\[65px\] {
-  height: 65px;
+.h-\[70px\] {
+  height: 70px;
 }
 
 .h-auto {
   height: auto;
 }
 
-.h-\[70px\] {
-  height: 70px;
-}
-
-.max-h-\[65px\] {
-  max-height: 65px;
+.h-\[75px\] {
+  height: 75px;
 }
 
 .max-h-\[70px\] {
   max-height: 70px;
+}
+
+.max-h-\[75px\] {
+  max-height: 75px;
 }
 
 .min-h-40 {
