@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>samirparhi.com</title>
+    <meta name="description" content="Blog Site of Samir Parhi">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="https://samirparhi.com/img/brand/samirparhi-febicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Jura&family=Work+Sans&family=Comfortaa:wght@300..700&family=Raleway&family=Syne+Mono&display=swap" rel="stylesheet">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://samirparhi.com/styles/styles.css" />
+</head>
+<body class="min-h-40">
+    <header class="py-5 px-5 from-sky-200 via-indigo-100 to-rose-50 bg-gradient-to-r backdrop-blur-2xl">
+        <div class="flex px-5flex-nowrap items-center justify-between py-5 from-cyan-500 via-indigo-600 to-rose-400">
+            <!-- Fixed-size, non-wrapping text -->
+            <div class="cursor-pointer">
+                <div class="px-5">
+                    <ul class="flex px-2">
+                        <a href="/#">
+                            
+                            
+                            
+    
+                            <ul class="flex">
+                                <a href="/#">
+                                    
+                                    
+                                    
+            
+                                    
+            
+                                    <img src="https:&#x2F;&#x2F;samirparhi.com&#x2F;processed_images&#x2F;samirparhi-logo.b634d9429bb5a861.png" srcset="/img&#x2F;brand&#x2F;samirparhi-logo.png 2x"/>
+                                
+                                </a>
+                            </ul>
+                        </a>
+                    </ul>
+            </div>
+            
+            <!-- Menu that wraps below the name on smaller screens -->
+            <div class="list-none px-5 mx-5 py-5 flex flex-wrap justify-center lg:justify-end space-x-5 lg:text-xl sm:text-xs md:text-sm mt-4 lg:mt-0">
+                
+                <li class=" hover:text-violet-900 text-fuchsia-800 font-semibold">
+                    <a href="https:&#x2F;&#x2F;samirparhi.com&#x2F;#">Home</a>
+                </li>
+                
+                <li class=" hover:text-violet-900 text-fuchsia-800 font-semibold">
+                    <a href="https:&#x2F;&#x2F;samirparhi.com&#x2F;about">About</a>
+                </li>
+                
+                <li class=" hover:text-violet-900 text-fuchsia-800 font-semibold">
+                    <a href="https:&#x2F;&#x2F;samirparhi.com&#x2F;collab">Collaboration</a>
+                </li>
+                
+                <li class=" hover:text-violet-900 text-fuchsia-800 font-semibold">
+                    <a href="https:&#x2F;&#x2F;samirparhi.com&#x2F;connect">Connect</a>
+                </li>
+                
+            </div>
+        </div>
+    </header>
+    
+    
+
+
+    <div class="container mx-auto py-10 flex-col-reverse  ">
+      <p class="text-4xl text-center py-10 text-sky-600">
+        Imposing mandatory http(s) security headers in NGINX ingress in Kubernetes
+      </p>
+
+      <div class="flex container flex-wrap text-lg justify-center px-10 py-1 space-x-5 md:text-sm lg:text-xl">
+        <div class="flex flex-wrap">
+        <p class="text-violet-950 font-bold">Author:</p>
+        <p class="text-red-800">
+          <a href="/about">Samir Ranjan Parhi</a>
+        </p>
+        </div>
+        <div class="flex flex-wrap">
+        <p class="text-violet-950 font-bold">Date:</p>
+        <p class="text-red-800">
+          30 April 2024
+        </p>
+      </div>
+      <div class="flex flex-wrap">
+        <p class="text-violet-950 font-bold">Word Count:</p>
+        <p class="text-red-800">462</p>
+      </div>
+      <div class="flex flex-wrap">
+        <p class="text-violet-950 font-bold">Estimated Read Time:</p>
+        <p class="text-red-800">3 minutes</p>
+      </div>
+    </div>
+
+  </div>
+
+    <div class=" container py-5 mx-auto rounded-lg ml-15 px-15 flex justify-between flex-wrap">
+
+      <article class=" container text-purple-700 overflow-hidden prose mx-auto p-5 text-justify text-wrap md:text-3xl lg:text-2xl text-sm ">
+        <p>Making an application up and running does not qualify as a full-fledged product. It is particularly important to have security measure in the Product. Now in the ever-increasing digital revolution, security flaws are really risk for an organisation as-well as the users. Though we cannot eliminate all the risks, we can always try to address most of them and the important CVEs. Earlier days these security considerations (Security headers in this context) are handled by application itself and coded by the developer in the application code but in the micro-service world it is especially important for developers to focus more on business logic rather than all these auxiliary tasks to reduce time to market of the product.</p>
+<p>The good news is, now DevOps team can handle few of these features with help of Kubernetes, Iingress Gateways and Service Meshes. In this blog post we will focus on how to impose the mandatory security headers in Kubernetes NGINX ingress controller.
+OWASP (Open Web Application Security Project) is a nonprofit foundation that works to improve the security of software, has recommended to below HTTP headers should be present by default.</p>
+<p>Important HTTP headers:</p>
+<p>Server - this is the first header which we must impose so the Server label should not be displayed in the browser
+server: hide
+<code>X-Frame-Options</code> - to avoid clickjacking attacks, by ensuring that their content is not embedded into other sites
+<code>X-Frame-Options</code>: DENY or SAMEORIGIN
+<code>X-XSS-Protection</code> - stops pages from loading when they detect reflected cross-site scripting (XSS) attacks.
+<code>X-XSS-Protection</code>: 0 or 1
+Content-Type - Indicate the original media type of the resource (prior to any content encoding applied for sending).
+<code>Content-Type</code>: text/html; charset=UTF-8
+<code>X-Content-Type-Options</code> - Avoid MIME type sniffing
+<code>X-Content-Type-Options</code>: nosniff
+<code>Strict-Transport-Security</code> (HSTS) - Enforce browsers that it should only be accessed using HTTPS, instead of using HTTP.</p>
+<p><code>Strict-Transport-Security</code>: max-age=&lt; expire-time-in-sec&gt;; includeSubDomains; preload
+<code>Strict-Transport-Security</code>: max-age=31536000; includeSubDomains; preload
+<code>Content-Security-Policy</code> (CSP) - mitigate Cross-Site Scripting (XSS) and data injection attacks
+<code>Content-Security-Policy</code>: default-src ‘self’ http://example.com
+<code>Cross-Origin-Resource-Policy</code> - tells the browser blocks no-cors cross-origin/cross-site requests to the given resource
+<code>Cross-Origin-Resource-Policy</code>: same-site</p>
+<p>Now as we understood the mandatory security headers to be imposed to our application, let’s see how we can configure from NGINX ingress add the annotation nginx.ingress.kubernetes.io/configuration-snippet: in the ingress manifest file (ingress.yaml )</p>
+<pre style="background-color:#212121;color:#eeffff;"><code><span>apiVersion: extensions/v1beta1
+</span><span>kind: Ingress
+</span><span>namespace: my-app
+</span><span>metadata:
+</span><span>  name: app-ingress
+</span><span>  annotations:
+</span><span>    nginx.ingress.kubernetes.io/configuration-snippet: |
+</span><span>      more_set_headers &quot;server: hide&quot;;
+</span><span>      more_set_headers &quot;Content-Type: text/html; charset=UTF-8&quot;;
+</span><span>      more_set_headers &quot;X-Content-Type-Options: nosniff&quot;;
+</span><span>      more_set_headers &quot;X-Frame-Options: DENY&quot;;
+</span><span>      more_set_headers &quot;X-Xss-Protection: 0&quot;;
+</span><span>      more_set_headers &quot;Strict-Transport-Security: max-age=31536000; includeSubDomains; preload&quot;;
+</span><span>      more_set_headers &quot;Content-Security-Policy: default-src &#39;self&#39; http://example.com&quot;;
+</span><span>      more_set_headers &quot;Cross-Origin-Resource-Policy: same-site&quot;;
+</span><span>spec:
+</span><span>  rules:
+</span><span>  - http:
+</span><span>      paths:
+</span><span>      - path: /testpath
+</span><span>        pathType: Prefix
+</span><span>        backend:
+</span><span>          service:
+</span><span>            name: test
+</span><span>            port:
+</span><span>              number: 80
+</span></code></pre>
+<p>There are also other interesting and useful annotation which you can checkout and I am sure it will enable you to add more features to your application.</p>
+<p>Sources:
+mdn Docs
+NGINX Ingress controller
+OWASP Docs
+Hope this helps. Stay tuned for More!</p>
+
+          
+        </article>
+        
+          <div class=" flex mx-auto text-center flex-wrap p-4 justify-center">
+            
+            <p class="text-fuchsia-800 flex flex-wrap"> Tags 🔖 :
+              
+              <a href="https://samirparhi.com/tags/kubernetes/" class="text-sky-700 flex hover:underline mx-2">
+                #Kubernetes 
+              </a>
+              
+              <a href="https://samirparhi.com/tags/open-source/" class="text-sky-700 flex hover:underline mx-2">
+                #Open-Source 
+              </a>
+              
+              <a href="https://samirparhi.com/tags/nginx/" class="text-sky-700 flex hover:underline mx-2">
+                #NGINX 
+              </a>
+              
+              <a href="https://samirparhi.com/tags/ingress/" class="text-sky-700 flex hover:underline mx-2">
+                #Ingress 
+              </a>
+              
+            </p>
+          </div>
+          
+
+
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          // Select all code blocks
+          const codeBlocks = document.querySelectorAll("pre");
+    
+          codeBlocks.forEach((block, index) => {
+              // Create a copy button
+              const copyButton = document.createElement("button");
+              copyButton.innerText = "Copy";
+              copyButton.classList.add("copy-btn", "bg-fuchsia-700", "text-white", "px-3", "py-1", "rounded-lg", "hover:bg-fuchsia-900", "absolute", "top-2", "right-2", "text-xs");
+    
+              // Add event listener to handle copying
+              copyButton.addEventListener("click", () => {
+                  const codeText = block.innerText;
+                  navigator.clipboard.writeText(codeText).then(() => {
+                      copyButton.innerText = "Copied!";
+                      setTimeout(() => {
+                          copyButton.innerText = "Copy";
+                      }, 2000);
+                  });
+              });
+    
+              // Wrap the code block in a relative container and add the button
+              const wrapper = document.createElement("div");
+              wrapper.classList.add("relative", "code-block-wrapper", "mb-6");
+              wrapper.appendChild(block.cloneNode(true));
+              wrapper.appendChild(copyButton);
+    
+              block.replaceWith(wrapper);
+          });
+      });
+    </script>
+
+ 
+
+
+    <footer class="py-4 from-cyan-100 to-rose-50 bg-gradient-to-l backdrop-blur-md">
+        <div class="px-auto flex flex-wrap justify-evenly">
+            <ul class="px-5 list-none flex justify-evenly space-x-6 py-2 mx-auto rounded-xl">
+                
+                <li class="text-xl text-purple-700 hover:underline border-1 hover:text-indigo-600 flex rounded-lg border-fuchsia-900">
+                    <a href="https:&#x2F;&#x2F;github.com&#x2F;samirparhi-dev"> GitHub</a>
+                </li>
+                
+                <li class="text-xl text-purple-700 hover:underline border-1 hover:text-indigo-600 flex rounded-lg border-fuchsia-900">
+                    <a href="https:&#x2F;&#x2F;linkedin.com&#x2F;in&#x2F;samir-parhi"> LinkedIn</a>
+                </li>
+                
+                <li class="text-xl text-purple-700 hover:underline border-1 hover:text-indigo-600 flex rounded-lg border-fuchsia-900">
+                    <a href="https:&#x2F;&#x2F;twitter.com&#x2F;samirparhi"> X</a>
+                </li>
+                
+                <li class="text-xl text-purple-700 hover:underline border-1 hover:text-indigo-600 flex rounded-lg border-fuchsia-900">
+                    <a href="mailto:samirparhi@gmail.com"> Mail</a>
+                </li>
+                
+                <li class="text-xl text-purple-700 hover:underline border-1 hover:text-indigo-600 flex rounded-lg border-fuchsia-900">
+                    <a href="https:&#x2F;&#x2F;mastodon.social&#x2F;@samirparhi"> Mastodon</a>
+                </li>
+                
+            </ul>
+        </div>
+        <div class="flex py-5 text-purple-700 justify-center text-xl">
+            <p>© samirparhi.com 2024</p>
+        </div>
+        <div class="flex py-5 text-purple-700 justify-center text-xl">
+            <p>Coded 💙 by samirparhi-dev</p>
+        </div>
+    </footer>
+</body>
+</html>

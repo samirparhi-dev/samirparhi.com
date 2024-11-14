@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>samirparhi.com</title>
+    <meta name="description" content="Blog Site of Samir Parhi">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="https://samirparhi.com/img/brand/samirparhi-febicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Jura&family=Work+Sans&family=Comfortaa:wght@300..700&family=Raleway&family=Syne+Mono&display=swap" rel="stylesheet">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://samirparhi.com/styles/styles.css" />
+</head>
+<body class="min-h-40">
+    <header class="py-5 px-5 from-sky-200 via-indigo-100 to-rose-50 bg-gradient-to-r backdrop-blur-2xl">
+        <div class="flex px-5flex-nowrap items-center justify-between py-5 from-cyan-500 via-indigo-600 to-rose-400">
+            <!-- Fixed-size, non-wrapping text -->
+            <div class="cursor-pointer">
+                <div class="px-5">
+                    <ul class="flex px-2">
+                        <a href="/#">
+                            
+                            
+                            
+    
+                            <ul class="flex">
+                                <a href="/#">
+                                    
+                                    
+                                    
+            
+                                    
+            
+                                    <img src="https:&#x2F;&#x2F;samirparhi.com&#x2F;processed_images&#x2F;samirparhi-logo.b634d9429bb5a861.png" srcset="/img&#x2F;brand&#x2F;samirparhi-logo.png 2x"/>
+                                
+                                </a>
+                            </ul>
+                        </a>
+                    </ul>
+            </div>
+            
+            <!-- Menu that wraps below the name on smaller screens -->
+            <div class="list-none px-5 mx-5 py-5 flex flex-wrap justify-center lg:justify-end space-x-5 lg:text-xl sm:text-xs md:text-sm mt-4 lg:mt-0">
+                
+                <li class=" hover:text-violet-900 text-fuchsia-800 font-semibold">
+                    <a href="https:&#x2F;&#x2F;samirparhi.com&#x2F;#">Home</a>
+                </li>
+                
+                <li class=" hover:text-violet-900 text-fuchsia-800 font-semibold">
+                    <a href="https:&#x2F;&#x2F;samirparhi.com&#x2F;about">About</a>
+                </li>
+                
+                <li class=" hover:text-violet-900 text-fuchsia-800 font-semibold">
+                    <a href="https:&#x2F;&#x2F;samirparhi.com&#x2F;collab">Collaboration</a>
+                </li>
+                
+                <li class=" hover:text-violet-900 text-fuchsia-800 font-semibold">
+                    <a href="https:&#x2F;&#x2F;samirparhi.com&#x2F;connect">Connect</a>
+                </li>
+                
+            </div>
+        </div>
+    </header>
+    
+    
+
+
+    <div class="container mx-auto py-10 flex-col-reverse  ">
+      <p class="text-4xl text-center py-10 text-sky-600">
+        Configuring Meshery behind ISTIO and ingress gateway
+      </p>
+
+      <div class="flex container flex-wrap text-lg justify-center px-10 py-1 space-x-5 md:text-sm lg:text-xl">
+        <div class="flex flex-wrap">
+        <p class="text-violet-950 font-bold">Author:</p>
+        <p class="text-red-800">
+          <a href="/about">Samir Ranjan Parhi</a>
+        </p>
+        </div>
+        <div class="flex flex-wrap">
+        <p class="text-violet-950 font-bold">Date:</p>
+        <p class="text-red-800">
+           6 May 2024
+        </p>
+      </div>
+      <div class="flex flex-wrap">
+        <p class="text-violet-950 font-bold">Word Count:</p>
+        <p class="text-red-800">845</p>
+      </div>
+      <div class="flex flex-wrap">
+        <p class="text-violet-950 font-bold">Estimated Read Time:</p>
+        <p class="text-red-800">5 minutes</p>
+      </div>
+    </div>
+
+  </div>
+
+    <div class=" container py-5 mx-auto rounded-lg ml-15 px-15 flex justify-between flex-wrap">
+
+      <article class=" container text-purple-700 overflow-hidden prose mx-auto p-5 text-justify text-wrap md:text-3xl lg:text-2xl text-sm ">
+        <p>Accessing Workloads behind a ingress-gateway always has been a  industry standard practice in Kubernetes setup. It facilitate single  entry point for all your services deployed in a production grade  Kubernetes. This setup also allows you to leverage the service-mesh  functionality of implementing policies and have a better authz and authn  to the deployed services. Meshery is no different, you can configure it  to be accessed through ingress gateway. Let’s see how can we configure  it.</p>
+<h4 id="prerequisite">Prerequisite :</h4>
+<ul>
+<li>Kubernetes is up and running.</li>
+<li>Ingress controller is installed and Ingress-gateway is provisioned  (we will be taking istio into account in this example and it is  installed in istio-system Namespace)</li>
+<li>Meshery is installed in your Kubernetes cluster (Preferably in meshery namespace)</li>
+</ul>
+<h3 id="see-in-action">See in Action:</h3>
+<h4 id="step-1-prerequisite-check">Step 1 : Prerequisite check</h4>
+<p>Lets see if everything mentioned in prerequisite is fulfilled</p>
+<pre><code class="text-sm">
+$ kubectl get svc -n istio-system                                                           
+NAME                   TYPE           CLUSTER-IP   EXTERNAL-IP   PORT(S)                                      AGE
+istio-ingressgateway   LoadBalancer   10.3.9.186   20.204.19.97    15021:30305/TCP,80:32107/TCP,443:32436/TCP   37d
+We have ingress gateway provisioned.
+$ kubectl get po -n meshery                                                                 
+NAME                                    READY   STATUS           RESTARTS      AGE
+meshery-5cc4489f77-7sbc5                1/1     Running             0          33d
+meshery-operator-5db8b6c874-5cdvg       1/1     Running             0          33d
+meshery-meshsync-8lb8b6y784-6ghnk       1/1     Running             0          33d
+meshery-istio-6c56dd44fb-gk6xx          1/1     Running             0          33d
+$ kubectl get svc -n meshery                                                                
+NAME                   TYPE           CLUSTER-IP   EXTERNAL-IP    PORT(S)          AGE
+meshery                LoadBalancer   10.3.9.178   10.5.3.188   9081:31037/TCP   33d
+
+</code></pre>
+<p>Now we see that Meshery’s core components meshery, meshery-operator, meshery-meshsync, meshery-istio (meshery adapter specific to your servicemesh), and meshery LoadBalance service (meshery) are up. The istio ingress gateway istio-ingressgateway is also up.</p>
+<p>Note :</p>
+<ul>
+<li>
+<p>you can observe that the CLUSTER-IP &amp; EXTERNAL-IP of the Meshery LoadBalancer are private IP (10.5.3.188, 10.3.9.178) that means you can not connect it from the browser or outside of the kubernetes cluster.</p>
+</li>
+<li>
+<p>in the other hand if you observe we have got an public ip for the istio-ingressgateway (20.204.19.97) which can be accessed from outside of the cluster.</p>
+</li>
+<li>
+<p>Only way to access the Meshery is through our ingress gateway (which is part of ingress controller Istio in this case)</p>
+</li>
+</ul>
+<h4 id="step-2-let-s-create-a-istio-gateway-for-this-meshery-which-will-facilitate-meshey-to-recive-the-request-from-outside-of-cluster-to-meshery">Step 2: Let’s create a istio-Gateway for this  meshery, which will facilitate meshey to recive the request from outside  of cluster to Meshery.</h4>
+<blockquote>
+<p>Tip:  What is istio-Gateway?
+Gateway describes a load balancer operating at the edge of the mesh  receiving incoming or outgoing HTTP/TCP connections. The specification  describes a set of ports that should be exposed, the type of protocol to  use, SNI configuration for the load balancer, etc. More information : Istio / Gateway.</p>
+</blockquote>
+<p>create a file <code>meshery-istio-gw.yaml</code> and copy paste the below content to the file.</p>
+<pre><code class="text-sm">
+apiVersion: networking.istio.io/v1alpha3
+kind: Gateway
+metadata:
+  name: meshery-gateway
+  namespace: meshery
+spec:
+  selector:
+    istio: ingressgateway
+  servers:
+  - port:
+      number: 80
+      name: http
+      protocol: HTTP
+    hosts:
+    - "*"
+</code></pre>
+<p>Now let’s apply this manifest in meshery Namespace.</p>
+<pre><code class="text-sm px-1">
+$ kubectl apply -f meshery-istio-gw.yaml
+</code></pre>
+<blockquote>
+<p>Tip:
+Istio gateway is namespace scoped.  The gateway listener for meshery listens on port 80.</p>
+</blockquote>
+<h4 id="step-3-lets-create-a-virtualservice-for-istio-gateway-to-reach-meshery-loadbalancer-in-the-kubernetes-cluster">Step 3: Lets create a virtualService for Istio gateway to reach Meshery Loadbalancer in the kubernetes cluster</h4>
+<blockquote>
+<p>🚩 Tip: A VirtualService defines a set of traffic routing rules to apply when a  host is addressed. Each routing rule defines matching criteria for  traffic of a specific protocol. If the traffic is matched, then it is  sent to a named destination service (or subset/version of it) defined in  the registry. More info: Istio / Virtual Service.</p>
+</blockquote>
+<p>create a file <code>meshery-istio-vs.yaml</code> and copy paste the below content to the file.</p>
+<pre><code class="text-sm max-h-64">
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: meshery
+  namespace: meshery
+spec:
+  hosts:
+  - "*"
+  gateways:
+  - meshery-gateway
+  http:
+  - match:
+    - uri:
+        prefix: /
+    route:
+    - destination:
+        host: meshery
+        port:
+          number: 9081
+</code></pre>
+<p>Now let’s apply this manifest in meshery Namespace.</p>
+<pre><code class="text-sm">
+$ kubectl apply -f meshery-istio-vs.yaml
+
+</code></pre>
+<blockquote>
+<p>Tip: istio virtualService is namespace scoped.</p>
+</blockquote>
+<h4 id="understanding-meshery-istio-vs-yaml">Understanding <code>meshery-istio-vs.yaml</code></h4>
+<p>When the request hits the istio ingress gateway (the gateway listener for meshery listens on port 80) with prefix “/” (root) it will forward it to the kubernetes service meshery which exists in meshery Namespace and listing on 9081 (The default port of Meshery)</p>
+<h4 id="step-4-accessing-meshery">Step 4: Accessing Meshery:</h4>
+<p>Now you can access meshhery UI with http:/// in this context http://20.204.19.97/
+Tip: when you hit http://20.204.19.97/ it will automatically redirect you to
+http://20.204.19.97/provider and you will she the meshery UI as below:</p>
+<h4 id="extras">Extras :</h4>
+<p>You can use fqdn (let’s say meshery.example.com) for accessing meshery. In that case you have to replace <code>*</code> field under hosts: section in <code>meshery-istio-vs.yaml</code> and <code>meshery-istio-gw.yaml</code> to <code>meshery.example.com</code> .</p>
+<h4 id="find-it-on">Find it on  : <a href= "https://discuss.layer5.io/t/configuring-meshery-behind-istio-ingress-gateway/157/" target="_blank"></h4>
+<p>Layer5 discuss forum
+</a></p>
+<h4 id="credits">Credits:</h4>
+<p><a href="https://layer5.io/" target="_blank"> Layer5</a> , <a href="https://istio.io/" target="_blank"> Istio</a> , <a href="https://meshery.io/" target="_blank"> Meshery</a></p>
+
+          
+        </article>
+        
+          <div class=" flex mx-auto text-center flex-wrap p-4 justify-center">
+            
+            <p class="text-fuchsia-800 flex flex-wrap"> Tags 🔖 :
+              
+              <a href="https://samirparhi.com/tags/meshery/" class="text-sky-700 flex hover:underline mx-2">
+                #Meshery 
+              </a>
+              
+              <a href="https://samirparhi.com/tags/open-source/" class="text-sky-700 flex hover:underline mx-2">
+                #Open -Source 
+              </a>
+              
+              <a href="https://samirparhi.com/tags/kubernetes/" class="text-sky-700 flex hover:underline mx-2">
+                #Kubernetes 
+              </a>
+              
+            </p>
+          </div>
+          
+
+
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          // Select all code blocks
+          const codeBlocks = document.querySelectorAll("pre");
+    
+          codeBlocks.forEach((block, index) => {
+              // Create a copy button
+              const copyButton = document.createElement("button");
+              copyButton.innerText = "Copy";
+              copyButton.classList.add("copy-btn", "bg-fuchsia-700", "text-white", "px-3", "py-1", "rounded-lg", "hover:bg-fuchsia-900", "absolute", "top-2", "right-2", "text-xs");
+    
+              // Add event listener to handle copying
+              copyButton.addEventListener("click", () => {
+                  const codeText = block.innerText;
+                  navigator.clipboard.writeText(codeText).then(() => {
+                      copyButton.innerText = "Copied!";
+                      setTimeout(() => {
+                          copyButton.innerText = "Copy";
+                      }, 2000);
+                  });
+              });
+    
+              // Wrap the code block in a relative container and add the button
+              const wrapper = document.createElement("div");
+              wrapper.classList.add("relative", "code-block-wrapper", "mb-6");
+              wrapper.appendChild(block.cloneNode(true));
+              wrapper.appendChild(copyButton);
+    
+              block.replaceWith(wrapper);
+          });
+      });
+    </script>
+
+ 
+
+
+    <footer class="py-4 from-cyan-100 to-rose-50 bg-gradient-to-l backdrop-blur-md">
+        <div class="px-auto flex flex-wrap justify-evenly">
+            <ul class="px-5 list-none flex justify-evenly space-x-6 py-2 mx-auto rounded-xl">
+                
+                <li class="text-xl text-purple-700 hover:underline border-1 hover:text-indigo-600 flex rounded-lg border-fuchsia-900">
+                    <a href="https:&#x2F;&#x2F;github.com&#x2F;samirparhi-dev"> GitHub</a>
+                </li>
+                
+                <li class="text-xl text-purple-700 hover:underline border-1 hover:text-indigo-600 flex rounded-lg border-fuchsia-900">
+                    <a href="https:&#x2F;&#x2F;linkedin.com&#x2F;in&#x2F;samir-parhi"> LinkedIn</a>
+                </li>
+                
+                <li class="text-xl text-purple-700 hover:underline border-1 hover:text-indigo-600 flex rounded-lg border-fuchsia-900">
+                    <a href="https:&#x2F;&#x2F;twitter.com&#x2F;samirparhi"> X</a>
+                </li>
+                
+                <li class="text-xl text-purple-700 hover:underline border-1 hover:text-indigo-600 flex rounded-lg border-fuchsia-900">
+                    <a href="mailto:samirparhi@gmail.com"> Mail</a>
+                </li>
+                
+                <li class="text-xl text-purple-700 hover:underline border-1 hover:text-indigo-600 flex rounded-lg border-fuchsia-900">
+                    <a href="https:&#x2F;&#x2F;mastodon.social&#x2F;@samirparhi"> Mastodon</a>
+                </li>
+                
+            </ul>
+        </div>
+        <div class="flex py-5 text-purple-700 justify-center text-xl">
+            <p>© samirparhi.com 2024</p>
+        </div>
+        <div class="flex py-5 text-purple-700 justify-center text-xl">
+            <p>Coded 💙 by samirparhi-dev</p>
+        </div>
+    </footer>
+</body>
+</html>

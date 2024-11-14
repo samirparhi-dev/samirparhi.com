@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>samirparhi.com - OpenSource</title>
+    <subtitle>Blog Site of Samir Parhi</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://samirparhi.com/tags/opensource/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://samirparhi.com"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2024-06-13T00:00:00+00:00</updated>
+    <id>https://samirparhi.com/tags/opensource/atom.xml</id>
+    <entry xml:lang="en">
+        <title>The Plan 🤞🏼</title>
+        <published>2024-06-13T00:00:00+00:00</published>
+        <updated>2024-06-13T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Samir Ranjan Parhi
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://samirparhi.com/the-plan/"/>
+        <id>https://samirparhi.com/the-plan/</id>
+        
+        <content type="html" xml:base="https://samirparhi.com/the-plan/">&lt;h4 id=&quot;the-p1-s&quot;&gt;The P1 (s)&lt;&#x2F;h4&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th style=&quot;text-align: center&quot;&gt;Focus&lt;&#x2F;th&gt;&lt;th style=&quot;text-align: center&quot;&gt;Category&lt;&#x2F;th&gt;&lt;th style=&quot;text-align: center&quot;&gt;Now&lt;&#x2F;th&gt;&lt;th style=&quot;text-align: center&quot;&gt;live On&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: center&quot;&gt;👓 Curated List of Rust Github Repos&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;page 📃&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;Live tomorrow&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;Pre Prod📱&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: center&quot;&gt;👓 Read time and Word Count&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;🌏 Enhancement&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;Live&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;🛑 Live Now&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: center&quot;&gt;⚙️ Part-2: Rust Recursive search with Code&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;📝Blog &amp;amp; 🔖 Tags&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;Review ✅&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;🛑 Live Now&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: center&quot;&gt;β End of Beta&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;🌏 Enhancement&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;🗞️ Rolling&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;20th June 2024&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: center&quot;&gt;🏃🏻‍➡️ Marathon blogs&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;📝Blog &amp;amp; 🔖 Tags&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;10 Contents ready ᚦ&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;30th June 2024&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;h5 id=&quot;the-p2-s&quot;&gt;The P2 (s)&lt;&#x2F;h5&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th style=&quot;text-align: right&quot;&gt;Focus&lt;&#x2F;th&gt;&lt;th style=&quot;text-align: center&quot;&gt;Category&lt;&#x2F;th&gt;&lt;th style=&quot;text-align: center&quot;&gt;Now&lt;&#x2F;th&gt;&lt;th style=&quot;text-align: center&quot;&gt;live On&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: right&quot;&gt;⚙️ Special blogs on Rust&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;📖 Page &amp;amp; 🔖 Tags&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;Content Ready under Review&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;In July 2024&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: right&quot;&gt;〄 Standardizing API trading platform&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;📝 Blog&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;🔬 Incubation&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;In July 2024&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: right&quot;&gt;🗒️ My System Design notes&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;📑 page&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;🔎 Under Content Consolidation&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;⏱️ Scheduled&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: right&quot;&gt;🗒️ My Kubernetes Design notes&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;📑 page&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;🔎 Under Content Consolidation&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;⏱️ Scheduled&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: right&quot;&gt;🗝️ Secure and Mobile first Coding&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;⌨️ System Designs, &amp;gt; coding&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;🔬 Incubation&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;⏱️ Scheduled&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: right&quot;&gt;⺵ Running Service mesh On a Scale&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;✍🏼 Writing&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;🔬 Incubation&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;⏱️ Scheduled&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: right&quot;&gt;Training juggernaut Model My Pi&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;💬 Pouring Thoughts&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;🔬 Incubation&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;🔜 Coming&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: right&quot;&gt;🧩 Hacking K8s on My Pi&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;💬 Pouring Thoughts&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;🔬 Incubation&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;🔜 Coming&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: right&quot;&gt;🛜 The power of Routing (VPNs vs. Proxy )&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;💬 Pouring Thoughts&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;🔬 Incubation&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;🔜 Coming&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: right&quot;&gt;🐧 The eBPF Hacks&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;✍🏼 Writing&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;💬 Pouring Thoughts&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;🔜 Coming&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: right&quot;&gt;∪ Union of ServiceMesh &amp;amp;eBPF Hacks&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;💬 Pouring Thoughts&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;🔬 Incubation&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;🔜 Coming&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;h5 id=&quot;the-p3-s&quot;&gt;The P3 (s)&lt;&#x2F;h5&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th style=&quot;text-align: center&quot;&gt;Focus&lt;&#x2F;th&gt;&lt;th style=&quot;text-align: center&quot;&gt;Category&lt;&#x2F;th&gt;&lt;th style=&quot;text-align: center&quot;&gt;Now&lt;&#x2F;th&gt;&lt;th style=&quot;text-align: center&quot;&gt;live On&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: center&quot;&gt;💬 Cementing Feature On Blog&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;🌏 Enhancement&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;🔬 Incubation&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;In Sept 2024&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: center&quot;&gt;🚊 Training juggernaut Model My Pi&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;✍🏼 Writing&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;🔬 Incubation&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: center&quot;&gt;👨🏻‍💻 Designing Decentralized System&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;📝Blog &amp;amp; Page&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;Review ✅&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;🔜 Coming&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: center&quot;&gt;ᐖ Ask Me Anything (AMA)&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;💬 Commenting&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;🔬 Incubation&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;🔜 Coming&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: center&quot;&gt;🎨 Blogs on Art Culture and Heritage&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;Section, Tag &amp;amp; Blog&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;Ideation&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;🔜 Coming&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: center&quot;&gt;♻️ My Contribution to Green Computing&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;🛟 Accountability&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;📘 Content ready&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;🔜 Coming&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;h4 id=&quot;more-coming-soon&quot;&gt;More Coming Soon..&lt;&#x2F;h4&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>SBOM: Know the Software&#x27;s source of truth</title>
+        <published>2024-04-27T00:00:00+00:00</published>
+        <updated>2024-04-27T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Samir Ranjan Parhi
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://samirparhi.com/sbom-source-of-truth/"/>
+        <id>https://samirparhi.com/sbom-source-of-truth/</id>
+        
+        <content type="html" xml:base="https://samirparhi.com/sbom-source-of-truth/">&lt;p&gt;Over the years, our focus has been on enhancing our software’s functionality and striving for vendor neutrality. We’ve integrated various freely available modules from diverse sources to expand our applications. However, we inadvertently overlooked verifying the authenticity of these sources.&lt;&#x2F;p&gt;
+&lt;p&gt;Nowadays, with privacy concerns escalating across individuals and organisations, we’ve started scrutinising the origins of each code segment extensively. This scrutiny is aimed at ensuring that we can confidently deliver authentic products to our end-users without compromising on features while maintaining compatibility with other software.&lt;&#x2F;p&gt;
+&lt;p&gt;The term SBOM (Software Bill of Materials) has become increasingly prominent in industry discussions over the past year. It’s likely that we’ll see a surge in demands for this skill set in the near future.&lt;&#x2F;p&gt;
+&lt;p&gt;SBOM is to establishing trust, much like how blockchain operates.
+For instance, in a blockchain scenario:&lt;&#x2F;p&gt;
+&lt;p&gt;when purchasing a diamond ring, the blockchain ensures the authenticity of the product from its mining origins to its delivery to the customer, despite involving numerous vendors and steps in the supply chain.&lt;&#x2F;p&gt;
+&lt;p&gt;Similarly, SBOM applies this logic to software. While we may utilise various modules or dependencies in our codebase to create impressive products, SBOM provides crucial information regarding the authenticity and vulnerabilities of these third-party components.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;So, SBOM is for Whom?&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Technically for Everyone (because privacy is our Rights not an option 😊)&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Primarily for developers, solution architects&#x2F;Consultants, delivery partners,&lt;&#x2F;li&gt;
+&lt;li&gt;Companies or individuals consuming the software&lt;&#x2F;li&gt;
+&lt;li&gt;Vendors or agencies providing its ongoing support (AMC).&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;strong&gt;For whom it is a whistle blower?&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Based on recent analyses from various articles, it’s evident that there’s a growing trend towards embracing and promoting open source. While this is a positive development, the open nature of such projects means that they attract contributors and collaborators from around the globe who share their code. However, this openness also introduces potential risks. In some cases, developers may not adhere to best coding practices, particularly in popular codebases where thorough code reviews might not occur. Consequently, there’s a heightened risk of subpar code being committed to the codebase.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;What’s the solution then?&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Indeed, thanks to the global open-source community, initiatives have been taken to develop and promote SBOM tools, enabling meticulous scrutiny of each code segment. These tools can operate during various stages, including raising a PR, building applications, and containerizing code, ensuring thorough checks even when end customers consume the software. This advancement provides developers and technical professionals involved in product development with peace of mind. The SBOM tool space continues to evolve and improve daily. Let’s delve into some of these open-source SBOM tools:&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;sbomit.dev&quot;&gt;Sbomit&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.fossology.org&quot;&gt;Fossology&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;cyclonedx.org&quot;&gt;Cyclonedx&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.tldrlegal.com&quot;&gt;Tldrlegal&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;owasp-dep-scan&#x2F;dep-scan&quot;&gt;Dep Scan&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;kubernetes-sigs&#x2F;bom&quot;&gt;BOM for K8S&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;projects.eclipse.org&#x2F;projects&#x2F;technology.sw360&quot;&gt;SW360&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;tern-tools&#x2F;tern&quot;&gt;Tern&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;nexB&#x2F;scancode-toolkit&quot;&gt;scancode-toolkit&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;fossid.com&#x2F;open-source-audit-services&#x2F;&quot;&gt;Fossid&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.leanix.net&#x2F;en&#x2F;wiki&#x2F;trm&#x2F;software-bill-of-materials&quot;&gt;Leanix&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.yoctoproject.org&quot;&gt;Yoctoproject&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;hogliux&#x2F;bomutils&quot;&gt;Bomutils&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;&lt;strong&gt;Popular Reporting Standards:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;spdx.dev&#x2F;use&#x2F;tools&#x2F;open-source-tools&#x2F;&quot;&gt;SPDX&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Is there a way to ensure End-user Confidence ?&lt;&#x2F;p&gt;
+&lt;p&gt;Absolutely, we possess the means to attest and sign our products, thereby offering transparency regarding the risk posture to end customers. Credit goes to the open-source community for dedicating efforts to develop tools capable of attesting and verifying containerized binaries and files. This allows any end customer to verify the risk posture of the software being consumed using the generated certificate.&lt;&#x2F;p&gt;
+&lt;p&gt;Few Open Source Attestation Tools are listed below :&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;tools&quot;&gt;Tools:&lt;&#x2F;h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.sigstore.dev&quot;&gt;Sigstore’s Cosign&lt;&#x2F;a&gt; (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;sigstore&#x2F;cosign&quot;&gt;GitHub&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;notaryproject&#x2F;notary&quot;&gt;Notary&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;docs.docker.com&#x2F;engine&#x2F;security&#x2F;trust&quot;&gt;DCT (Docker Content Trust)&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;in-toto&#x2F;attestation&quot;&gt;In-toto&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;IBM&#x2F;portieris&quot;&gt;Portieris&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h3 id=&quot;open-source-frameworks&quot;&gt;Open Source Frameworks:&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;theupdateframework.io&quot;&gt;TUF (The Update Framework)&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;open-source-registries&quot;&gt;Open Source Registries:&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;goharbor.io&#x2F;docs&#x2F;2.7.0&#x2F;working-with-projects&#x2F;working-with-images&#x2F;sign-images&#x2F;&quot;&gt;Harbor&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Docker Hub: &lt;em&gt;you know the link right 🤔&lt;&#x2F;em&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;After All, SBOM is becoming indispensable in ensuring software authenticity and security, benefiting stakeholders across the development and consumption spectrum.
+Hope you loved reading it. 🍻&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>
