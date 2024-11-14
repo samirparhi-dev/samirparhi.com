@@ -3,6 +3,7 @@
     "@tailwindcss/typography": "^0.5.15"
   },
   "dependencies": {
-    "normalize.css": "^8.0.1"
+    "normalize.css": "^8.0.1",
+    "tailwind-scrollbar": "^3.1.0"
   }
 }

@@ -142,3 +142,4 @@ my_collab = [
     { url = "https://capita7.com/", name = "Capita7", Techstack= "Rust, Cargo TailwinCss" },
     { url = "https://github.com/samirparhi-dev/fuse", name = "Fuse-cli", Techstack= "Rust, Cargo" }
 ]
+excluded_slugs = ["success", "the-plan"]
