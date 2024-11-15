@@ -1171,16 +1171,16 @@ video {
   height: 0.25rem;
 }
 
+.h-2 {
+  height: 0.5rem;
+}
+
 .h-\[70px\] {
   height: 70px;
 }
 
 .h-auto {
   height: auto;
-}
-
-.h-2 {
-  height: 0.5rem;
 }
 
 .max-h-\[75px\] {
