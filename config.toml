@@ -66,8 +66,8 @@ my_blog_menu = [
 social_handle = [
     { url = "https://github.com/samirparhi-dev", social_handle = "GitHub" },
     { url = "https://linkedin.com/in/samir-parhi", social_handle = "LinkedIn" },
-    { url = "https://twitter.com/samirparhi", social_handle = "X" },
-    { url = "mailto:samirparhi@gmail.com", social_handle = "Mail" },
+    { url = "https://twitter.com/samirparhi", social_handle = "X (Twitter)" },
+    { url = "mailto:samirparhi@gmail.com", social_handle = "E-Mail" },
     { url = "https://mastodon.social/@samirparhi", social_handle = "Mastodon" },
 
 ]
