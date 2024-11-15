@@ -30,7 +30,7 @@
                                 <a href="/#">
                                     {% set mdata = get_image_metadata(path="img/brand/samirparhi-logo.png") %}
                                     {% set w = (mdata.width/2) | int %}
-                                    {% set h = (mdata.height/2) | int %}
+                                    {% set h = (mdata.height/4) | int %}
             
                                     {% set image = resize_image(path="img/brand/samirparhi-logo.png", width=w, height=h, op="fit_width") %}
             
