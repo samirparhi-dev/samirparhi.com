@@ -59,15 +59,14 @@
     <div class="w-full h-2 bg-gradient-to-l from-purple-500 via-sky-600 to-rose-400 backdrop-blur-lg shadow-lg bg-opacity-10"></div> 
     <footer class="py-4 from-cyan-100 to-rose-50 bg-gradient-to-l backdrop-blur-md">
 
-        <div class="px-auto flex flex-wrap justify-evenly">
-            <ul class="px-5 list-none flex justify-evenly space-x-6 py-2 mx-auto rounded-xl">
+            <ul class="px-5 list-none flex flex-wrap justify-evenly space-x-2 py-2 mx-auto rounded-xl">
                 {% for item in config.extra.social_handle %}
-                <li class="text-xl text-purple-700 hover:underline border-1 hover:text-indigo-600 flex rounded-lg border-fuchsia-900">
+                <li class="text-xl flex-wrap text-purple-700 justify-evenly hover:underline border-1 hover:text-indigo-600 flex rounded-lg border-fuchsia-900">
                     <a href="{{ item.url }}"> {{ item.social_handle }}</a>
                 </li>
                 {% endfor %}
             </ul>
-        </div>
+        
         <div class="flex py-5 text-purple-700 justify-center text-xl">
             <p>© {{ config.title }} {{ config.extra.current_year }}</p>
         </div>
