@@ -1155,10 +1155,6 @@ video {
   margin-top: 1.25rem;
 }
 
-.ml-10 {
-  margin-left: 2.5rem;
-}
-
 .block {
   display: block;
 }
@@ -1237,10 +1233,6 @@ video {
 
 .flex-wrap {
   flex-wrap: wrap;
-}
-
-.flex-nowrap {
-  flex-wrap: nowrap;
 }
 
 .items-start {
@@ -1635,6 +1627,10 @@ video {
   font-weight: 600;
 }
 
+.font-light {
+  font-weight: 300;
+}
+
 .text-blue-500 {
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity));
@@ -1819,7 +1815,7 @@ video {
 }
 
 html, body {
-  font-family: "Jura", "Moderustic","IBM Plex Sans", "Space Mono", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+  font-family:"Work Sans","Manrope","IBM Plex Sans","Funnel Display","Space Mono", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
 }
 
 .paper-like {

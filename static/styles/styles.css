@@ -1392,10 +1392,6 @@ video {
   --tw-bg-opacity: 0.1;
 }
 
-.bg-opacity-5 {
-  --tw-bg-opacity: 0.05;
-}
-
 .bg-gradient-to-l {
   background-image: linear-gradient(to left, var(--tw-gradient-stops));
 }
@@ -1623,6 +1619,10 @@ video {
   font-weight: 200;
 }
 
+.font-light {
+  font-weight: 300;
+}
+
 .font-semibold {
   font-weight: 600;
 }
@@ -1811,7 +1811,7 @@ video {
 }
 
 html, body {
-  font-family: "Jura", "Moderustic","IBM Plex Sans", "Space Mono", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+  font-family:"Work Sans","Manrope","IBM Plex Sans","Funnel Display","Space Mono", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
 }
 
 .paper-like {

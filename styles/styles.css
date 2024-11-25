@@ -52,8 +52,8 @@
 }
 
 html, body {
-    font-family: "Jura", "Moderustic","IBM Plex Sans", "Space Mono", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
-  }
+  font-family:"Work Sans","Manrope","IBM Plex Sans","Funnel Display","Space Mono", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+}
 
   .paper-like {
     background-color: #fdfdfd; /* Light beige color */
