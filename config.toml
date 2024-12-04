@@ -137,9 +137,13 @@ Cyber_security_skills = [
     "Tool Integrations"
 ]
 my_collab = [
-    { url = "https://github.com/samirparhi-dev/sharang", name = "Sharang App", Techstack= "Julia, PlotlyDash" },
-    { url = "https://asteria.co.in/skydeck", name = "Skydeck", Techstack= "Go, Python, TailwindCSS" },
-    { url = "https://capita7.com/", name = "Capita7", Techstack= "Rust, Cargo TailwinCss" },
-    { url = "https://github.com/samirparhi-dev/fuse", name = "Fuse-cli", Techstack= "Rust, Cargo" }
+    { url = "https://s9lab.dev", name = "s9lab", Techstack= "Rust, Zola, TailwindCSS", avtarURL = "https://raw.githubusercontent.com/samirparhi-dev/samirparhi-dev/main/Logos/s9lab-logo-new.png" },
+
+    { url = "https://github.com/samirparhi-dev/sharang", name = "Sharang App", Techstack= "Julia, PlotlyDash", avtarURL = "https://raw.githubusercontent.com/samirparhi-dev/samirparhi-dev/main/Logos/sharang-new.svg" },
+
+    { url = "https://github.com/samirparhi-dev/fuse", name = "Fuse-cli", Techstack= "Rust, Cargo", avtarURL = "https://raw.githubusercontent.com/samirparhi-dev/samirparhi-dev/main/Logos/fuse-logo-new.png" },
+
+    { url = "https://capita7.com/", name = "Capita7", Techstack= "Rust, Cargo TailwinCss", avtarURL = "https://raw.githubusercontent.com/samirparhi-dev/samirparhi-dev/main/Logos/capita-7-logo-latest.png" }
+    
 ]
 excluded_slugs = ["success", "the-plan"]
