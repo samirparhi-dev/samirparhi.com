@@ -5,8 +5,62 @@
     <link rel="self" type="application/atom+xml" href="https://samirparhi.com/tags/open-source/atom.xml"/>
     <link rel="alternate" type="text/html" href="https://samirparhi.com"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
-    <updated>2024-09-18T00:00:00+00:00</updated>
+    <updated>2025-02-12T00:00:00+00:00</updated>
     <id>https://samirparhi.com/tags/open-source/atom.xml</id>
+    <entry xml:lang="en">
+        <title>A step towards Accelerating Open-source Community with s9lab.dev 🌏</title>
+        <published>2025-02-12T00:00:00+00:00</published>
+        <updated>2025-02-12T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Samir Ranjan Parhi
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://samirparhi.com/accelarating-oss-with-s9lab/"/>
+        <id>https://samirparhi.com/accelarating-oss-with-s9lab/</id>
+        
+        <content type="html" xml:base="https://samirparhi.com/accelarating-oss-with-s9lab/">&lt;p&gt;We are Moving Fast! Artificial Intelligence (AI), Machine Learning (ML), and especially Generative AI are revolutionizing industries. It’s easy to get overwhelmed by the amount of information out there. But for newcomers, this flood of resources can feel like trying to drink from a firehose! 😅&lt;&#x2F;p&gt;
+&lt;p&gt;That’s when &lt;a href=&quot;https:&#x2F;&#x2F;s9lab.dev&quot;&gt;s9lab.dev&lt;&#x2F;a&gt; was born! 🎉—what if we could create a one-stop hub that simplifies the exploration of open-source tools and technologies for contributors, developers, system designers, cybersecurity enthusiasts, blockchain buffs, and curious learners alike.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;s9lab.dev&quot;&gt;s9lab.dev&lt;&#x2F;a&gt; envisioned as a &lt;strong&gt;Collection of collections&lt;&#x2F;strong&gt; (think of bucket lists or arrays 😉), designed to guide you through cutting-edge resources related to AI, ML, and beyond, whether you’re just starting out or diving into advanced topics.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;available-collections-till-date&quot;&gt;Available Collections Till Date:&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;1-open-source-vector-dbs-jar&quot;&gt;1️⃣ Open Source Vector DBs 🫙&lt;&#x2F;h3&gt;
+&lt;p&gt;🔗 &lt;a href=&quot;https:&#x2F;&#x2F;s9lab.dev&#x2F;oss-vectordb-repos&#x2F;&quot;&gt;Explore Open Source Vector DBs&lt;&#x2F;a&gt;&lt;br &#x2F;&gt;
+Dive into a handpicked list of vector databases, essential for modern AI&#x2F;ML applications. Perfect for building multi-agent systems or finding the right tool for specific tasks.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;2-epic-julia-repositories-test-tube&quot;&gt;2️⃣ Epic Julia Repositories 🧪&lt;&#x2F;h3&gt;
+&lt;p&gt;🔗 &lt;a href=&quot;https:&#x2F;&#x2F;s9lab.dev&#x2F;awsome-julia-repos&#x2F;&quot;&gt;Discover Powerful Julia Repos&lt;&#x2F;a&gt;&lt;br &#x2F;&gt;
+Julia—a programming language that’s faster, smarter, and mathematically robust—is poised to take the tech world by storm. Explore repositories that showcase Julia’s potential in AI&#x2F;ML and beyond. Trust me, it’s underrated now but will soon shine brighter than Python or R! ✨&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;3-awesome-rust-repositories-gear&quot;&gt;3️⃣ Awesome Rust Repositories ⚙️&lt;&#x2F;h3&gt;
+&lt;p&gt;🔗 &lt;a href=&quot;https:&#x2F;&#x2F;s9lab.dev&#x2F;awsome-rust-repos&#x2F;&quot;&gt;Check Out Rust Repos&lt;&#x2F;a&gt;&lt;br &#x2F;&gt;
+Rust is my personal favorite—a language built for speed, safety, and scalability. If you’re into futuristic, resilient systems, this collection has everything written in Rust. From web apps to low-level system design, Rust has got you covered!&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;4-ai-ml-inference-tools-robot&quot;&gt;4️⃣ AI&#x2F;ML Inference Tools 🤖&lt;&#x2F;h3&gt;
+&lt;p&gt;🔗 &lt;a href=&quot;https:&#x2F;&#x2F;s9lab.dev&#x2F;ai-ml-tool-collection&#x2F;&quot;&gt;AI&#x2F;ML Tool Collection&lt;&#x2F;a&gt;&lt;br &#x2F;&gt;
+Need tools to deploy and run AI models? This collection brings together all the essentials for inference tasks. While it’s still growing, we’re working on making it more structured and insightful. Stay tuned!&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;5-modern-ai-ml-infrastructure-tools&quot;&gt;5️⃣ Modern AI&#x2F;ML Infrastructure 🛠️&lt;&#x2F;h3&gt;
+&lt;p&gt;🔗 &lt;a href=&quot;https:&#x2F;&#x2F;s9lab.dev&#x2F;modern-ai-ml-infra&#x2F;&quot;&gt;Find Your Ideal Infra&lt;&#x2F;a&gt;&lt;br &#x2F;&gt;
+Deploying ML models shouldn’t be a headache. This directory highlights cost-effective and tailored infrastructure options to suit your needs. Whether you’re scaling up or starting small, we’ve got the right pointers for you!&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;raised-hands-an-open-invitation-to-everyone&quot;&gt;🙌 An Open Invitation to Everyone&lt;&#x2F;h2&gt;
+&lt;p&gt;The journey of &lt;a href=&quot;https:&#x2F;&#x2F;s9lab.dev&quot;&gt;s9lab.dev&lt;&#x2F;a&gt; has been exciting so far, but I truly believe the best is yet to come—and it starts with &lt;strong&gt;YOU&lt;&#x2F;strong&gt;! 🌟&lt;&#x2F;p&gt;
+&lt;p&gt;This project is a labor of love, but I know that magic happens when brilliant minds collaborate. That’s why I’m putting out an open invitation to all tech enthusiasts, developers, and creators who share the vision of making learning and development accessible to everyone. Let’s collaborate to:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Curate New Collections&lt;&#x2F;li&gt;
+&lt;li&gt;Refine Existing Ones&lt;&#x2F;li&gt;
+&lt;li&gt;Spread the Word&lt;&#x2F;li&gt;
+&lt;li&gt;Brainstorm Ideas&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Together, we can transform s9lab.dev into a vibrant hub of knowledge and innovation—a place where learners and contributors thrive. 🚀&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;the-future-is-bright&quot;&gt;🌟 The Future is Bright&lt;&#x2F;h2&gt;
+&lt;p&gt;This is just the beginning! s9lab.dev has the potential to evolve into a vibrant ecosystem that caters to every type of learner and creator—whether you’re a developer, system designer, cybersecurity expert, blockchain enthusiast, or simply someone curious about tech.&lt;&#x2F;p&gt;
+&lt;p&gt;I firmly believe that the power of open source lies in shared knowledge and collective effort. That’s why s9lab.dev is—and always will be—completely open source. ❤️&lt;&#x2F;p&gt;
+&lt;p&gt;Let’s shape the future of &lt;strong&gt;Community learning&lt;&#x2F;strong&gt;—one collection at a time! 🚀&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
     <entry xml:lang="en">
         <title>Physics in Product Metaphor: Navigating Momentum Through Pivot</title>
         <published>2024-09-18T00:00:00+00:00</published>

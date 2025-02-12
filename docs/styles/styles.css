@@ -1192,24 +1192,12 @@ video {
   height: auto;
 }
 
-.h-10 {
-  height: 2.5rem;
-}
-
-.h-11 {
-  height: 2.75rem;
-}
-
 .max-h-\[75px\] {
   max-height: 75px;
 }
 
 .min-h-40 {
   min-height: 10rem;
-}
-
-.w-12 {
-  width: 3rem;
 }
 
 .w-40 {
@@ -1222,10 +1210,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-16 {
-  width: 4rem;
 }
 
 .max-w-5xl {
@@ -1369,11 +1353,6 @@ video {
   border-width: 2px;
 }
 
-.border-cyan-400 {
-  --tw-border-opacity: 1;
-  border-color: rgb(34 211 238 / var(--tw-border-opacity));
-}
-
 .border-fuchsia-900 {
   --tw-border-opacity: 1;
   border-color: rgb(112 26 117 / var(--tw-border-opacity));
@@ -1423,10 +1402,6 @@ video {
   --tw-bg-opacity: 0.1;
 }
 
-.bg-opacity-50 {
-  --tw-bg-opacity: 0.5;
-}
-
 .bg-gradient-to-l {
   background-image: linear-gradient(to left, var(--tw-gradient-stops));
 }
@@ -1438,12 +1413,6 @@ video {
 .from-cyan-100 {
   --tw-gradient-from: #cffafe var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(207 250 254 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.from-cyan-50 {
-  --tw-gradient-from: #ecfeff var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(236 254 255 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
@@ -1463,11 +1432,6 @@ video {
   --tw-gradient-from: #a855f7 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(168 85 247 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.via-indigo-50 {
-  --tw-gradient-to: rgb(238 242 255 / 0)  var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), #eef2ff var(--tw-gradient-via-position), var(--tw-gradient-to);
 }
 
 .via-indigo-600 {
@@ -1651,10 +1615,6 @@ video {
   font-weight: 800;
 }
 
-.font-extralight {
-  font-weight: 200;
-}
-
 .font-light {
   font-weight: 300;
 }
@@ -1680,11 +1640,6 @@ video {
 .text-blue-700 {
   --tw-text-opacity: 1;
   color: rgb(29 78 216 / var(--tw-text-opacity));
-}
-
-.text-emerald-600 {
-  --tw-text-opacity: 1;
-  color: rgb(5 150 105 / var(--tw-text-opacity));
 }
 
 .text-fuchsia-600 {
